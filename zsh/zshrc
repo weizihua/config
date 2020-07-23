@@ -57,21 +57,11 @@ export EDITOR='nvim'
 alias mvn-new="mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4"
 
 # Kubernetes
-alias kube-dev="kubectl config use-context dev.tekaef-saas.com"
-alias kube-local="kubectl config use-context docker-desktop"
 alias kube-current="kubectl config current-context"
 alias kube-info="kubectl cluster-info"
 alias k="kubectl"
-alias k9s-dev="k9s --context dev.tekaef-saas.com -n nabucco"
-alias k9s-local="k9s --context docker-desktop -n nabucco"
-
-# JSON and XML
-alias json="pjson"
-alias xml="xmllint --format -"
 
 alias vim="nvim"
-alias mutt="neomutt"
-alias redis-cli="iredis"
 
 # Configuration Files
 alias cfg-alacritty="cd ~/.config/alacritty/ && nvim ~/.config/alacritty/alacritty.yml"
@@ -98,8 +88,6 @@ alias notes-work='cd ~/Notes && vim -c "call vimwiki#base#goto_index(2)"'
 alias docker-clean="docker system prune -a"
 
 # Kubernetes
-alias kube-edit-local="vim /home/xvitcoder/Work/Development/nabucco/nabucco-deployments/local-kube/nabucco-deployment.yaml"
-alias kube-apply-local="kube-local && kubectl apply -f /home/xvitcoder/Work/Development/nabucco/nabucco-deployments/local-kube/nabucco-deployment.yaml"
 
 
 # Git
@@ -135,15 +123,6 @@ alias catc="bat"
 
 # Bookmarks
 alias config='cd ~/.config'
-alias nabucco='cd ~/Work/Development/nabucco'
-alias nabucco-backend='cd ~/Work/Development/nabucco/nabucco-backend-service'
-alias nabucco-api='cd ~/Work/Development/nabucco/nabucco-api-gateway-service'
-alias nabucco-workflow='cd ~/Work/Development/nabucco/nabucco-workflow-service'
-alias nabucco-search='cd ~/Work/Development/nabucco/nabucco-search-service'
-alias nabucco-media='cd ~/Work/Development/nabucco/nabucco-media-service'
-alias nabucco-media-importer='cd ~/Work/Development/nabucco/nabucco-media-importer-task'
-alias nabucco-product-catalog-importer='cd ~/Work/Development/nabucco/nabucco-product-catalog-importer-task'
-alias nabucco-product-catalog-indexer='cd ~/Work/Development/nabucco/nabucco-product-catalog-indexer-task'
 
 # ------------------------------
 # Initialization code
@@ -178,40 +157,9 @@ fd() { local dir dir=$(find ${1:-.} -path '*/\.*' -prune -o -type d \
       -print 2> /dev/null | fzf +m) && cd "$dir"}
 
 # TMUX helper functions
-# Create nabucco session with all windows
-tmux-nabucco () {
-    ROOT_PATH='/home/xvitcoder'
-    tmux has -t nabucco 2> /dev/null
-    if [[ $? == 1 ]]; then
-        # Create a new TMUX session
-        tmux new-session -d -s nabucco -n nabucco-backend   -c "$NABUCCO_ROOT_PATH/nabucco-backend-service"
-        tmux new-window -d -n search-service                -c "$NABUCCO_ROOT_PATH/nabucco-search-service"
-        tmux new-window -d -n workflow-service              -c "$NABUCCO_ROOT_PATH/nabucco-workflow-service"
-        tmux new-window -d -n product-catalog-importer      -c "$NABUCCO_ROOT_PATH/nabucco-product-catalog-importer-task"
-        tmux new-window -d -n product-catalog-indexer       -c "$NABUCCO_ROOT_PATH/nabucco-product-catalog-indexer-task"
-        tmux new-window -d -n media-importer                -c "$NABUCCO_ROOT_PATH/nabucco-media-importer-task"
-        tmux new-window -d -n media-service                 -c "$NABUCCO_ROOT_PATH/nabucco-media-service"
-        tmux new-window -d -n api-gateway-service           -c "$NABUCCO_ROOT_PATH/nabucco-api-gateway-service"
-        tmux new-window -d -n master-data-importer          -c "$NABUCCO_ROOT_PATH/nabucco-master-data-importer-task"
-		tmux new-window -d -n ldap-importer                 -c "$NABUCCO_ROOT_PATH/nabucco-ldap-importer-task"
-		tmux new-window -d -n sap-data-importer             -c "$NABUCCO_ROOT_PATH/nabucco-sap-data-importer-task"
-        tmux new-window -d -n workflow-files                -c "$NABUCCO_ROOT_PATH/nabucco-workflow-files"
-        tmux new-window -d -n deployments                   -c "$NABUCCO_ROOT_PATH/nabucco-deployments"
-        tmux new-window -d -n dockerfiles                   -c "$NABUCCO_ROOT_PATH/nabucco-dockerfiles"
-        tmux new-window -d -n workspace                     -c "$ROOT_PATH/Documents/Workspace"
-
-        if [[ $1 = true ]]; then
-            tmux attach-session -t nabucco
-        fi
-    else
-        # Attaching to existing session
-        tmux attach-session -t nabucco
-    fi
-}
-
 # Create config session with all config files
 tmux-config () {
-    ROOT_PATH='/home/xvitcoder'
+    ROOT_PATH="$HOME"
     tmux has -t config 2> /dev/null
     if [[ $? == 1 ]]; then
         # Create a new TMUX session
@@ -242,7 +190,7 @@ tmux-config () {
 
 # Create kubernetes session
 tmux-kubernetes () {
-    ROOT_PATH='/home/xvitcoder'
+    ROOT_PATH="$HOME"
     tmux has -t kubernetes 2> /dev/null
     if [[ $? == 1 ]]; then
         # Create a new TMUX session
@@ -264,7 +212,7 @@ tmux-kubernetes () {
 
 # Create system session
 tmux-system () {
-    ROOT_PATH='/home/xvitcoder'
+    ROOT_PATH="$HOME"
     tmux has -t system 2> /dev/null
     if [[ $? == 1 ]]; then
         # Create a new TMUX session
@@ -282,7 +230,7 @@ tmux-system () {
 
 # Create notes session
 tmux-notes () {
-    ROOT_PATH='/home/xvitcoder/Notes'
+    ROOT_PATH="$HOME/Notes"
     tmux has -t notes 2> /dev/null
     if [[ $? == 1 ]]; then
         # Create a new TMUX session
@@ -322,12 +270,10 @@ tmux-tests () {
 }
 
 tmux-work() {
-    # tmux-tests      false
     tmux-system     false
     tmux-config     false
     tmux-notes      false
     tmux-kubernetes true
-    # tmux-nabucco    true
 }
 
 tmux-killall() {

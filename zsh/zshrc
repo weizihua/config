@@ -1,0 +1,441 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/home/xvitcoder/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="amuse"
+# ZSH_THEME="mortalscumbag"
+
+# Autostart tmux
+# ZSH_TMUX_AUTOSTART=true
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  tmux
+  last-working-dir
+  zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# -------------------------------------------------------------------------
+# User configuration
+# -------------------------------------------------------------------------
+
+
+# ------------------------------
+# Variables
+# ------------------------------
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Default Editor
+export EDITOR='nvim'
+# ------------------------------
+
+
+# ------------------------------
+# Aliases
+# ------------------------------
+# Java
+alias mvn-new="mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4"
+
+# Kubernetes
+alias kube-dev="kubectl config use-context dev.tekaef-saas.com"
+alias kube-local="kubectl config use-context docker-desktop"
+alias kube-current="kubectl config current-context"
+alias kube-info="kubectl cluster-info"
+alias k="kubectl"
+alias k9s-dev="k9s --context dev.tekaef-saas.com -n nabucco"
+alias k9s-local="k9s --context docker-desktop -n nabucco"
+
+# JSON and XML
+alias json="pjson"
+alias xml="xmllint --format -"
+
+alias vim="nvim"
+alias mutt="neomutt"
+alias redis-cli="iredis"
+
+# Configuration Files
+alias cfg-alacritty="cd ~/.config/alacritty/ && nvim ~/.config/alacritty/alacritty.yml"
+alias cfg-zsh="cd ~/.config/zsh/ && nvim ~/.config/zsh/zshrc"
+alias cfg-vim="cd ~/.config/nvim/ && nvim init.vim"
+alias cfg-ideavim="cd ~/.config/ideavim && nvim ~/.ideavimrc"
+alias cfg-tmux="cd ~/.config/tmux/ && nvim tmux.conf"
+alias cfg-ranger="cd ~/.config/ranger/ && nvim rc.conf"
+
+# Reload Configuration Files
+alias reload-cfg-zsh="source ~/.zshrc"
+
+# Others
+alias h="hostname"
+alias tree="tree -C"
+alias http-server="python -m SimpleHTTPServer 5000"
+
+# Vim
+alias notes="cd ~/Notes && vim -c VimwikiUISelect"
+alias notes-personal='cd ~/Notes && vim -c "call vimwiki#base#goto_index(1)"'
+alias notes-work='cd ~/Notes && vim -c "call vimwiki#base#goto_index(2)"'
+
+# Docker
+alias docker-clean="docker system prune -a"
+
+# Kubernetes
+alias kube-edit-local="vim /home/xvitcoder/Work/Development/nabucco/nabucco-deployments/local-kube/nabucco-deployment.yaml"
+alias kube-apply-local="kube-local && kubectl apply -f /home/xvitcoder/Work/Development/nabucco/nabucco-deployments/local-kube/nabucco-deployment.yaml"
+
+
+# Git
+alias gs="git status"
+alias gb="fgb"
+alias gbm="git checkout master"
+alias gbd="git checkout develop"
+alias gRh="git reset --hard"
+alias gco="fgco"
+alias gcoc="fgcoc"
+alias gi="fgshow"
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gt="git tag"
+alias ga="git add --all"
+alias gc="git commit -am"
+alias gpm="git pull origin master"
+alias gpd="git pull origin develop"
+alias gptm="git pull --tags origin master"
+alias gptd="git pull --tags origin develop"
+alias gPm="git push origin master"
+alias gPd="git push origin develop"
+alias gPtm="git push --tags origin master"
+alias gPtd="git push --tags origin develop"
+alias gmm="git merge master"
+alias gmd="git merge develop"
+
+alias youtube-get="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]'"
+
+alias catc="bat"
+
+# SSH
+# ------------------------------
+
+# Bookmarks
+alias config='cd ~/.config'
+alias nabucco='cd ~/Work/Development/nabucco'
+alias nabucco-backend='cd ~/Work/Development/nabucco/nabucco-backend-service'
+alias nabucco-api='cd ~/Work/Development/nabucco/nabucco-api-gateway-service'
+alias nabucco-workflow='cd ~/Work/Development/nabucco/nabucco-workflow-service'
+alias nabucco-search='cd ~/Work/Development/nabucco/nabucco-search-service'
+alias nabucco-media='cd ~/Work/Development/nabucco/nabucco-media-service'
+alias nabucco-media-importer='cd ~/Work/Development/nabucco/nabucco-media-importer-task'
+alias nabucco-product-catalog-importer='cd ~/Work/Development/nabucco/nabucco-product-catalog-importer-task'
+alias nabucco-product-catalog-indexer='cd ~/Work/Development/nabucco/nabucco-product-catalog-indexer-task'
+
+# ------------------------------
+# Initialization code
+# ------------------------------
+# Initializa FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# ! IMPORTTANT, install ripgrep tool
+# export FZF_DEFAULT_OPTS='--height=70% --preview="ccat {}" --preview-window=right:40%:wrap'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" --glob "!*.class" --glob "!target/*" --glob "!.idea/*" --glob "!.settings/*" --glob "!.DS_Store"'
+
+
+# ------------------------------
+# Functions
+# ------------------------------
+function perf {
+  curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
+}
+
+curl_time() {
+    curl -so /dev/null -w "\
+   namelookup:  %{time_namelookup}s\n\
+      connect:  %{time_connect}s\n\
+   appconnect:  %{time_appconnect}s\n\
+  pretransfer:  %{time_pretransfer}s\n\
+     redirect:  %{time_redirect}s\n\
+starttransfer:  %{time_starttransfer}s\n\
+-------------------------\n\
+        total:  %{time_total}s\n" "$@"
+}
+
+fd() { local dir dir=$(find ${1:-.} -path '*/\.*' -prune -o -type d \
+      -print 2> /dev/null | fzf +m) && cd "$dir"}
+
+# TMUX helper functions
+# Create nabucco session with all windows
+tmux-nabucco () {
+    ROOT_PATH='/home/xvitcoder'
+    tmux has -t nabucco 2> /dev/null
+    if [[ $? == 1 ]]; then
+        # Create a new TMUX session
+        tmux new-session -d -s nabucco -n nabucco-backend   -c "$NABUCCO_ROOT_PATH/nabucco-backend-service"
+        tmux new-window -d -n search-service                -c "$NABUCCO_ROOT_PATH/nabucco-search-service"
+        tmux new-window -d -n workflow-service              -c "$NABUCCO_ROOT_PATH/nabucco-workflow-service"
+        tmux new-window -d -n product-catalog-importer      -c "$NABUCCO_ROOT_PATH/nabucco-product-catalog-importer-task"
+        tmux new-window -d -n product-catalog-indexer       -c "$NABUCCO_ROOT_PATH/nabucco-product-catalog-indexer-task"
+        tmux new-window -d -n media-importer                -c "$NABUCCO_ROOT_PATH/nabucco-media-importer-task"
+        tmux new-window -d -n media-service                 -c "$NABUCCO_ROOT_PATH/nabucco-media-service"
+        tmux new-window -d -n api-gateway-service           -c "$NABUCCO_ROOT_PATH/nabucco-api-gateway-service"
+        tmux new-window -d -n master-data-importer          -c "$NABUCCO_ROOT_PATH/nabucco-master-data-importer-task"
+		tmux new-window -d -n ldap-importer                 -c "$NABUCCO_ROOT_PATH/nabucco-ldap-importer-task"
+		tmux new-window -d -n sap-data-importer             -c "$NABUCCO_ROOT_PATH/nabucco-sap-data-importer-task"
+        tmux new-window -d -n workflow-files                -c "$NABUCCO_ROOT_PATH/nabucco-workflow-files"
+        tmux new-window -d -n deployments                   -c "$NABUCCO_ROOT_PATH/nabucco-deployments"
+        tmux new-window -d -n dockerfiles                   -c "$NABUCCO_ROOT_PATH/nabucco-dockerfiles"
+        tmux new-window -d -n workspace                     -c "$ROOT_PATH/Documents/Workspace"
+
+        if [[ $1 = true ]]; then
+            tmux attach-session -t nabucco
+        fi
+    else
+        # Attaching to existing session
+        tmux attach-session -t nabucco
+    fi
+}
+
+# Create config session with all config files
+tmux-config () {
+    ROOT_PATH='/home/xvitcoder'
+    tmux has -t config 2> /dev/null
+    if [[ $? == 1 ]]; then
+        # Create a new TMUX session
+        tmux new-session -d -s config -n zsh-config     -c "$ROOT_PATH/.config"
+        tmux send-keys 'cfg-zsh' C-m
+
+        tmux new-window -n tmux-config                  -c "$ROOT_PATH/.config/tmux"
+        tmux send-keys 'cfg-tmux' C-m
+
+        tmux new-window -n vim-config                   -c "$ROOT_PATH/.config/nvim"
+        tmux send-keys 'cfg-vim' C-m
+
+        tmux new-window -n ideavim-config               -c "$ROOT_PATH/.config/nvim"
+        tmux send-keys 'cfg-ideavim' C-m
+
+        tmux new-window -n ranger-config                -c "$ROOT_PATH/.config/ranger"
+        tmux send-keys 'cfg-ranger' C-m
+
+        if [[ $1 = true ]]; then
+            tmux select-window -t 1
+            tmux attach-session -t config
+        fi
+    else
+        # Attaching to existing session
+        tmux attach-session -t config
+    fi
+}
+
+# Create kubernetes session
+tmux-kubernetes () {
+    ROOT_PATH='/home/xvitcoder'
+    tmux has -t kubernetes 2> /dev/null
+    if [[ $? == 1 ]]; then
+        # Create a new TMUX session
+        tmux new-session -d -s kubernetes -n k9s-dev     -c "$ROOT_PATH"
+        tmux send-keys 'k9s-dev' C-m
+
+        tmux new-window -n k9s-local                     -c "$ROOT_PATH"
+        tmux send-keys 'k9s-local' C-m
+
+        if [[ $1 = true ]]; then
+            tmux select-window -t 1
+            tmux attach-session -t kubernetes
+        fi
+    else
+        # Attaching to existing session
+        tmux attach-session -t kubernetes
+    fi
+}
+
+# Create system session
+tmux-system () {
+    ROOT_PATH='/home/xvitcoder'
+    tmux has -t system 2> /dev/null
+    if [[ $? == 1 ]]; then
+        # Create a new TMUX session
+        tmux new-session -d -s system -n shell     -c "$ROOT_PATH"
+
+        if [[ $1 = true ]]; then
+            tmux select-window -t 1
+            tmux attach-session -t system
+        fi
+    else
+        # Attaching to existing session
+        tmux attach-session -t system
+    fi
+}
+
+# Create notes session
+tmux-notes () {
+    ROOT_PATH='/home/xvitcoder/Notes'
+    tmux has -t notes 2> /dev/null
+    if [[ $? == 1 ]]; then
+        # Create a new TMUX session
+        tmux new-session -d -s Work     -c "$ROOT_PATH/work"
+        tmux send-keys 'cd ~/Notes/work && vim -c "call vimwiki#base#goto_index(1)"' C-m
+
+        # Create a new TMUX session
+        tmux new-window -n Personal     -c "$ROOT_PATH/personal"
+        tmux send-keys 'cd ~/Notes/work && vim -c "call vimwiki#base#goto_index(2)"' C-m
+
+        if [[ $1 = true ]]; then
+            tmux select-window -t 1
+            tmux attach-session -t notes
+        fi
+    else
+        # Attaching to existing session
+        tmux attach-session -t notes
+    fi
+}
+
+# Create tests session
+tmux-tests () {
+    ROOT_PATH='/tmp'
+    tmux has -t tests 2> /dev/null
+    if [[ $? == 1 ]]; then
+        # Create a new TMUX session
+        tmux new-session -d -s tests     -c "$ROOT_PATH"
+
+        if [[ $1 = true ]]; then
+            tmux select-window -t 1
+            tmux attach-session -t tests
+        fi
+    else
+        # Attaching to existing session
+        tmux attach-session -t tests
+    fi
+}
+
+tmux-work() {
+    # tmux-tests      false
+    tmux-system     false
+    tmux-config     false
+    tmux-notes      false
+    tmux-kubernetes true
+    # tmux-nabucco    true
+}
+
+tmux-killall() {
+    tmux list-sessions | awk 'BEGIN{FS=":"}{print $1}' | xargs -n 1 tmux kill-session -t
+}
+
+
+ftags() {
+  local line
+  [ -e tags ] &&
+  line=$(
+    awk 'BEGIN { FS="\t" } !/^!/ {print toupper($4)"\t"$1"\t"$2"\t"$3}' tags |
+    cut -c1-80 | fzf --height 90% --nth=1,2
+  ) && ${EDITOR:-vim} $(cut -f3 <<< "$line") -c "set nocst" \
+                                      -c "silent tag $(cut -f2 <<< "$line")"
+}
+
+tm() {
+  [[ -n "$TMUX" ]] && change="switch-client" || change="attach-session"
+  if [ $1 ]; then
+    tmux $change -t "$1" 2>/dev/null || (tmux new-session -d -s $1 && tmux $change -t "$1"); return
+  fi
+  session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | fzf --exit-0) &&  tmux $change -t "$session" || echo "No sessions found."
+}
+
+fts() {
+  local session
+  session=$(tmux list-sessions -F "#{session_name}" | \
+    fzf --query="$1" --select-1 --exit-0) &&
+  tmux switch-client -t "$session"
+}
+
+ftpane() {
+  local panes current_window current_pane target target_window target_pane
+  panes=$(tmux list-panes -s -F '#I:#P - #{pane_current_path} #{pane_current_command}')
+  current_pane=$(tmux display-message -p '#I:#P')
+  current_window=$(tmux display-message -p '#I')
+
+  target=$(echo "$panes" | grep -v "$current_pane" | fzf +m --reverse) || return
+
+  target_window=$(echo $target | awk 'BEGIN{FS=":|-"} {print$1}')
+  target_pane=$(echo $target | awk 'BEGIN{FS=":|-"} {print$2}' | cut -c 1)
+
+  if [[ $current_window -eq $target_window ]]; then
+    tmux select-pane -t ${target_window}.${target_pane}
+  else
+    tmux select-pane -t ${target_window}.${target_pane} &&
+    tmux select-window -t $target_window
+  fi
+}
+
+fkill() {
+    local pid
+    if [ "$UID" != "0" ]; then
+        pid=$(ps -f -u $UID | sed 1d | fzf -m | awk '{print $2}')
+    else
+        pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
+    fi
+
+    if [ "x$pid" != "x" ]
+    then
+        echo $pid | xargs kill -${1:-9}
+    fi
+}
+
+
+# fbr - checkout git branch
+fgb() {
+  local branches branch
+  branches=$(git --no-pager branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+# fco - checkout git branch/tag
+fgco() {
+  local tags branches target
+  branches=$(
+    git --no-pager branch --all \
+      --format="%(if)%(HEAD)%(then)%(else)%(if:equals=HEAD)%(refname:strip=3)%(then)%(else)%1B[0;34;1mbranch%09%1B[m%(refname:short)%(end)%(end)" \
+    | sed '/^$/d') || return
+  tags=$(
+    git --no-pager tag | awk '{print "\x1b[35;1mtag\x1b[m\t" $1}') || return
+  target=$(
+    (echo "$branches"; echo "$tags") |
+    fzf --no-hscroll --no-multi -n 2 \
+        --ansi) || return
+  git checkout $(awk '{print $2}' <<<"$target" )
+}
+
+
+# fcoc - checkout git commit
+fgcoc() {
+  local commits commit
+  commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
+  commit=$(echo "$commits" | fzf --tac +s +m -e) &&
+  git checkout $(echo "$commit" | sed "s/ .*//")
+}
+
+# fshow - git commit browser
+fgshow() {
+  git log --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
+  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
+      --bind "ctrl-m:execute:
+                (grep -o '[a-f0-9]\{7\}' | head -1 |
+                xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
+                {}
+FZF-EOF"
+}
+# ------------------------------

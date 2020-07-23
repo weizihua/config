@@ -1,0 +1,12 @@
+{
+    "suggest.minTriggerInputLength": 1,
+    "java.jdt.ls.vmargs": "-Xmx300m -javaagent:/Users/xvitcoder/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar",
+    "java.import.maven.enabled": true,
+    "java.home": "/Users/xvitcoder/.sdkman/candidates/java/current",
+    "java.implementationsCodeLens.enabled": true,
+    "java.referencesCodeLens.enabled": true,
+    "java.autobuild.enabled": true,
+    "java.format.enabled": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.format.settings.url": "/Users/xvitcoder/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml"
+}

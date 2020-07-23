@@ -1,0 +1,21 @@
+# All not needed apps
+configstore/
+htop/
+mc/
+karabiner/
+lf/
+oni/
+vifm/
+kitty/
+nvim/.netrwhist
+pgcli/
+neofetch/
+coc/
+mutt/
+msmtp/
+gcloud/
+htop/
+pcmanfm/
+libfm/
+VirtualBox/
+yay/

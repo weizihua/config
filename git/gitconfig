@@ -1,0 +1,12 @@
+[core]
+    editor = vim
+
+[user]
+	name = Vitalie Mudrenco
+	email = xvitcoder@gmail.com
+
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto

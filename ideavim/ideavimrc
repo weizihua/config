@@ -1,0 +1,74 @@
+" ===== General {{{
+let mapleader = " "
+let localleader = ","
+" }}}
+
+" ===== Plugins {{{
+set surround
+set vim-multiple-cursors
+" }}}
+
+" ===== Settings {{{
+set nowrap
+set hidden
+" set nonumber
+" set norelativenumber
+set incsearch
+set hlsearch
+set tabstop=4
+set shiftwidth=4
+set autowrite
+set cursorline
+set autoread
+set splitbelow
+set splitright
+" set autochdir
+" set mouse=a
+set encoding=utf-8
+set expandtab
+" set nocompatible
+" set diffopt+=vertical
+set noignorecase
+set smartcase
+set sidescroll=1
+set scrolloff=10
+set showmode
+" set conceallevel=2
+" set switchbuf=usetab
+" set showtabline=0
+" set sessionoptions+=tabpages,globals
+set ttimeoutlen=0
+" set foldmethod=marker
+" }}}
+
+" ===== Code editing  {{{
+nmap == :action ReformatCode<CR>
+
+" Commenting
+nnoremap <leader>c<leader> :action CommentByLineComment<CR>
+nnoremap <leader>cm :action CommentByBlockComment<CR>i
+nnoremap <leader>cy yy :action CommentByLineComment<CR>
+vnoremap <leader>c<leader> :action CommentByLineComment<CR>
+vnoremap <leader>cm :action CommentByBlockComment<CR>
+vnoremap <leader>cy ygv :action CommentByBlockComment<CR>
+
+vnoremap Y "+y
+nnoremap YY "+yy
+" }}}
+
+" ===== Code Navigation {{{
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gb :action Back<cr>
+nnoremap gf :action Forward<cr>
+" }}}
+
+" ===== Easy Motion {{{
+nmap s :action KJumpAction<CR>
+" }}}
+
+" ===== Backskash {{{
+nnoremap \h :noh<CR>
+" }}}
+
+

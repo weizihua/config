@@ -40,7 +40,7 @@ ln -s $HOME_DIR/.config/git/gitconfig $HOME_DIR/.gitconfig
 
 # Apply urxvt configuration
 mkdir -p $HOME_DIR/.urxvt/ext
-ln $HOME_DIR/.config/urxvt/ext/font-size $HOME_DIR/.urxvt/ext/font-size
+wget https://raw.githubusercontent.com/majutsushi/urxvt-font-size/master/font-size -O $HOME_DIR/.urxvt/ext/font-size
 
 echo "Fixing permissions"
 chown -R $USER:$USER $HOME_DIR/*

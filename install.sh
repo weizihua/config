@@ -19,6 +19,7 @@ echo "Installing oh-my-zsh"
 curl -Lo install_oh_my_zsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 CHSH=no RUNZSH=no sh ./install_oh_my_zsh.sh
 rm install_oh_my_zsh.sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo "Clonning the config repo"
 git clone https://github.com/xvitcoder/config.git 
@@ -45,3 +46,8 @@ rm -rf config
 # Apply urxvt configuration
 mkdir -p $HOME_DIR/.urxvt/ext
 wget https://raw.githubusercontent.com/majutsushi/urxvt-font-size/master/font-size -O $HOME_DIR/.urxvt/ext/font-size
+
+mkdir $HOME_DIR/.bin
+
+# Switch to zsh
+env zsh

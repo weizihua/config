@@ -9,6 +9,8 @@
     - picom
     - lightdm
     - lightdm-gtk-greeter
+    - ttf-dejavu
+    - ttf-jetbrains-mono
 # Install required software
 - packages:
     - firefox
@@ -34,3 +36,4 @@
 # Commands to execute
 python -m pip install --user --upgrade pynvim
 
+# Install YAY

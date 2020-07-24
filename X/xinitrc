@@ -1,0 +1,5 @@
+# Set the keyboard repeat and delay
+xset r rate 200 100
+
+# Remap caps lock to escape
+setxkbmap -option caps:escape

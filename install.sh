@@ -13,7 +13,7 @@ echo "Installing fonts"
 sudo pacman -Syu --noconfirm ttf-dejavu ttf-jetbrains-mono
 
 echo "Installing applications"
-sudo pacman -Syu --noconfirm firefox rxvt-unicode pcmanfm bluez neovim tmux zsh bat htop git ack ripgrep k9s go go-utils ansible fzf helm ranger tree wget
+sudo pacman -Syu --noconfirm firefox vimb rxvt-unicode pcmanfm bluez bluez-utils neovim tmux zsh bat htop git ack ripgrep k9s go go-utils ansible fzf helm ranger tree wget vagrant
 
 echo "Installing oh-my-zsh"
 curl -Lo install_oh_my_zsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh

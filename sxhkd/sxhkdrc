@@ -3,7 +3,7 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	alacritty
 
 # program launcher
 super + @space
@@ -121,7 +121,7 @@ super + {Left,Down,Up,Right}
 
 # Applications
 super + alt + b
-	firefox
+	qutebrowser
 
 super + alt + f
     pcmanfm

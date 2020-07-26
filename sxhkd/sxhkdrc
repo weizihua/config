@@ -125,3 +125,9 @@ super + alt + b
 
 super + alt + f
     pcmanfm
+
+super + alt + i
+    idea.sh
+
+super + alt + c + v
+    vim ~/.vimrc

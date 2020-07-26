@@ -74,6 +74,7 @@ alias cfg-tmux="cd ~/.config/tmux/ && nvim tmux.conf"
 alias cfg-ranger="cd ~/.config/ranger/ && nvim rc.conf"
 alias cfg-sxhkd="cd ~/.config/sxhkd/ && nvim sxhkdrc"
 alias cfg-bspwm="cd ~/.config/bspwm/ && nvim bspwmrc"
+alias cfg-polybar="cd ~/.config/polybar/ && nvim config"
 alias cfg-install="cd ~/.config/ && nvim install.sh"
 
 # Reload Configuration Files

@@ -7,7 +7,7 @@ HOME_DIR=/home/$USER
 cd $HOME_DIR
 
 echo "Installing bspwm"
-sudo pacman -Syu --noconfirm xorg-xinit xorg-server bspwm dmenu sxhkd nitrogen picom lightdm lightdm-gtk-greeter
+sudo pacman -Syu --noconfirm xorg-xinit xorg-server bspwm dmenu sxhkd nitrogen picom lightdm lightdm-gtk-greeter pulseaudio libpulse
 
 echo "Installing fonts"
 sudo pacman -Syu --noconfirm ttf-dejavu ttf-jetbrains-mono
@@ -22,7 +22,7 @@ makepkg -si
 rm -rf yay-git
 
 echo "Installing AUR packages"
-yay -Syu --noconfirm polybar
+yay -Syu --noconfirm polybar pulseaudio-ctl
 
 echo "Installing oh-my-zsh"
 curl -Lo install_oh_my_zsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh

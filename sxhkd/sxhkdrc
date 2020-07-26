@@ -123,11 +123,33 @@ super + {Left,Down,Up,Right}
 super + alt + b
 	qutebrowser
 
+# Start pcmanfm
 super + alt + f
     pcmanfm
 
+# Start IntelliJ Idea
 super + alt + i
     export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh
 
-super + alt + c + v
-    vim ~/.vimrc
+
+# Puseaudio
+
+# Toggle mute
+XF86AudioMute
+    pulseaudio-ctl mute
+
+# Toggle mic mute
+XF86AudioMicMute
+    pulseaudio-ctl mute-input
+
+# Change volume
+XF86Audio{Raise,Lower}Volume
+    pulseaudio-ctl {up,down} 2
+
+# Change volume
+{f11,f12}
+    pulseaudio-ctl {up,down} 2
+
+# Mute volume
+super + f10
+    pulseaudio-ctl mute

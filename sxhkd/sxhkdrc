@@ -127,7 +127,7 @@ super + alt + f
     pcmanfm
 
 super + alt + i
-    idea.sh
+    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh
 
 super + alt + c + v
     vim ~/.vimrc

@@ -38,8 +38,9 @@ jdk-openjdk
 maven
 gradle
 docker
-virtualbox
+python-pip
 virtualbox-host-modules-arch
+virtualbox
 )
 
 count=0

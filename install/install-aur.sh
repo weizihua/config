@@ -4,6 +4,7 @@
 tput setaf 3;echo "Installing AUR";tput sgr0;
 
 sudo git clone https://aur.archlinux.org/yay-git.git $HOME/yay-git
+chown -R $USER:$USER $HOME/yay-git
 cd $HOME/yay-git
 makepkg -si
 rm -rf $HOME/yay-git

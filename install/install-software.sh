@@ -86,6 +86,7 @@ list=(
 vlc
 simplescreenrecorder
 flameshot
+imagemagick
 meld
 scrot
 )
@@ -172,39 +173,6 @@ fzf
 ranger
 tree
 wget
-)
-
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
-
-###############################################################################
-
-tput setaf 11;
-echo "################################################################"
-echo "Software has been installed"
-echo "################################################################"
-echo;tput sgr0
-
-###############################################################################
-
-func_category Additional-Tools
-
-list=(
-arandr
-dmenu
-feh
-imagemagick
-lxappearance
-lxrandr
-nitrogen
-picom
-playerctl
-python-pywal
-volumeicon
 )
 
 count=0

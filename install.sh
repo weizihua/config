@@ -16,8 +16,11 @@ echo "Installing Software"
 sh install/install-software.sh
 sh install/install-software-dev.sh
 
-echo "Installing System"
+echo "Installing AUR"
 sh install/install-aur.sh
+
+echo "Installing AUR Packages"
+sh install/install-aur-packages.sh
 
 # Configuration
 # ---------------

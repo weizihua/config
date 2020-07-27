@@ -2,7 +2,7 @@
 #set -e
 
 func_install() {
-	if pacman -Qi $1 &> /dev/null; then
+	if yay -Qi $1 &> /dev/null; then
 		tput setaf 2
   		echo "###############################################################################"
   		echo "################## The package "$1" is already installed"
@@ -16,40 +16,28 @@ func_install() {
     	echo "###############################################################################"
     	echo
     	tput sgr0
-    	sudo pacman -S --noconfirm --needed $1
+    	sudo yay -S --noconfirm --needed $1
     fi
 }
 
-###############################################################################
-echo "Installation of the core software"
+func_category() {
+	tput setaf 5;
+	echo "################################################################"
+	echo "Installing software for category " $1
+	echo "################################################################"
+	echo;tput sgr0
+}
+
 ###############################################################################
 
+func_category YAY
+
 list=(
-xorg-init
-xorg-server
-bspwm
-sxhkd
-dmenu
-xdo
-feh
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-thunar
-thunar-archive-plugin
-thunar-volman
-arandr
-lxappearance
-lxrandr
-nitrogen
-picom
-playerctl
-python-pywal
-volumeicon
+polybar
+pulseaudio-ctl
 )
 
 count=0
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -58,20 +46,9 @@ done
 
 ###############################################################################
 
-tput setaf 5;echo "################################################################"
-echo "Enabling lightdm as display manager"
-echo "################################################################"
-echo;tput sgr0
-sudo systemctl enable lightdm.service -f
-
-tput setaf 7;echo "################################################################"
-echo "You now have a very minimal functional desktop"
-echo "################################################################"
-echo;tput sgr0
-
 tput setaf 11;
 echo "################################################################"
-echo "Reboot your system"
+echo "Software has been installed"
 echo "################################################################"
 echo;tput sgr0
 

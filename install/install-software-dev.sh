@@ -25,6 +25,7 @@ echo "Installation of the development packages"
 ###############################################################################
 
 list=(
+base-devel
 git
 ack
 ripgrep

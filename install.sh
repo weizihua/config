@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "Installing System"
-sh $HOME/.config/install/install-aur.sh
-
 echo "Installing Window Manager"
 sh $HOME/.config/install/install-window-manager.sh
 
@@ -18,6 +15,9 @@ sh $HOME/.config/install/install-fonts.sh
 echo "Installing Software"
 sh $HOME/.config/install/install-software.sh
 sh $HOME/.config/install/install-software-dev.sh
+
+echo "Installing System"
+sh $HOME/.config/install/install-aur.sh
 
 # Configuration
 # ---------------

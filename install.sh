@@ -46,7 +46,7 @@ ln -s --relative $HOME_DIR/.config/zsh/zshrc $HOME_DIR/.zshrc
 ln -s --relative $HOME_DIR/.config/tmux/tmux.conf $HOME_DIR/.tmux.conf
 ln -s --relative $HOME_DIR/.config/nvim/init.vim $HOME_DIR/.vimrc
 ln -s --relative $HOME_DIR/.config/ideavim/ideavimrc $HOME_DIR/.ideavim
-ln -s --relative $HOME_DIR/.config/X/xinitrc $HOME_DIR/.xinitrc
+ln -s --relative $HOME_DIR/.config/X/xprofile $HOME_DIR/.xprofile
 ln -s --relative $HOME_DIR/.config/git/gitconfig $HOME_DIR/.gitconfig
 
 rm -rf config

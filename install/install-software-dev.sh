@@ -39,6 +39,7 @@ maven
 gradle
 docker
 virtualbox
+virtualbox-host-modules-arch
 )
 
 count=0

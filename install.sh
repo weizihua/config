@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Install packages
-cd $HOME
+echo "Installing System"
+sh $HOME/.config/install/install-aur.sh
 
 echo "Installing Window Manager"
 sh $HOME/.config/install/install-window-manager.sh
@@ -19,18 +19,9 @@ echo "Installing Software"
 sh $HOME/.config/install/install-software.sh
 sh $HOME/.config/install/install-software-dev.sh
 
-echo "Install AUR"
-sudo git clone https://aur.archlinux.org/yay-git.git $HOME/yay-git
-cd $HOME/yay-git
-makepkg -si
-rm -rf $HOME/yay-git
-
-echo "Installing AUR packages"
-yay -Syu --noconfirm polybar pulseaudio-ctl
-
 # Configuration
 # ---------------
-echo "Clonning the config repo"
+echo "Configuring System"
 sh $HOME/.config/install/configure-oh-my-zsh.sh
 sh $HOME/.config/install/configure-conf.sh
 # ---------------
@@ -40,7 +31,6 @@ sh $HOME/.config/install/configure-conf.sh
 mkdir $HOME/.bin
 mkdir $HOME/.app
 # ---------------
-
 
 # Switch to zsh
 # ---------------

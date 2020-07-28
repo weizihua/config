@@ -11,6 +11,7 @@ func_print "Installation of window manager software" 4
 packages=(
 xorg-init
 xorg-server
+xorg-xmodmap
 bspwm
 sxhkd
 dmenu
@@ -20,6 +21,7 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 papirus-icon-theme
+materia-gtk-theme
 archlinux-background
 thunar
 thunar-archive-plugin

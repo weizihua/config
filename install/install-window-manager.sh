@@ -19,6 +19,8 @@ feh
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
+papirus-icon-theme
+archlinux-background
 thunar
 thunar-archive-plugin
 thunar-volman

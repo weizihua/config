@@ -35,6 +35,9 @@ sh $INSTALL_DIR/configure-conf.sh
 # ---------------
 mkdir $HOME/.bin
 mkdir $HOME/.app
+mkdir $HOME/Downloads
+mkdir $HOME/Documents
+mkdir $HOME/Workspace
 # ---------------
 
 # Switch to zsh

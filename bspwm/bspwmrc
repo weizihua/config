@@ -7,7 +7,7 @@ sxhkd &
 polybar example &
 
 # Background
-nitrogen --restore &
+nitrogen --set-centered /usr/share/backgrounds/archlinux/archlinux-simplyblack.png &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

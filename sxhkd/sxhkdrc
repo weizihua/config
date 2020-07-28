@@ -121,11 +121,11 @@ super + {Left,Down,Up,Right}
 
 # Applications
 super + alt + b
-	qutebrowser
+	firefox
 
-# Start pcmanfm
-super + alt + f
-    pcmanfm
+# Start Thunar
+super + shift + Return
+    thunar
 
 # Start IntelliJ Idea
 super + alt + i

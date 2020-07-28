@@ -21,4 +21,6 @@ ln -s --relative $HOME/.config/X/xprofile $HOME/.xprofile
 ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
 
 rm -rf $HOME/config
+
+sudo chsh -s /bin/zsh
 # ---------------

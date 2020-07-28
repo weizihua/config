@@ -5,20 +5,15 @@
 source ./utils.sh
 
 ###############################################################################
-func_print "Installation of laptop software" 4
+func_print "Installing AUR" 3
 ###############################################################################
 
-packages=(
-tlp
-)
-
-func_iterate_install "${packages[@]}"
+git clone https://aur.archlinux.org/yay-git.git $HOME/yay-git
+cd $HOME/yay-git
+makepkg -si
+rm -rf $HOME/yay-git
 
 ###############################################################################
 
-func_print "Enabling services" 5
-
-sudo systemctl enable tlp.service
-
-func_print "Software has been installed" 11
+func_print "AUR Software has been installed" 11
 

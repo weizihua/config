@@ -2,87 +2,48 @@
 #set -e
 
 
-func_install() {
-	if pacman -Qi $1 &> /dev/null; then
-		tput setaf 2
-  		echo "###############################################################################"
-  		echo "################## The package "$1" is already installed"
-      	echo "###############################################################################"
-      	echo
-		tput sgr0
-	else
-    	tput setaf 3
-    	echo "###############################################################################"
-    	echo "##################  Installing package "  $1
-    	echo "###############################################################################"
-    	echo
-    	tput sgr0
-    	sudo pacman -S --noconfirm --needed $1
-    fi
-}
-
-func_category() {
-	tput setaf 5;
-	echo "################################################################"
-	echo "Installing software for category " $1
-	echo "################################################################"
-	echo;tput sgr0
-}
+# Load utils
+source ./utils.sh
 
 ###############################################################################
 
-func_category Editors
+func_print "Installing software for category 'Editors'" 5
 
-list=(
+packages=(
 neovim
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-func_category Graphics
+func_print "Installing software for category 'Graphics'" 5
 
-list=(
+packages=(
 gimp
 inkscape
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-func_category Internet
+func_print "Installing software for category 'Internet'" 5
 
-list=(
+packages=(
 firefox
 qutebrowser
 telegram-desktop
 qbittorrent
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-func_category Multimedia
+func_print "Installing software for category 'Multimedia'" 5
 
-list=(
+packages=(
 vlc
 simplescreenrecorder
 flameshot
@@ -91,50 +52,35 @@ meld
 scrot
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-func_category Office
+func_print "Installing software for category 'Office'" 5
 
-list=(
-wps-office
+packages=(
 libreoffice
+freeoffice
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-func_category System
+func_print "Installing software for category 'System'" 5
 
-list=(
+packages=(
 dconf-editor
 arc-gtk-theme
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-func_category Unpack
+func_print "Installing software for category 'Unpack'" 5
 
-list=(
+packages=(
 unace
 unrar
 zip
@@ -146,12 +92,7 @@ cabextract
 file-roller
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
@@ -163,9 +104,9 @@ echo;tput sgr0
 
 ###############################################################################
 
-func_category Tools
+func_print "Installing software for category 'Tools'" 5
 
-list=(
+packages=(
 tmux
 zsh
 bat
@@ -175,18 +116,9 @@ tree
 wget
 )
 
-count=0
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-tput setaf 11;
-echo "################################################################"
-echo "Software has been installed"
-echo "################################################################"
-echo;tput sgr0
+func_print "Software has been installed" 11
 

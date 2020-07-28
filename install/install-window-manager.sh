@@ -1,30 +1,14 @@
 #!/bin/bash
 #set -e
 
-func_install() {
-	if pacman -Qi $1 &> /dev/null; then
-		tput setaf 2
-  		echo "###############################################################################"
-  		echo "################## The package "$1" is already installed"
-      	echo "###############################################################################"
-      	echo
-		tput sgr0
-	else
-    	tput setaf 3
-    	echo "###############################################################################"
-    	echo "##################  Installing package "  $1
-    	echo "###############################################################################"
-    	echo
-    	tput sgr0
-    	sudo pacman -S --noconfirm --needed $1
-    fi
-}
+# Load utils
+source ./utils.sh
 
 ###############################################################################
-echo "Installation of the core software"
+func_print "Installation of window manager software" 4
 ###############################################################################
 
-list=(
+packages=(
 xorg-init
 xorg-server
 bspwm
@@ -48,30 +32,14 @@ python-pywal
 volumeicon
 )
 
-count=0
-
-for name in "${list[@]}" ; do
-	count=$[count+1]
-	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
-	func_install $name
-done
+func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
-tput setaf 5;echo "################################################################"
-echo "Enabling lightdm as display manager"
-echo "################################################################"
-echo;tput sgr0
+func_print "Enabling lightdm as display manager" 5
+
 sudo systemctl enable lightdm.service -f
 
-tput setaf 7;echo "################################################################"
-echo "You now have a very minimal functional desktop"
-echo "################################################################"
-echo;tput sgr0
+###############################################################################
 
-tput setaf 11;
-echo "################################################################"
-echo "Reboot your system"
-echo "################################################################"
-echo;tput sgr0
-
+func_print "Software has been installed" 11

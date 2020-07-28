@@ -1,32 +1,34 @@
 #!/bin/bash
 
+INSTALL_DIR="$(dirname "$(readlink -f "$0")")"
+
 echo "Installing Window Manager"
-sh install/install-window-manager.sh
+sh $INSTALL_DIR/install-window-manager.sh
 
 echo "Installing System"
-sh install/install-audio.sh
-sh install/install-bluetooth.sh
-sh install/install-printers.sh
-sh install/install-laptop.sh
+sh $INSTALL_DIR/install-audio.sh
+sh $INSTALL_DIR/install-bluetooth.sh
+sh $INSTALL_DIR/install-printers.sh
+sh $INSTALL_DIR/install-laptop.sh
 
 echo "Installing Fonts"
-sh install/install-fonts.sh
+sh $INSTALL_DIR/install-fonts.sh
 
 echo "Installing Software"
-sh install/install-software.sh
-sh install/install-software-dev.sh
+sh $INSTALL_DIR/install-software.sh
+sh $INSTALL_DIR/install-software-dev.sh
 
-echo "Installing AUR"
-sh install/install-aur.sh
+echo "Installing YAY"
+sh $INSTALL_DIR/install-yay.sh
 
 echo "Installing AUR Packages"
-sh install/install-aur-packages.sh
+sh $INSTALL_DIR/install-aur-packages.sh
 
 # Configuration
 # ---------------
 echo "Configuring System"
-sh install/configure-oh-my-zsh.sh
-sh install/configure-conf.sh
+sh $INSTALL_DIR/configure-oh-my-zsh.sh
+sh $INSTALL_DIR/configure-conf.sh
 # ---------------
 
 # Create necessary directories

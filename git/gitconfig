@@ -11,6 +11,6 @@
     interactive = auto
     diff = auto
 [credential]
-	helper = cache --timeout=25000
+	helper = cache --timeout=2500000
 [push]
 	default = simple

@@ -13,6 +13,8 @@ cd $HOME/yay-git
 makepkg -si
 rm -rf $HOME/yay-git
 
+yay --editmenu --nodiffmenu --save
+
 ###############################################################################
 
 func_print "AUR Software has been installed" 11

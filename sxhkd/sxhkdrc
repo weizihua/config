@@ -7,14 +7,14 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run -fn 'JetBrains Mono:Normal:19'
+	dmenu_run -fn 'JetBrains Mono:Regular:size=14' -p '🡲'
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
 #
-# bspwm hotkeys
+# bspwm hotkeys 
 #
 
 # quit/restart bspwm

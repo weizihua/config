@@ -107,6 +107,7 @@ echo;tput sgr0
 func_print "Installing software for category 'Tools'" 5
 
 packages=(
+alacritty
 tmux
 zsh
 bat

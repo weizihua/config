@@ -30,7 +30,7 @@ ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
 
 rm -rf $HOME/config
 
-sudo chsh -s /bin/zsh
+sudo chsh -s /bin/zsh $USER
 
 ###############################################################################
 

@@ -7,7 +7,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
+	dmenu_run -fn 'JetBrains Mono:Normal:19'
 
 # make sxhkd reload its configuration files:
 super + Escape

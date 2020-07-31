@@ -24,7 +24,7 @@ func_install_aur() {
         func_print "The package '"$1"' is already installed" 2
 	else
         func_print "Installing package '"$1"'" 3
-    	yay -Sc --noconfirm --needed $1 
+    	yay -S --noconfirm $1 
     fi
 }
 

@@ -6,6 +6,9 @@ sxhkd &
 # Polybar
 polybar example &
 
+# Picom
+picom --config ~/.picom.conf &
+
 # Background
 nitrogen --set-centered /usr/share/backgrounds/archlinux/archlinux-simplyblack.png &
 

@@ -27,6 +27,7 @@ ln -s --relative $HOME/.config/nvim/init.vim $HOME/.vimrc
 ln -s --relative $HOME/.config/ideavim/ideavimrc $HOME/.ideavim
 ln -s --relative $HOME/.config/X/xprofile $HOME/.xprofile
 ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
+ln -s --relative $HOME/.config/picom/picom.conf $HOME/.picom.conf
 
 rm -rf $HOME/config
 

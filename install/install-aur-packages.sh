@@ -12,6 +12,7 @@ func_print "Installation of AUR software" 4
 packages=(
 pulseaudio-ctl
 polybar
+archlinux-wallpaper
 )
 
 func_iterate_install_aur "${packages[@]}"

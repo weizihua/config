@@ -29,6 +29,7 @@ sh $INSTALL_DIR/install-aur-packages.sh
 echo "Configuring System"
 sh $INSTALL_DIR/configure-oh-my-zsh.sh
 sh $INSTALL_DIR/configure-conf.sh
+sh $INSTALL_DIR/configure-window-manager.sh
 # ---------------
 
 # Create necessary directories

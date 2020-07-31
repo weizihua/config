@@ -10,7 +10,7 @@ func_print "Installing AUR" 3
 
 git clone https://aur.archlinux.org/yay-git.git $HOME/yay-git
 cd $HOME/yay-git
-makepkg -si
+makepkg -si --noconfirm
 rm -rf $HOME/yay-git
 
 yay --editmenu --nodiffmenu --save

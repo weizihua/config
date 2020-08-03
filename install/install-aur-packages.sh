@@ -13,6 +13,8 @@ packages=(
 pulseaudio-ctl
 polybar
 archlinux-wallpaper
+slack-desktop
+skypeforlinux-stable-bin
 )
 
 func_iterate_install_aur "${packages[@]}"

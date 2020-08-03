@@ -115,6 +115,9 @@ fzf
 ranger
 tree
 wget
+rsync
+cronie
+gvfs
 )
 
 func_iterate_install "${packages[@]}"

@@ -129,7 +129,7 @@ super + shift + Return
 
 # Start IntelliJ Idea
 super + alt + i
-    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh
+    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh nosplash
 
 
 # Puseaudio

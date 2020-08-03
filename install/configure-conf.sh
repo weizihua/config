@@ -24,7 +24,7 @@ func_print "Creating configuration links" 3
 ln -s --relative $HOME/.config/zsh/zshrc $HOME/.zshrc
 ln -s --relative $HOME/.config/tmux/tmux.conf $HOME/.tmux.conf
 ln -s --relative $HOME/.config/nvim/init.vim $HOME/.vimrc
-ln -s --relative $HOME/.config/idea/ideavimrc $HOME/.ideavim
+ln -s --relative $HOME/.config/idea/ideavimrc $HOME/.ideavimrc
 ln -s --relative $HOME/.config/X/xprofile $HOME/.xprofile
 ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
 ln -s --relative $HOME/.config/picom/picom.conf $HOME/.picom.conf

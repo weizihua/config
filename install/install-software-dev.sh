@@ -27,6 +27,7 @@ python-pip
 virtualbox-host-modules-arch
 virtualbox
 terraform
+aws-cli
 )
 
 func_iterate_install "${packages[@]}"

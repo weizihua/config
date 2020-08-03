@@ -26,6 +26,7 @@ docker
 python-pip
 virtualbox-host-modules-arch
 virtualbox
+terraform
 )
 
 func_iterate_install "${packages[@]}"

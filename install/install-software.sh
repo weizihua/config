@@ -118,6 +118,7 @@ wget
 rsync
 cronie
 gvfs
+xsel
 )
 
 func_iterate_install "${packages[@]}"

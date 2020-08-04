@@ -75,7 +75,7 @@ alias cfg-ranger="cd ~/.config/ranger/ && nvim rc.conf"
 alias cfg-sxhkd="cd ~/.config/sxhkd/ && nvim sxhkdrc"
 alias cfg-bspwm="cd ~/.config/bspwm/ && nvim bspwmrc"
 alias cfg-polybar="cd ~/.config/polybar/ && nvim config"
-alias cfg-install="cd ~/.config/ && nvim install.sh"
+alias cfg-install="cd ~/.config/install/ && nvim install.sh"
 
 # Reload Configuration Files
 alias reload-cfg-zsh="source ~/.zshrc"

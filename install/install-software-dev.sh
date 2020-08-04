@@ -28,6 +28,7 @@ virtualbox-host-modules-arch
 virtualbox
 terraform
 aws-cli
+kubectl
 )
 
 func_iterate_install "${packages[@]}"

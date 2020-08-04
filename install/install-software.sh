@@ -119,6 +119,7 @@ rsync
 cronie
 gvfs
 xsel
+dnsutils
 )
 
 func_iterate_install "${packages[@]}"

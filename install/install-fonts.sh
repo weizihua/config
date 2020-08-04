@@ -23,6 +23,7 @@ ttf-roboto
 ttf-ubuntu-font-family
 tamsyn-font
 ttf-jetbrains-mono
+ttf-font-awesome
 )
 
 func_iterate_install "${packages[@]}"

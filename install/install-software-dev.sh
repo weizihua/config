@@ -29,6 +29,8 @@ virtualbox
 terraform
 aws-cli
 kubectl
+jq
+highlight
 )
 
 func_iterate_install "${packages[@]}"

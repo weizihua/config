@@ -15,6 +15,7 @@ polybar
 archlinux-wallpaper
 slack-desktop
 skypeforlinux-stable-bin
+kops
 )
 
 func_iterate_install_aur "${packages[@]}"

@@ -125,6 +125,9 @@ super + {Left,Down,Up,Right}
 super + alt + b
 	firefox
 
+super + alt ctrl + b
+	qutebrowser
+
 # Start Thunar
 super + shift + Return
     thunar

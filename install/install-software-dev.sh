@@ -31,6 +31,7 @@ aws-cli
 kubectl
 jq
 highlight
+httpie
 )
 
 func_iterate_install "${packages[@]}"

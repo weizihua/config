@@ -2,7 +2,9 @@
 # Base16 qutebrowser template by theova
 # Gruvbox dark, hard scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 
-base00 = "#1d2021"
+
+#  base00 = "#1d2021"
+base00 = "#282828"
 base01 = "#3c3836"
 base02 = "#504945"
 base03 = "#665c54"
@@ -26,7 +28,7 @@ base0F = "#d65d0e"
 c.colors.completion.fg = base05
 
 # Background color of the completion widget for odd rows.
-c.colors.completion.odd.bg = base01
+c.colors.completion.odd.bg = base00
 
 # Background color of the completion widget for even rows.
 c.colors.completion.even.bg = base00
@@ -38,10 +40,10 @@ c.colors.completion.category.fg = base0A
 c.colors.completion.category.bg = base00
 
 # Top border color of the completion widget category headers.
-c.colors.completion.category.border.top = base00
+c.colors.completion.category.border.top = base01
 
 # Bottom border color of the completion widget category headers.
-c.colors.completion.category.border.bottom = base00
+c.colors.completion.category.border.bottom = base01
 
 # Foreground color of the selected completion item.
 c.colors.completion.item.selected.fg = base01
@@ -171,7 +173,7 @@ c.colors.statusbar.normal.bg = base00
 c.colors.statusbar.insert.fg = base00
 
 # Background color of the statusbar in insert mode.
-c.colors.statusbar.insert.bg = base0D
+c.colors.statusbar.insert.bg = '#b8bb26'
 
 # Foreground color of the statusbar in passthrough mode.
 c.colors.statusbar.passthrough.fg = base00
@@ -248,7 +250,7 @@ c.colors.tabs.indicator.error = base08
 c.colors.tabs.odd.fg = base05
 
 # Background color of unselected odd tabs.
-c.colors.tabs.odd.bg = base01
+c.colors.tabs.odd.bg = base00
 
 # Foreground color of unselected even tabs.
 c.colors.tabs.even.fg = base05
@@ -281,17 +283,46 @@ c.colors.tabs.pinned.selected.odd.bg = base05
 c.colors.tabs.pinned.selected.odd.fg = base0E
 
 # Foreground color of selected odd tabs.
-c.colors.tabs.selected.odd.fg = base00
+c.colors.tabs.selected.odd.fg = base05
 
 # Background color of selected odd tabs.
-c.colors.tabs.selected.odd.bg = base05
+c.colors.tabs.selected.odd.bg = base02
 
 # Foreground color of selected even tabs.
-c.colors.tabs.selected.even.fg = base00
+c.colors.tabs.selected.even.fg = base05
 
 # Background color of selected even tabs.
-c.colors.tabs.selected.even.bg = base05
+c.colors.tabs.selected.even.bg = base02
 
 # Background color for webpages if unset (or empty to use the theme's
 # color).
 # c.colors.webpage.bg = base00
+
+# ---------------------------------------------------------------
+
+c.fonts.default_family = 'Monospace'
+c.fonts.default_size = '16pt'
+
+#  c.content.user_stylesheets = 'colors.css'
+
+c.url.default_page = 'https://www.google.com/search?hl=en'
+c.url.start_pages = 'https://www.google.com/search?hl=en'
+
+c.url.searchengines = {
+        'DEFAULT': 'https://www.google.com/search?hl=en&q={}', 
+        'gg': 'https://www.google.com/search?hl=en&q={}', 
+        'yt': 'https://www.youtube.com/results?search_query={}', 
+        'st': 'https://stackoverflow.com/search?q={}',
+        'aw': 'https://wiki.archlinux.org/?search={}',
+}
+
+c.completion.height = '35%'
+c.completion.shrink = True
+c.completion.scrollbar.padding = 0
+c.completion.scrollbar.width = 0
+
+c.tabs.favicons.scale = 0.8
+c.tabs.last_close = 'close'
+c.tabs.mousewheel_switching = False
+c.tabs.title.format = '{audio}{index}:{current_url}'
+

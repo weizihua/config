@@ -87,6 +87,7 @@ alias cfg-sxhkd="cd ~/.config/sxhkd/ && nvim sxhkdrc"
 alias cfg-bspwm="cd ~/.config/bspwm/ && nvim bspwmrc"
 alias cfg-polybar="cd ~/.config/polybar/ && nvim config"
 alias cfg-install="cd ~/.config/install/ && nvim install.sh"
+alias cfg-qutebrowser="cd ~/.config/qutebrowser/ && nvim config.py"
 
 # Reload Configuration Files
 alias reload-cfg-zsh="source ~/.zshrc"

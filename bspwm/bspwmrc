@@ -9,6 +9,8 @@ polybar example &
 # Picom
 picom --config ~/.picom.conf &
 
+source ~/.xprofile
+
 # Background
 nitrogen --set-centered /usr/share/backgrounds/archlinux/archlinux-simplyblack.png &
 

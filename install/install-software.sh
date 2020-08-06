@@ -61,6 +61,7 @@ func_print "Installing software for category 'Office'" 5
 packages=(
 libreoffice
 freeoffice
+evince
 )
 
 func_iterate_install "${packages[@]}"

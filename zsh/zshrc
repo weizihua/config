@@ -92,6 +92,8 @@ alias cfg-qutebrowser="cd ~/.config/qutebrowser/ && nvim config.py"
 # Reload Configuration Files
 alias reload-cfg-zsh="source ~/.zshrc"
 
+alias intellij-cheatsheet="evince ~/Workspace/Documentation/IntelliJIDEA_ReferenceCard.pdf"
+
 # Others
 alias h="hostname"
 alias tree="tree -C"

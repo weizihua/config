@@ -62,6 +62,7 @@ packages=(
 libreoffice
 freeoffice
 evince
+thunderbird
 )
 
 func_iterate_install "${packages[@]}"

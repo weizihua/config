@@ -14,7 +14,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 #
-# bspwm hotkeys 
+# bspwm hotkeys
 #
 
 # quit/restart bspwm
@@ -124,6 +124,9 @@ super + {Left,Down,Up,Right}
 # -------------------------------------------------
 super + alt + b
 	firefox
+
+super + alt + e
+	thunderbird
 
 super + alt ctrl + b
 	qutebrowser

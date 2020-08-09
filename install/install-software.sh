@@ -45,6 +45,7 @@ func_print "Installing software for category 'Multimedia'" 5
 
 packages=(
 vlc
+mplayer
 simplescreenrecorder
 flameshot
 imagemagick

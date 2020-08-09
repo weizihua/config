@@ -39,7 +39,9 @@ mkdir $HOME/.app
 mkdir $HOME/Downloads
 mkdir $HOME/Documents
 mkdir $HOME/Workspace
+mkdir $HOME/VirtualBox
 mkdir $HOME/Desktop
+mkdir $HOME/Desktop/Screenshots
 # ---------------
 
 # Switch to zsh

@@ -33,7 +33,6 @@ rm -rf $HOME/config
 
 sudo chsh -s /bin/zsh $USER
 
-mkdir $HOME/VirtualBox
 vboxmanage setproperty machinefolder ~/VirtualBox
 
 ###############################################################################

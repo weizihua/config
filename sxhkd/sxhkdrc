@@ -128,12 +128,20 @@ super + alt + b
 super + alt + e
 	thunderbird
 
-super + alt ctrl + b
+super + alt + ctrl + b
 	qutebrowser
 
 # Start Thunar
 super + shift + Return
     thunar
+
+# Make screenshot
+Print
+    sleep 0.2; \
+    scrot -s $HOME/'Desktop/Screenshots/%Y-%m-%d_%H%M%S-$wx$h.png'
+
+ctrl + Print
+    scrot $HOME/'Desktop/Screenshots/%Y-%m-%d_%H%M%S-$wx$h.png'
 
 # Start IntelliJ Idea
 super + alt + i

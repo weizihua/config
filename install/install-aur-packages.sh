@@ -16,6 +16,8 @@ archlinux-wallpaper
 slack-desktop
 skypeforlinux-stable-bin
 kops
+arch-silence-grub-theme-git
+betterlockscreen
 )
 
 func_iterate_install_aur "${packages[@]}"

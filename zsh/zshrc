@@ -109,6 +109,8 @@ alias docker-clean="docker system prune -a"
 
 # Kubernetes
 
+# Pacman
+alias pacman-list="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 
 # Git
 alias gs="git status"

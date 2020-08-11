@@ -147,6 +147,9 @@ ctrl + Print
 super + alt + i
     export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh nosplash
 
+super + alt + o
+    $HOME/'.bin/test.sh'
+
 
 # Puseaudio
 

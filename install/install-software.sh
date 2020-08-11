@@ -51,6 +51,7 @@ flameshot
 imagemagick
 meld
 scrot
+mpd
 )
 
 func_iterate_install "${packages[@]}"

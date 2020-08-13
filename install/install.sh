@@ -34,8 +34,7 @@ sh $INSTALL_DIR/configure-window-manager.sh
 
 # Create necessary directories
 # ---------------
-mkdir $HOME/.bin
-mkdir $HOME/.app
+mkdir -p $HOME/.local/bin
 mkdir $HOME/Downloads
 mkdir $HOME/Documents
 mkdir $HOME/Workspace

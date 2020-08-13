@@ -29,6 +29,9 @@ ln -s --relative $HOME/.config/X/xprofile $HOME/.xprofile
 ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
 ln -s --relative $HOME/.config/picom/picom.conf $HOME/.picom.conf
 
+func_print "Creating application links" 3
+ln $HOME/.config/bin/cfg.sh $HOME/.local/bin/cfg.sh
+
 rm -rf $HOME/config
 
 sudo chsh -s /bin/zsh $USER

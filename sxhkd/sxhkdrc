@@ -122,37 +122,50 @@ super + {Left,Down,Up,Right}
 
 # Applications
 # -------------------------------------------------
-super + alt + b
+super + alt + ctrl + shift + b
 	firefox
-
-super + alt + e
-	thunderbird
 
 super + alt + ctrl + b
 	qutebrowser
 
-# Start Thunar
-super + shift + Return
+super + alt + ctrl + e
+	thunderbird
+
+
+# Start Thunar UI file manager
+super + alt + shift + Return
     thunar
 
+# Start IntelliJ Idea
+super + alt + ctrl + i
+    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh nosplash
+
+# Start ranger file manager
+super + shift + Return
+    alacritty -e ranger
+
+# Start htop
+super + alt + ctrl + p
+    alacritty -e htop
+
+# Start configuration files
+super + alt + ctrl + c
+    sh $HOME/.local/bin/cfg.sh
+
+
 # Make screenshot
+# --------------------------
 Print
     sleep 0.2; \
     scrot -s $HOME/'Desktop/Screenshots/%Y-%m-%d_%H%M%S-$wx$h.png'
 
 ctrl + Print
     scrot $HOME/'Desktop/Screenshots/%Y-%m-%d_%H%M%S-$wx$h.png'
-
-# Start IntelliJ Idea
-super + alt + i
-    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh nosplash
-
-super + alt + o
-    $HOME/'.bin/test.sh'
+# --------------------------
 
 
 # Puseaudio
-
+# --------------------------
 # Toggle mute
 XF86AudioMute
     pulseaudio-ctl mute
@@ -172,3 +185,4 @@ XF86Audio{Raise,Lower}Volume
 # Mute volume
 super + f10
     pulseaudio-ctl mute
+# --------------------------

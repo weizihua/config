@@ -111,6 +111,8 @@ alias docker-clean="docker system prune -a"
 
 # Pacman
 alias pacman-list="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
+alias pacman-count="sudo ls /var/cache/pacman/pkg | wc -l"
+alias pacman-size="du -sh /var/cache/pacman/pkg"
 
 # Git
 alias gs="git status"

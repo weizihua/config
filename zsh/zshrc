@@ -48,8 +48,6 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/go/bin"
 export PATH="$PATH:$HOME/.local/idea/bin"
 
-export GOPATH="$HOME/.local/go"
-
 # Default Editor
 export EDITOR='nvim'
 

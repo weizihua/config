@@ -120,6 +120,7 @@ fzf
 ranger
 tree
 wget
+htop
 rsync
 cronie
 gvfs

@@ -324,5 +324,5 @@ c.completion.scrollbar.width = 0
 c.tabs.favicons.scale = 0.8
 c.tabs.last_close = 'close'
 c.tabs.mousewheel_switching = False
-c.tabs.title.format = '{audio}{index}:{current_url}'
+c.tabs.title.format = '{audio}{index}:{current_title}'
 

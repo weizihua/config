@@ -2,6 +2,18 @@
 
 INSTALL_DIR="$(dirname "$(readlink -f "$0")")"
 
+# Create necessary directories
+# ---------------
+mkdir -p $HOME/.local/bin
+mkdir -p $HOME/.local/go/bin
+mkdir $HOME/Downloads
+mkdir $HOME/Documents
+mkdir $HOME/Workspace
+mkdir $HOME/VirtualBox
+mkdir $HOME/Desktop
+mkdir $HOME/Desktop/Screenshots
+# ---------------
+
 echo "Installing Window Manager"
 sh $INSTALL_DIR/install-window-manager.sh
 
@@ -28,20 +40,8 @@ sh $INSTALL_DIR/install-aur-packages.sh
 # ---------------
 echo "Configuring System"
 sh $INSTALL_DIR/configure-oh-my-zsh.sh
-sh $INSTALL_DIR/configure-conf.sh
 sh $INSTALL_DIR/configure-window-manager.sh
-# ---------------
-
-# Create necessary directories
-# ---------------
-mkdir -p $HOME/.local/bin
-mkdir -p $HOME/.local/go/bin
-mkdir $HOME/Downloads
-mkdir $HOME/Documents
-mkdir $HOME/Workspace
-mkdir $HOME/VirtualBox
-mkdir $HOME/Desktop
-mkdir $HOME/Desktop/Screenshots
+sh $INSTALL_DIR/configure-conf.sh
 # ---------------
 
 # Switch to zsh

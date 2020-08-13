@@ -3,8 +3,10 @@
 # Configuration
 # ---------------
 
+INSTALL_DIR="$(dirname "$(readlink -f "$0")")"
+
 # Load utils
-source ./utils.sh
+source $INSTALL_DIR/utils.sh
 
 ###############################################################################
 func_print "Applying configuration" 4
@@ -33,6 +35,7 @@ func_print "Creating application links" 3
 ln $HOME/.config/bin/cfg.sh $HOME/.local/bin/cfg.sh
 
 rm -rf $HOME/config
+cd ~
 
 sudo chsh -s /bin/zsh $USER
 

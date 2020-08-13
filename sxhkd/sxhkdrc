@@ -129,7 +129,7 @@ super + alt + ctrl + b
 	qutebrowser
 
 super + alt + ctrl + e
-	thunderbird
+	evolution
 
 
 # Start Thunar UI file manager

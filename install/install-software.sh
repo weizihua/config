@@ -64,7 +64,7 @@ packages=(
 libreoffice
 freeoffice
 evince
-thunderbird
+evolution
 )
 
 func_iterate_install "${packages[@]}"
@@ -76,6 +76,7 @@ func_print "Installing software for category 'System'" 5
 packages=(
 dconf-editor
 arc-gtk-theme
+gnome-keyring
 )
 
 func_iterate_install "${packages[@]}"

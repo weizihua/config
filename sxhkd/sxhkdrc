@@ -149,19 +149,10 @@ super + alt + ctrl + p
     alacritty -e htop
 
 # Start configuration files
-super + alt + ctrl + c
-    sh $HOME/.local/bin/cfg.sh
-
+super + alt + ctrl + 0
+    dmenu-cfg.sh
 
 # Make screenshot
-# --------------------------
-Print
-    sleep 0.2; \
-    scrot -s $HOME/'Desktop/Screenshots/%Y-%m-%d_%H%M%S-$wx$h.png'
-
-ctrl + Print
-    scrot $HOME/'Desktop/Screenshots/%Y-%m-%d_%H%M%S-$wx$h.png'
-
 super + alt + ctrl + 4
     dmenu-scrot.sh
 # --------------------------

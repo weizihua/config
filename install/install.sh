@@ -11,7 +11,7 @@ mkdir $HOME/Documents
 mkdir $HOME/Workspace
 mkdir $HOME/VirtualBox
 mkdir $HOME/Desktop
-mkdir $HOME/Desktop/Screenshots
+mkdir $HOME/Screenshots
 # ---------------
 
 echo "Installing Window Manager"

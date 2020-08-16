@@ -77,6 +77,7 @@ packages=(
 dconf-editor
 arc-gtk-theme
 gnome-keyring
+dunst
 )
 
 func_iterate_install "${packages[@]}"
@@ -126,6 +127,10 @@ cronie
 gvfs
 xsel
 dnsutils
+iotop
+iftop
+nmon
+glances
 )
 
 func_iterate_install "${packages[@]}"

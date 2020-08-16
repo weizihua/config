@@ -161,6 +161,9 @@ Print
 
 ctrl + Print
     scrot $HOME/'Desktop/Screenshots/%Y-%m-%d_%H%M%S-$wx$h.png'
+
+super + alt + ctrl + 4
+    dmenu-scrot.sh
 # --------------------------
 
 

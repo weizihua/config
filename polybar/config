@@ -59,7 +59,7 @@ module-margin-right = 1
 font-0 = fixed:pixelsize=10;3
 font-1 = MaterialIcons:size=13;3
 font-2 = Termsynu:size=8:antialias=false;-2
-font-3 = FontAwesome:size=10;0
+font-3 = FontAwesome:size=10;2
 
 modules-left = bspwm
 modules-center = 
@@ -110,7 +110,9 @@ interval = 25
 mount-0 = /
 mount-1 = /home
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+spacing = 4
+
+label-mounted =  %mountpoint%: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -210,14 +212,14 @@ format-prefix-foreground = #cd1f3f
 ;   <ramp-coreload>
 format = <label> <ramp-coreload>
 
-format-padding = 2
+format-padding = 0
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
 label-font = 1
-label = CPU: %percentage%%
+label = CPU: %percentage%% 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 3
 ramp-coreload-0-foreground = #aaff77
@@ -259,7 +261,7 @@ label = %gb_used%/%gb_free%
 
 format = Mem <label>
 format-prefix = "  "
-format-prefix-foreground = #3384d0
+format-prefix-foreground = #cd1f3f
 ; format-underline = #3384d0
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
@@ -325,7 +327,7 @@ date-alt = " %a %b %d, %Y"
 time = %l:%M%p
 time-alt = %l:%M%p
 format-prefix = " "
-format-prefix-foreground = #fefefe
+format-prefix-foreground = #3384d0
 format-foreground = #fefefe
 ; format-background = #668bd7
 ; format-underline = #ffb52a

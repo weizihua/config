@@ -62,8 +62,8 @@ font-2 = Termsynu:size=8:antialias=false;-2
 font-3 = FontAwesome:size=10;0
 
 modules-left = bspwm
-modules-center = mpd
-modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth battery temperature date
+modules-center = 
+modules-right = filesystem sep pulseaudio sep xkeyboard sep memory sep cpu sep eth sep temperature sep date
 
 tray-position = right
 tray-padding = 2
@@ -93,15 +93,15 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
-format-underline = #645377
+format-underline = #bdeb34
 
 label-layout = %layout%
-label-layout-underline = #645377
+label-layout-underline = #bdeb34
 
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
-label-indicator-underline = #645377
+label-indicator-underline = #bdeb34
 
 [module/filesystem]
 type = internal/fs
@@ -334,30 +334,32 @@ label = "%date% %time% "
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>
 
 label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
+label-volume-underline = #ebc334
 
 label-muted =   muted
 label-muted-foreground = #666
 
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+; bar-volume-width = 10
+; bar-volume-foreground-0 = #55aa55
+; bar-volume-foreground-1 = #55aa55
+; bar-volume-foreground-2 = #55aa55
+; bar-volume-foreground-3 = #55aa55
+; bar-volume-foreground-4 = #55aa55
+; bar-volume-foreground-5 = #f5a70a
+; bar-volume-foreground-6 = #ff5555
+; bar-volume-gradient = false
+; bar-volume-indicator = |
+; bar-volume-indicator-font = 2
+; bar-volume-fill = ─
+; bar-volume-fill-font = 2
+; bar-volume-empty = ─
+; bar-volume-empty-font = 2
+; bar-volume-empty-foreground = ${colors.foreground-alt}
+; bar-volume-underline = #404040
 
 [module/battery]
 type = internal/battery
@@ -448,5 +450,13 @@ format-background = ${colors.background}
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
+
+; Workaround for using a module separator with a different foreground color than
+; the one defined for the whole bar.
+[module/sep]
+type = custom/text
+content = |
+content-foreground = ${colors.foreground-alt}
+content-padding = 1
 
 ; vim:ft=dosini

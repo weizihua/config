@@ -18,6 +18,7 @@ skypeforlinux-stable-bin
 kops
 arch-silence-grub-theme-git
 betterlockscreen
+sxiv-rifle
 )
 
 func_iterate_install_aur "${packages[@]}"

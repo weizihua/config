@@ -52,6 +52,8 @@ imagemagick
 meld
 scrot
 mpd
+rawtherapee
+exiv2
 )
 
 func_iterate_install "${packages[@]}"

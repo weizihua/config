@@ -93,15 +93,15 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
-format-underline = #bdeb34
+; format-underline = #bdeb34
 
 label-layout = %layout%
-label-layout-underline = #bdeb34
+; label-layout-underline = #bdeb34
 
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
-label-indicator-underline = #bdeb34
+; label-indicator-underline = #bdeb34
 
 [module/filesystem]
 type = internal/fs
@@ -117,7 +117,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 ; format-mounted = <label-mounted>
 ; format-mounted-foreground = ${colors.foreground}
 ; format-mounted-background = ${colors.background}
-format-mounted-underline = #707070
+; format-mounted-underline = #707070
 
 
 [module/bspwm]
@@ -138,7 +138,7 @@ type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+; label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 label-occupied = %index%
@@ -201,7 +201,7 @@ format-background = ${colors.background}
 ;   
 format-prefix = " "
 format-prefix-foreground = #cd1f3f
-format-underline = ${colors.secondary}
+; format-underline = ${colors.secondary}
 
 ; Available tags:
 ;   <label> (default)
@@ -260,7 +260,7 @@ label = %gb_used%/%gb_free%
 format = Mem <label>
 format-prefix = "  "
 format-prefix-foreground = #3384d0
-format-underline = #3384d0
+; format-underline = #3384d0
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -270,7 +270,7 @@ interface = net1
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+; format-connected-underline = #9f78e1
 label-connected = %essid%
 
 format-disconnected =
@@ -305,13 +305,13 @@ label-disconnected = %ifname% disconnected
 
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.background}
-format-connected-underline = #55aa55
+; format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = #55aa55
 format-connected-prefix-background = ${colors.background}
 
 format-disconnected = <label-disconnected>
-format-disconnected-underline = ${colors.alert}
+; format-disconnected-underline = ${colors.alert}
 label-disconnected-foreground = ${colors.foreground}
 
 [module/date]
@@ -328,7 +328,7 @@ format-prefix = " "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
 ; format-background = #668bd7
-format-underline = #ffb52a
+; format-underline = #ffb52a
 label = "%date% %time% "
 
 [module/pulseaudio]
@@ -338,7 +338,7 @@ format-volume = <label-volume>
 
 label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
-label-volume-underline = #ebc334
+; label-volume-underline = #ebc334
 
 label-muted =   muted
 label-muted-foreground = #666
@@ -368,14 +368,14 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+; format-charging-underline = #ffb52a
 
 format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+; format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+; format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -400,9 +400,9 @@ thermal-zone = 0
 warn-temperature = 70
 
 format = <ramp> <label>
-format-underline = #f50a4d
+; format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+; format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
@@ -437,7 +437,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix = "  "
 format-prefix-foreground = #fefefe
-format-underline = #00b52a
+; format-underline = #00b52a
 
 
 [module/aur-updates]
@@ -449,7 +449,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
-format-underline = #FFBB00
+; format-underline = #FFBB00
 
 ; Workaround for using a module separator with a different foreground color than
 ; the one defined for the whole bar.

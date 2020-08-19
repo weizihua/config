@@ -12,11 +12,15 @@ packages=(
 xorg-init
 xorg-server
 xorg-xmodmap
+xorg-xrandr
+xorg-xdpyinfo
+xorg-xrdb
 bspwm
 sxhkd
 dmenu
 xdo
 feh
+imagemadick
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings

@@ -9,6 +9,8 @@ polybar example &
 # Picom
 picom --config ~/.picom.conf &
 
+#betterlockscreen -w dimblur
+
 source ~/.xprofile
 
 # Background

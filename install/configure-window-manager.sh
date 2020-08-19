@@ -19,6 +19,8 @@ sudo sed -i 's/#xft-antialias=/xft-antialias=true/' /etc/lightdm/lightdm-gtk-gre
 sudo sed -i 's/#indicators=/indicators=/' /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i 's/#position=/position=45% 65%/' /etc/lightdm/lightdm-gtk-greeter.conf
 
+betterlockscreen -u /usr/share/backgrounds/archlinux/archlinux-simplyblack.png -b 1.0
+
 ###############################################################################
 
 func_print "Configuration Done" 11

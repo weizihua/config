@@ -34,4 +34,5 @@ bspc rule -a TelegramDesktop desktop='^9' follow=on
 bspc rule -a Gimp desktop='^8' follow=on
 bspc rule -a rawtherapee desktop='^8' follow=on
 bspc rule -a Screenkey manage=off
+bspc rule -a jetbrains-idea desktop='^4' follow=on
 # bspc rule -a Gimp desktop='^8' state=floating follow=on

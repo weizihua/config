@@ -1,6 +1,6 @@
 " ===== General {{{
 let mapleader = " "
-let localleader = ","
+let maplocalleader = ","
 " }}}
 
 " ===== Plugins {{{
@@ -42,7 +42,6 @@ set ttimeoutlen=0
 " }}}
 
 " ===== Code editing  {{{
-nmap == :action ReformatCode<CR>
 
 " Commenting
 nnoremap <leader>c<leader> :action CommentByLineComment<CR>
@@ -69,21 +68,45 @@ nnoremap <leader>gs :action GotoSymbol<cr>
 nnoremap <leader>ga :action GotoAction<cr>
 " }}}
 
-" ===== Actions {{{
-nnoremap <leader>ar :action RenameElement<cr>
-nnoremap <leader>aR :action RefactoringMenu<cr>
-nnoremap <leader>ao :action OptimizeImports<cr>
-nnoremap <leader>au :action FindUsages<cr>
-nnoremap <leader>aU :action FindUsagesInFile<cr>
-nnoremap <leader>ag :action Generate<cr>
-" }}}
-
 " ===== Run {{{
 nnoremap <leader>rR :action ChooseRunConfiguration<cr>
 nnoremap <leader>rr :action Run<cr>
 nnoremap <leader>rd :action Debug<cr>
 nnoremap <leader>rc :action Compile<cr>
 nnoremap <leader>rC :action CompileProject<cr>
+" }}}
+
+nmap == :action ReformatCode<CR>
+
+" ===== Actions {{{
+nnoremap \r :action RenameElement<cr>
+nnoremap \R :action RefactoringMenu<cr>
+nnoremap \o :action OptimizeImports<cr>
+nnoremap \u :action FindUsages<cr>
+nnoremap \U :action FindUsagesInFile<cr>
+nnoremap \g :action Generate<cr>
+" }}}
+
+" ===== Git {{{
+nnoremap ,gp :action Git.Push<cr>
+nnoremap ,gP :action Git.Pull<cr>
+nnoremap ,gb :action Git.Branches<cr>
+nnoremap ,gm :action Git.Merge<cr>
+nnoremap ,gg :action Git.Menu<cr>
+nnoremap ,gt :action Git.Tag<cr>
+nnoremap ,gi :action Git.Init<cr>
+nnoremap ,ga :action Git.Add<cr>
+nnoremap ,gf :action Git.Fetch<cr>
+nnoremap ,gr :action Git.Rebase<cr>
+nnoremap ,gR :action Git.Reset<cr>
+nnoremap ,gs :action Git.Stash<cr>
+nnoremap ,gu :action Git.Unstash<cr>
+" }}}
+
+" ===== Maven {{{
+nnoremap ,mm :action Maven.ExecuteGoal<cr>
+nnoremap ,mr :action Maven.ReimportProject<cr>
+nnoremap ,mR :action Maven.Reimport<cr>
 " }}}
 
 " ===== Easy Motion {{{

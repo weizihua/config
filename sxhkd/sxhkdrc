@@ -138,7 +138,7 @@ super + alt + shift + Return
 
 # Start IntelliJ Idea
 super + alt + ctrl + i
-    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.app/idea/bin/idea.sh nosplash
+    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.local/idea/bin/idea.sh nosplash
 
 # Start ranger file manager
 super + shift + Return

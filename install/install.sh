@@ -42,6 +42,7 @@ echo "Configuring System"
 sh $INSTALL_DIR/configure-oh-my-zsh.sh
 sh $INSTALL_DIR/configure-window-manager.sh
 sh $INSTALL_DIR/configure-conf.sh
+sh $INSTALL_DIR/configure-system.sh
 # ---------------
 
 # Switch to zsh

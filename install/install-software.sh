@@ -135,6 +135,7 @@ iftop
 nmon
 glances
 neofetch
+man
 )
 
 func_iterate_install "${packages[@]}"

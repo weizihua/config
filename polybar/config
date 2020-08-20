@@ -108,7 +108,7 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /home
+; mount-1 = /home
 
 spacing = 4
 

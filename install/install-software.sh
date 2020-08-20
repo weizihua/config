@@ -116,6 +116,7 @@ func_print "Installing software for category 'Tools'" 5
 
 packages=(
 alacritty
+ueberzug
 tmux
 zsh
 bat

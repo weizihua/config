@@ -16,6 +16,7 @@ ripgrep
 k9s
 go
 go-tools
+nodejs
 ansible
 helm
 vagrant

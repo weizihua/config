@@ -42,6 +42,7 @@ autocmd BufWinEnter * silent! :%foldopen!
 syntax enable
 " colorscheme onedark
 colorscheme gruvbox
+hi Normal ctermfg=252 ctermbg=234
 
 set nowrap
 set hidden

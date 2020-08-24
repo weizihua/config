@@ -20,6 +20,9 @@ cp -rf $HOME/config/.gitignore $HOME/.config/
 func_print "Installing neovim python provider" 3
 python -m pip install --user --upgrade pynvim
 
+func_print "Installing tmux plugin manager" 3
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 rm $HOME/.zshrc
 
 func_print "Creating configuration links" 3

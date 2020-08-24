@@ -31,6 +31,7 @@ ln -s --relative $HOME/.config/X/xprofile $HOME/.Xprofile
 ln -s --relative $HOME/.config/X/xresources $HOME/.Xresources
 ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
 ln -s --relative $HOME/.config/picom/picom.conf $HOME/.picom.conf
+ln $HOME/.config/k9s/skin.yml $HOME/.k9s/skin.yml
 
 func_print "Creating application links" 3
 ln $HOME/.config/bin/dmenu-cfg.sh $HOME/.local/bin/dmenu-cfg.sh

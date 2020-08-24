@@ -17,6 +17,8 @@ cp -rf $HOME/config/* $HOME/.config/
 cp -rf $HOME/config/.git $HOME/.config/
 cp -rf $HOME/config/.gitignore $HOME/.config/
 
+mkdir -p $HOME/.k9s
+
 func_print "Installing neovim python provider" 3
 python -m pip install --user --upgrade pynvim
 

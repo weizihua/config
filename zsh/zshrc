@@ -146,6 +146,7 @@ alias catc="bat"
 # Bookmarks
 alias config='cd ~/.config'
 alias cf='cd ~/.config'
+alias ci='cd ~/.config/install'
 
 # ------------------------------
 # Initialization code

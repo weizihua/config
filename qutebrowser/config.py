@@ -305,8 +305,9 @@ c.fonts.default_size = '16pt'
 
 #  c.content.user_stylesheets = 'colors.css'
 
-c.url.default_page = 'https://www.google.com/search?hl=en'
-c.url.start_pages = 'https://www.google.com/search?hl=en'
+#  c.url.default_page = 'https://www.google.com/search?hl=en'
+c.url.default_page = "about:blank"
+#  c.url.start_pages = 'https://www.google.com/search?hl=en'
 
 c.url.searchengines = {
         'DEFAULT': 'https://www.google.com/search?hl=en&q={}', 
@@ -327,3 +328,33 @@ c.tabs.last_close = 'close'
 c.tabs.mousewheel_switching = False
 c.tabs.title.format = '{audio}{index}:{current_title}'
 
+c.content.user_stylesheets = 'darkmode.css'
+#  c.user_stylesheets = darkmode.css
+
+
+c.auto_save.session = True
+c.downloads.location.directory = "~/Downloads"
+c.downloads.location.prompt = False
+c.editor.command = ["alacritty", "-e", "nvim '{}'"]
+c.hints.chars = "asdfghjklie"
+c.input.insert_mode.auto_leave = True
+c.input.insert_mode.auto_load = True
+
+# Bindings
+# --------------------------------------
+config.bind("gi", "hint inputs")
+config.bind("<f12>", "inspector")
+#  config.unbind("+")
+#  config.unbind("-")
+#  config.unbind("=")
+#  config.bind("z+", "zoom-in")
+#  config.bind("z-", "zoom-out")
+#  config.bind("zz", "zoom")
+#
+#  config.unbind("O")
+#  config.unbind("T")
+#  config.unbind("th")
+#  config.unbind("tl")
+#  config.bind("O", "set-cmd-text :open {url:pretty}")
+#  config.bind("T", "set-cmd-text :open -t {url:pretty}")
+#  config.bind("t", "set-cmd-text -s :open -t")

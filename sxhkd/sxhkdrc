@@ -159,15 +159,15 @@ super + alt + ctrl + shift + p
 
 # Start configuration files
 super + alt + ctrl + 1
-    dmenu-cfg.sh
+    $HOME'/.local/bin/dmenu-cfg.sh'
 
 # Reboot or Poweroff
 super + alt + ctrl + 0
-    dmenu-poweroff.sh
+    $HOME/'.local/bin/dmenu-poweroff.sh'
 
 # Make screenshot
 super + alt + ctrl + 2
-    dmenu-scrot.sh
+    $HOME/'.local/bin/dmenu-scrot.sh'
 # --------------------------
 
 

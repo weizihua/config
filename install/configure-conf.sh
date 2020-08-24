@@ -21,7 +21,7 @@ func_print "Installing neovim python provider" 3
 python -m pip install --user --upgrade pynvim
 
 func_print "Installing tmux plugin manager" 3
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 
 rm $HOME/.zshrc
 
@@ -41,12 +41,12 @@ ln $HOME/.config/bin/dmenu-cfg.sh $HOME/.local/bin/dmenu-cfg.sh
 ln $HOME/.config/bin/dmenu-scrot.sh $HOME/.local/bin/dmenu-scrot.sh
 ln $HOME/.config/bin/dmenu-poweroff.sh $HOME/.local/bin/dmenu-poweroff.sh
 
-rm -rf $HOME/config
-cd ~
-
 sudo chsh -s /bin/zsh $USER
 
 vboxmanage setproperty machinefolder ~/VirtualBox
+
+rm -rf $HOME/config
+cd $HOME 
 
 ###############################################################################
 

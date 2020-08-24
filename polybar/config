@@ -18,7 +18,8 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #aa222222
+background = #222222
+; background = #aa222222
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -257,7 +258,7 @@ interval = 1
 ;   %mb_used%
 ;   %mb_free%
 ;   %mb_total%
-label = %gb_used%/%gb_free%
+label = %gb_used%/%gb_total%
 
 format = Mem <label>
 format-prefix = " "

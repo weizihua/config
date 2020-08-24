@@ -15,7 +15,7 @@ func_print "Applying system configuration" 4
 sudo sed -i 's|#GRUB_THEME=".*"|GRUB_THEME="/boot/grub/themes/arch-silence/theme.txt"|' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-cp $INSTALL_DIR/hid_magicmouse.conf /etc/modprobe.d/
+cp $INSTALL_DIR/hid_magicmouse.conf /etc/modprobe.d/hid_magicmouse.conf
 
 ###############################################################################
 

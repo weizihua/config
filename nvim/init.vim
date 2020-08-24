@@ -737,8 +737,8 @@ au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
 " }}}
 
-" ===== GoVim ===== {{{
-let g:go_bin_path = $HOME . "/.local/go/bin"
+" ===== VimGo ===== {{{
+let g:go_bin_path = "/bin"
 autocmd FileType go nmap <leader>rb  <Plug>(go-build)
 autocmd FileType go nmap <leader>rr  <Plug>(go-run)
 autocmd FileType go nmap <leader>rt  <Plug>(go-test)

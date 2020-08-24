@@ -19,6 +19,7 @@ kops
 arch-silence-grub-theme-git
 betterlockscreen
 sxiv-rifle
+golangci-lint-bin
 )
 
 func_iterate_install_aur "${packages[@]}"

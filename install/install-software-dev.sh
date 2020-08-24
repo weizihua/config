@@ -15,6 +15,7 @@ ack
 ripgrep
 k9s
 go
+go-tools
 ansible
 helm
 vagrant

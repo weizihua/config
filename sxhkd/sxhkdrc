@@ -153,6 +153,10 @@ super + alt + ctrl + q
 super + alt + ctrl + p
     alacritty -e htop
 
+# Start glances
+super + alt + ctrl + shift + p
+    alacritty -e glances
+
 # Start configuration files
 super + alt + ctrl + 1
     dmenu-cfg.sh

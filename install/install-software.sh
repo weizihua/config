@@ -136,6 +136,9 @@ nmon
 glances
 neofetch
 man
+nmap
+net-tools
+youtube-dl
 )
 
 func_iterate_install "${packages[@]}"

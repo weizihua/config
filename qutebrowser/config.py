@@ -321,6 +321,7 @@ c.completion.shrink = True
 c.completion.scrollbar.padding = 0
 c.completion.scrollbar.width = 0
 
+c.tabs.show = "never" 
 c.tabs.favicons.scale = 0.8
 c.tabs.last_close = 'close'
 c.tabs.mousewheel_switching = False

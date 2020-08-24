@@ -9,9 +9,7 @@ polybar example &
 # Picom
 picom --config ~/.picom.conf &
 
-#betterlockscreen -w dimblur
-
-source ~/.xprofile
+source ~/.Xprofile
 
 # Background
 nitrogen --set-centered /usr/share/backgrounds/archlinux/archlinux-simplyblack.png &

@@ -2,3 +2,4 @@
 application/pdf=org.gnome.Evince.desktop;
 video/x-matroska=mplayer.desktop;vlc.desktop;
 image/png=sxiv.desktop;
+video/webm=mplayer.desktop;

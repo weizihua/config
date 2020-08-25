@@ -307,12 +307,12 @@ c.fonts.default_size = '16pt'
 
 #  c.url.default_page = 'https://www.google.com/search?hl=en'
 c.url.default_page = "about:blank"
-#  c.url.start_pages = 'https://www.google.com/search?hl=en'
+c.url.start_pages = 'https://www.google.com/search?hl=en'
 
 c.url.searchengines = {
-        'DEFAULT': 'https://www.google.com/search?hl=en&q={}', 
-        'gg': 'https://www.google.com/search?hl=en&q={}', 
-        'yt': 'https://www.youtube.com/results?search_query={}', 
+        'DEFAULT': 'https://www.google.com/search?hl=en&q={}',
+        'gg': 'https://www.google.com/search?hl=en&q={}',
+        'yt': 'https://www.youtube.com/results?search_query={}',
         'st': 'https://stackoverflow.com/search?q={}',
         'aw': 'https://wiki.archlinux.org/?search={}',
 }
@@ -322,29 +322,55 @@ c.completion.shrink = True
 c.completion.scrollbar.padding = 0
 c.completion.scrollbar.width = 0
 
-c.tabs.show = "never" 
+c.tabs.show = "never"
 c.tabs.favicons.scale = 0.8
 c.tabs.last_close = 'close'
 c.tabs.mousewheel_switching = False
 c.tabs.title.format = '{audio}{index}:{current_title}'
 
-c.content.user_stylesheets = 'darkmode.css'
-#  c.user_stylesheets = darkmode.css
+#  c.content.user_stylesheets = 'darkmode.css'
 
 
 c.auto_save.session = True
 c.downloads.location.directory = "~/Downloads"
 c.downloads.location.prompt = False
-c.editor.command = ["alacritty", "-e", "nvim '{}'"]
-c.hints.chars = "asdfghjklie"
+c.editor.command = ["alacritty", "-e", "nvim {}"]
+c.hints.chars = "1234567890"
 c.input.insert_mode.auto_leave = True
-c.input.insert_mode.auto_load = True
+#  c.input.insert_mode.auto_load = True
 
+
+# --------------------------------------
 # Bindings
 # --------------------------------------
 config.bind("gi", "hint inputs")
-config.bind("<f12>", "inspector")
-#  config.unbind("+")
+
+# Tools
+config.bind(",t", "devtools bottom")
+config.bind(",s", "view-source")
+config.bind(",!", "config-source")
+config.bind(",.", "set content.user_stylesheets darkmode.css")
+config.bind(",,", "set content.user_stylesheets default.css")
+
+# Downloads
+config.bind("<Space>dd", "download-open")
+config.bind("<Space>dc", "download-cancel")
+config.bind("<Space>dC", "download-clear")
+
+# Messages
+config.bind("<Space>mm", "messages")
+config.bind("<Space>mc", "clear-messages")
+
+# Windows
+config.bind("<Space>wo", "window-only")
+
+# Tabs
+config.bind("<Space>to", "tab-only")
+config.bind("<Space>tp", "tab-pin")
+config.bind("<Space>tc", "tab-clone")
+
+
+#  config.bind("<Meta-w>", "tab-close", mode="normal")
 #  config.unbind("-")
 #  config.unbind("=")
 #  config.bind("z+", "zoom-in")
@@ -358,3 +384,4 @@ config.bind("<f12>", "inspector")
 #  config.bind("O", "set-cmd-text :open {url:pretty}")
 #  config.bind("T", "set-cmd-text :open -t {url:pretty}")
 #  config.bind("t", "set-cmd-text -s :open -t")
+# --------------------------------------

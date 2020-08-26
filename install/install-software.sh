@@ -146,5 +146,16 @@ func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
+func_print "Installing software for category 'Drivers'" 5
+
+packages=(
+mesa
+xf86-video-intel
+)
+
+func_iterate_install "${packages[@]}"
+
+###############################################################################
+
 func_print "Software has been installed" 11
 

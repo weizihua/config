@@ -42,8 +42,17 @@ super + g
 #
 
 # set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {shift + t,s}
+	bspc node -t {pseudo_tiled,floating}
+
+# Fullscreen disable transparency
+super + f
+    bspc node -t fullscreen; \
+    kill -15 $(pgrep -x picom);
+
+super + t
+    bspc node -t tiled; \
+    picom --config ~/.picom.conf &
 
 # set the node flags
 super + ctrl + {m,x,y,z}

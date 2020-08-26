@@ -40,10 +40,14 @@ autocmd BufWinEnter * silent! :%foldopen!
 
 " ===== Settings ===== {{{
 syntax enable
-" colorscheme onedark
 colorscheme gruvbox
-hi Normal ctermfg=252 ctermbg=234
-autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
+" hi Normal ctermfg=252 ctermbg=234
+
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE
+
+" hide tilde on blank lines
+let &fcs='eob: '
 
 set nowrap
 set hidden
@@ -75,8 +79,6 @@ set sessionoptions+=tabpages,globals
 set ttimeoutlen=0
 set foldmethod=marker
 
-" hide tilde on blank lines
-hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 
 filetype plugin indent on
 set autoindent

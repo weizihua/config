@@ -43,6 +43,7 @@ syntax enable
 " colorscheme onedark
 colorscheme gruvbox
 hi Normal ctermfg=252 ctermbg=234
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
 
 set nowrap
 set hidden

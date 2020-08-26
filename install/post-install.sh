@@ -12,7 +12,7 @@ func_print "Applying after configuration" 4
 sudo cp $INSTALL_DIR/hid_magicmouse.conf /etc/modprobe.d/hid_magicmouse.conf
 
 mkdir -p ~/.cache/i3lock/current
-betterlockscreen -u /usr/share/backgrounds/archlinux/archlinux-simplyblack.png -b 1.0
+betterlockscreen -u /usr/share/backgrounds/archlinux/archlinux-cloud.png -b 1.0
 
 ###############################################################################
 

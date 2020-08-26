@@ -22,8 +22,9 @@ xdo
 feh
 imagemadick
 lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+# lightdm-gtk-greeter
+# lightdm-gtk-greeter-settings
+lightdm-webkit2-greeter
 papirus-icon-theme
 materia-gtk-theme
 archlinux-background

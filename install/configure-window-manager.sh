@@ -13,13 +13,12 @@ func_print "Applying window manager configuration" 4
 ###############################################################################
 
 # Wallpaper
-sudo cp $INSTALL_DIR/wallpapers/archlinux-cloud.png /usr/share/backgrounds/archlinux/archlinux-cloud.png
+sudo cp $INSTALL_DIR/media/wallpapers/archlinux-cloud.png /usr/share/backgrounds/archlinux/archlinux-cloud.png
 
 # LightDM Theme
-sudo git clone https://github.com/pedropenna/musfealle /usr/share/lightdm-webkit/themes/musfealle
-sudo cp $INSTALL_DIR/webkit2-theme-files/index.html /usr/share/lightdm-webkit/themes/musfealle/index.html
+sudo cp -r $INSTALL_DIR/media/lightdm-webkit-themes/arch /usr/share/lightdm-webkit/themes/
 sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter/' /etc/lightdm/lightdm.conf
-sudo sed -i 's|webkit_theme.*|webkit_theme\t    = musfealle|' /etc/lightdm/lightdm-webkit2-greeter.conf
+sudo sed -i 's|webkit_theme.*|webkit_theme\t    = arch|' /etc/lightdm/lightdm-webkit2-greeter.conf
 
 # Lock Screen
 mkdir -p ~/.cache/i3lock/current

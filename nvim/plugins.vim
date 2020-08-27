@@ -41,7 +41,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'schickling/vim-bufonly'
 Plug 'neomake/neomake'
-Plug 'ryanoasis/vim-devicons'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'machakann/vim-swap'
@@ -67,6 +66,7 @@ Plug 'Shougo/neco-vim'
 Plug 'neoclide/coc-neco'
 Plug 'vim-scripts/DrawIt'
 Plug 'gyim/vim-boxdraw'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 

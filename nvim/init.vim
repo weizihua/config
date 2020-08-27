@@ -245,18 +245,18 @@ let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
 let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
 
 " Remove square brackets
-augroup nerdtreeconcealbrackets
-      autocmd!
-      autocmd FileType nerdtree syntax match hideBracketsInNerdTree "\]" contained conceal containedin=ALL
-      autocmd FileType nerdtree syntax match hideBracketsInNerdTree "\[" contained conceal containedin=ALL
-      autocmd FileType nerdtree setlocal conceallevel=3
-      autocmd FileType nerdtree setlocal concealcursor=nvic
-augroup END
+" augroup nerdtreeconcealbrackets
+"       autocmd!
+"       autocmd FileType nerdtree syntax match hideBracketsInNerdTree "\]" contained conceal containedin=ALL
+"       autocmd FileType nerdtree syntax match hideBracketsInNerdTree "\[" contained conceal containedin=ALL
+"       autocmd FileType nerdtree setlocal conceallevel=3
+"       autocmd FileType nerdtree setlocal concealcursor=nvic
+" augroup END
 
 " Remove the last slash from directory names
 augroup nerdtreehidetirslashes
-	autocmd!
-	autocmd FileType nerdtree syntax match NERDTreeDirSlash #/$# containedin=NERDTreeDir conceal contained
+    autocmd!
+    autocmd FileType nerdtree syntax match NERDTreeDirSlash #/$# containedin=NERDTreeDir conceal contained
 augroup end
 
 " after a re-source, fix syntax matching issues (concealing brackets):

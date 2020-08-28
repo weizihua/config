@@ -52,51 +52,51 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/xvitcoder
-	Desktop
+d/home/xvitcoder/.config/idea
+	idea-settings.zip
 0
+d/home/xvitcoder/.config
+	gtk-3.0
+8
+d/home/xvitcoder
+	Downloads
+12
+d/home/xvitcoder/Downloads
+	IntelliJIDEA_ReferenceCard.pdf
+0
+d/home/xvitcoder
+	.config
+1
+d/home/xvitcoder/.config
+	bin
+5
+d/home/xvitcoder/.config/bin
+	ranger
+0
+d/home/xvitcoder/.config
+	bin
+5
+d/home/xvitcoder
+	.fzf
+3
 d/home
 	xvitcoder
 0
 d/
 	home
 4
+d/home
+	xvitcoder
+0
 d/home/xvitcoder
 	.config
-0
-d/home/xvitcoder/Workspace
-	test.php
-11
+1
 d/home/xvitcoder/.config
-	mimeapps.list
-27
-d/home/xvitcoder
-	Desktop
-11
-d/home/xvitcoder/Desktop
-	..
-0
-d/home/xvitcoder
-	Downloads
-13
-d/home/xvitcoder/Downloads
-	JetBrainsMono-1.0.0.zip
-0
-d/home/xvitcoder
-	Documents
-12
-d/home/xvitcoder/Documents
-	..
-0
-d/home/xvitcoder
-	Downloads
-13
-d/home/xvitcoder/Downloads
-	JetBrainsMono-1.0.0.zip
-0
-d/home/xvitcoder
-	.zshrc
-27
+	bin
+5
+d/home/xvitcoder/.config/bin
+	imft
+4
 d
 
 # Right window history (oldest to newest):
@@ -106,7 +106,6 @@ D/home/xvitcoder
 D
 
 # Command line history (oldest to newest):
-:shell
 :sort
 :vs
 :view
@@ -120,6 +119,8 @@ D
 :touch test.ttf
 :touch test.php
 :touch test.py
+:open 
+:touch imft
 
 # Search history (oldest to newest):
 /i
@@ -129,7 +130,6 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/xvitcoder/Trash/000_ranger
 
 # Directory stack (oldest to newest):
 
@@ -188,8 +188,6 @@ t/home/xvitcoder/Trash/000_vifminfo
 	/home/xvitcoder/Workspace/test/vifminfo
 t/home/xvitcoder/Trash/000_vifmrc
 	/home/xvitcoder/Workspace/test/vifmrc
-t/home/xvitcoder/Trash/000_ranger
-	/home/xvitcoder/.config/ranger
 
 # State:
 f

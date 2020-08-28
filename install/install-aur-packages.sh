@@ -20,6 +20,8 @@ arch-silence-grub-theme-git
 betterlockscreen
 sxiv-rifle
 golangci-lint-bin
+apvlv
+pv
 )
 
 func_iterate_install_aur "${packages[@]}"

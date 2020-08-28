@@ -54,6 +54,7 @@ scrot
 mpd
 rawtherapee
 exiv2
+mp3info
 )
 
 func_iterate_install "${packages[@]}"
@@ -67,6 +68,8 @@ libreoffice
 freeoffice
 evince
 evolution
+zathura
+xpdf
 )
 
 func_iterate_install "${packages[@]}"

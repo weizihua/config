@@ -86,6 +86,7 @@ alias cfg-bspwm="cd ~/.config/bspwm/ && nvim bspwmrc"
 alias cfg-polybar="cd ~/.config/polybar/ && nvim config"
 alias cfg-install="cd ~/.config/install/ && nvim install.sh"
 alias cfg-qutebrowser="cd ~/.config/qutebrowser/ && nvim config.py"
+alias cfg-vifm="cd ~/.vifm/ && nvim vifmrc"
 
 # Reload Configuration Files
 alias reload-cfg-zsh="source ~/.zshrc"
@@ -140,6 +141,9 @@ alias youtube-get="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]'"
 
 alias catc="bat"
 
+alias trash-clear="rm -vrf ~/Trash/*"
+
+
 # SSH
 # ------------------------------
 
@@ -147,6 +151,7 @@ alias catc="bat"
 alias config='cd ~/.config'
 alias cf='cd ~/.config'
 alias ci='cd ~/.config/install'
+alias trash="cd ~/Trash"
 
 # ------------------------------
 # Initialization code

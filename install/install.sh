@@ -14,6 +14,7 @@ mkdir $HOME/Desktop
 mkdir $HOME/Screenshots
 mkdir $HOME/Video
 mkdir $HOME/Photo
+mkdir $HOME/Trash
 # ---------------
 
 echo "Installing Window Manager"

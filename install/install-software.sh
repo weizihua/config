@@ -122,7 +122,6 @@ tmux
 zsh
 bat
 fzf
-ranger
 vifm
 tree
 wget

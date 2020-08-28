@@ -123,6 +123,7 @@ zsh
 bat
 fzf
 ranger
+vifm
 tree
 wget
 htop

@@ -149,9 +149,9 @@ super + alt + shift + Return
 super + alt + ctrl + i
     export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.local/idea/bin/idea.sh nosplash
 
-# Start ranger file manager
+# Start file manager
 super + shift + Return
-    alacritty -e ranger
+    alacritty -e vifm
 
 
 # lockscreen

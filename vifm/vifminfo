@@ -1,29 +1,51 @@
 # You can edit this file by hand, but it's recommended not to do that.
 
 # Marks:
-'H
-	/home/xvitcoder/
-	..
-1598531036
+'a
+	/home/xvitcoder/.config/X
+	xresources
+1598533334
 'b
-	/home/xvitcoder/bin/
+	/home/xvitcoder/.config/polybar/scripts
+	check-all-updates.sh
+1598533344
+'c
+	/home/xvitcoder/.config
 	..
-1598531036
+1598603033
+'e
+	/etc
+	..
+1598603125
 'h
 	/home/xvitcoder/
 	..
-1598531036
-'z
-	/home/xvitcoder/.config/vifm
+1598603033
+'i
+	/home/xvitcoder/.config/install
 	..
-1598531036
+1598603033
+'t
+	/tmp
+	..
+1598603125
+'u
+	/usr
+	..
+1598603125
 
 # Bookmarks:
+b/home/xvitcoder/
+	~/.config/install,i
+	1598602354
+b/home/xvitcoder/Workspace/
+	~/.config/install,i
+	1598602860
 
 # TUI:
 al
-q0
-v2
+q1
+v1
 ov
 m-1
 l2
@@ -31,52 +53,148 @@ r2
 
 # Left window history (oldest to newest):
 d/home/xvitcoder
-	Screenshots
-5
-d/home/xvitcoder/Screenshots
+	Desktop
+0
+d/home
+	xvitcoder
+0
+d/
+	home
+4
+d/home/xvitcoder
+	.config
+0
+d/home/xvitcoder/Workspace
+	test.php
+11
+d/home/xvitcoder/.config
+	mimeapps.list
+27
+d/home/xvitcoder
+	Desktop
+11
+d/home/xvitcoder/Desktop
 	..
 0
 d/home/xvitcoder
-	Photo
-4
-d/home
-	xvitcoder
-1
-d/
-	home
-4
-d/home
+	Downloads
+13
+d/home/xvitcoder/Downloads
+	JetBrainsMono-1.0.0.zip
+0
+d/home/xvitcoder
+	Documents
+12
+d/home/xvitcoder/Documents
 	..
 0
-d/
-	home
-4
+d/home/xvitcoder
+	Downloads
+13
+d/home/xvitcoder/Downloads
+	JetBrainsMono-1.0.0.zip
+0
+d/home/xvitcoder
+	.zshrc
+27
 d
 
 # Right window history (oldest to newest):
 D/home/xvitcoder
-	..
+	Desktop
 0
 D
 
 # Command line history (oldest to newest):
+:shell
+:sort
+:vs
+:view
+:set viewcolumns=*{name}..,6{}.
+:set viewcolumns=*{name}..,6{}.<cr>
+:q
+:touch test.java
+:touch test.html
+:touch Jenkinsfile
+:touch Dockerfile
+:touch test.ttf
+:touch test.php
+:touch test.py
 
 # Search history (oldest to newest):
+/i
 
 # Prompt history (oldest to newest):
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/xvitcoder/Trash/000_ranger
 
 # Directory stack (oldest to newest):
 
 # Trash content:
+t/home/xvitcoder/.local/share/vifm/Trash/000_new_name(1)
+	/home/xvitcoder/Workspace/new_name(1)
+t/home/xvitcoder/.local/share/vifm/Trash/000_new_name(2)
+	/home/xvitcoder/Workspace/new_name(2)
+t/home/xvitcoder/.local/share/vifm/Trash/000_new_name(3)
+	/home/xvitcoder/Workspace/new_name(3)
+t/home/xvitcoder/.local/share/vifm/Trash/000_new_name(4)
+	/home/xvitcoder/Workspace/new_name(4)
+t/home/xvitcoder/.local/share/vifm/Trash/000_new_name(5)
+	/home/xvitcoder/Workspace/new_name(5)
+t/home/xvitcoder/.local/share/vifm/Trash/000_new_name(6)
+	/home/xvitcoder/Workspace/new_name(6)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file
+	/home/xvitcoder/Workspace/file
+t/home/xvitcoder/.local/share/vifm/Trash/000_file2
+	/home/xvitcoder/Workspace/file2
+t/home/xvitcoder/.local/share/vifm/Trash/000_file4
+	/home/xvitcoder/Workspace/file4
+t/home/xvitcoder/.local/share/vifm/Trash/000_new_name
+	/home/xvitcoder/Workspace/new_name
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(1)
+	/home/xvitcoder/Workspace/file(1)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(10)
+	/home/xvitcoder/Workspace/file(10)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(2)
+	/home/xvitcoder/Workspace/file(2)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(3)
+	/home/xvitcoder/Workspace/file(3)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(4)
+	/home/xvitcoder/Workspace/file(4)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(5)
+	/home/xvitcoder/Workspace/file(5)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(6)
+	/home/xvitcoder/Workspace/file(6)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(7)
+	/home/xvitcoder/Workspace/file(7)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(8)
+	/home/xvitcoder/Workspace/file(8)
+t/home/xvitcoder/.local/share/vifm/Trash/000_file(9)
+	/home/xvitcoder/Workspace/file(9)
+t/home/xvitcoder/Trash/000_file00.md
+	/home/xvitcoder/Workspace/test/file00.md
+t/home/xvitcoder/Trash/000_file01.md
+	/home/xvitcoder/Workspace/test/file01.md
+t/home/xvitcoder/Trash/000_file03.md
+	/home/xvitcoder/Workspace/test/file03.md
+t/home/xvitcoder/Trash/000_file04.md
+	/home/xvitcoder/Workspace/test/file04.md
+t/home/xvitcoder/Trash/000_vifm-help.txt
+	/home/xvitcoder/Workspace/test/vifm-help.txt
+t/home/xvitcoder/Trash/000_vifminfo
+	/home/xvitcoder/Workspace/test/vifminfo
+t/home/xvitcoder/Trash/000_vifmrc
+	/home/xvitcoder/Workspace/test/vifmrc
+t/home/xvitcoder/Trash/000_ranger
+	/home/xvitcoder/.config/ranger
 
 # State:
 f
 i1
-[.1
+[.0
 [F
 F
 I1

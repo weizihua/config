@@ -67,6 +67,8 @@ Plug 'neoclide/coc-neco'
 Plug 'vim-scripts/DrawIt'
 Plug 'gyim/vim-boxdraw'
 Plug 'ryanoasis/vim-devicons'
+Plug 'ap/vim-css-color'
+Plug 'vifm/vifm.vim'
 call plug#end()
 
 

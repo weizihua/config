@@ -22,6 +22,7 @@ sxiv-rifle
 golangci-lint-bin
 apvlv
 pv
+poppler
 )
 
 func_iterate_install_aur "${packages[@]}"

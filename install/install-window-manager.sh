@@ -19,8 +19,10 @@ bspwm
 sxhkd
 dmenu
 xdo
+xdotool
 feh
-imagemadick
+sxiv
+imagemagick
 lightdm
 lightdm-webkit2-greeter
 papirus-icon-theme

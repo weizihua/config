@@ -13,6 +13,7 @@ mkdir $HOME/VirtualBox
 mkdir $HOME/Desktop
 mkdir $HOME/Screenshots
 mkdir $HOME/Video
+mkdir $HOME/Music
 mkdir $HOME/Photo
 mkdir $HOME/Trash
 # ---------------
@@ -39,12 +40,16 @@ sh $INSTALL_DIR/install-yay.sh
 echo "Installing AUR Packages"
 sh $INSTALL_DIR/install-aur-packages.sh
 
+echo "Installing Tools"
+sh $INSTALL_DIR/install-tools.sh
+
 # Configuration
 # ---------------
 echo "Configuring System"
 sh $INSTALL_DIR/configure-system.sh
 sh $INSTALL_DIR/configure-oh-my-zsh.sh
 sh $INSTALL_DIR/configure-window-manager.sh
+sh $INSTALL_DIR/configure-tools.sh
 sh $INSTALL_DIR/configure-conf.sh
 # ---------------
 

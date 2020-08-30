@@ -34,9 +34,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # -------------------------------------------------------------------------
-# User configuration
-# -------------------------------------------------------------------------
-
+# User configuration ------------------------------------------------------------------------- 
 
 # ------------------------------
 # Variables
@@ -58,6 +56,27 @@ else
   export EDITOR='nvim'
 fi
 
+# Input prompt of fuzzy searcher
+export FONTPREVIEW_SEARCH_PROMPT="❯ "
+
+# Size of the font preview window
+export FONTPREVIEW_SIZE=532x365
+
+# The position where the font preview window should be displayed
+export FONTPREVIEW_POSITION="+0+0"
+
+# Font size
+export FONTPREVIEW_FONT_SIZE=38
+
+# Background color of the font preview window
+export FONTPREVIEW_BG_COLOR="#ffffff"
+
+# Foreground color of the font preview window
+export FONTPREVIEW_FG_COLOR="#000000"
+
+# Preview text that should be displayed in the font preview window
+export FONTPREVIEW_PREVIEW_TEXT="ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n1234567890\n!@$\%(){}[]"
+
 # ------------------------------
 
 
@@ -73,6 +92,7 @@ alias kube-info="kubectl cluster-info"
 alias k="kubectl"
 
 alias vim="nvim"
+alias vifm='sh ~/.local/bin/vifmrun'
 
 # Configuration Files
 alias cfg-alacritty="cd ~/.config/alacritty/ && nvim ~/.config/alacritty/alacritty.yml"
@@ -137,7 +157,33 @@ alias gPtd="git push --tags origin develop"
 alias gmm="git merge master"
 alias gmd="git merge develop"
 
-alias youtube-get="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]'"
+# get fastest mirrors
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias merge='xrdb -merge ~/.Xresources'
+
+# get error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+
+# youtube-dl
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-mp4="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]'"
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+
 
 alias catc="bat"
 
@@ -182,6 +228,34 @@ starttransfer:  %{time_starttransfer}s\n\
         total:  %{time_total}s\n" "$@"
 }
 
+### ARCHIVE EXTRACTION
+# usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *.tar.zst)   unzstd $1    ;;      
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
+
 fd() { local dir dir=$(find ${1:-.} -path '*/\.*' -prune -o -type d \
       -print 2> /dev/null | fzf +m) && cd "$dir"}
 
@@ -204,56 +278,17 @@ tmux-config () {
         tmux new-window -n ideavim-config               -c "$ROOT_PATH/.config/nvim"
         tmux send-keys 'cfg-ideavim' C-m
 
-        tmux new-window -n ranger-config                -c "$ROOT_PATH/.config/ranger"
-        tmux send-keys 'cfg-ranger' C-m
+        tmux new-window -n vifm-config                -c "$ROOT_PATH/.config/vifm"
+        tmux send-keys 'cfg-vifm' C-m
 
-        if [[ $1 = true ]]; then
-            tmux select-window -t 1
-            tmux attach-session -t config
-        fi
+        tmux new-window -n x-config                -c "$ROOT_PATH/.config/X"
+        tmux send-keys 'cfg-x' C-m
+
+        tmux select-window -t 1
+        tmux attach-session -t config
     else
         # Attaching to existing session
         tmux attach-session -t config
-    fi
-}
-
-# Create kubernetes session
-tmux-kubernetes () {
-    ROOT_PATH="$HOME"
-    tmux has -t kubernetes 2> /dev/null
-    if [[ $? == 1 ]]; then
-        # Create a new TMUX session
-        tmux new-session -d -s kubernetes -n k9s-dev     -c "$ROOT_PATH"
-        tmux send-keys 'k9s-dev' C-m
-
-        tmux new-window -n k9s-local                     -c "$ROOT_PATH"
-        tmux send-keys 'k9s-local' C-m
-
-        if [[ $1 = true ]]; then
-            tmux select-window -t 1
-            tmux attach-session -t kubernetes
-        fi
-    else
-        # Attaching to existing session
-        tmux attach-session -t kubernetes
-    fi
-}
-
-# Create system session
-tmux-system () {
-    ROOT_PATH="$HOME"
-    tmux has -t system 2> /dev/null
-    if [[ $? == 1 ]]; then
-        # Create a new TMUX session
-        tmux new-session -d -s system -n shell     -c "$ROOT_PATH"
-
-        if [[ $1 = true ]]; then
-            tmux select-window -t 1
-            tmux attach-session -t system
-        fi
-    else
-        # Attaching to existing session
-        tmux attach-session -t system
     fi
 }
 
@@ -296,13 +331,6 @@ tmux-tests () {
         # Attaching to existing session
         tmux attach-session -t tests
     fi
-}
-
-tmux-work() {
-    tmux-system     false
-    tmux-config     false
-    tmux-notes      false
-    tmux-kubernetes true
 }
 
 tmux-killall() {

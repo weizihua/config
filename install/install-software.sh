@@ -55,6 +55,9 @@ mpd
 rawtherapee
 exiv2
 mp3info
+sox
+cmus
+ffmpegthumbnailer
 )
 
 func_iterate_install "${packages[@]}"
@@ -127,6 +130,7 @@ bat
 fzf
 vifm
 tree
+w3m
 wget
 htop
 rsync
@@ -143,6 +147,7 @@ man
 nmap
 net-tools
 youtube-dl
+reflector
 )
 
 func_iterate_install "${packages[@]}"

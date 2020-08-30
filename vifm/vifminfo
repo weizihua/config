@@ -46,57 +46,57 @@ b/home/xvitcoder/Workspace/
 al
 q1
 v1
-ov
+oh
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/xvitcoder/.config/idea
-	idea-settings.zip
+d/home/xvitcoder/Video
+	Arch Linux.mp4
 0
-d/home/xvitcoder/.config
-	gtk-3.0
-8
+d/home/xvitcoder
+	Screenshots
+16
+d/home/xvitcoder/Screenshots
+	2020-08-30-@09-58-53-scrot.png
+0
 d/home/xvitcoder
 	Downloads
-12
+14
 d/home/xvitcoder/Downloads
 	IntelliJIDEA_ReferenceCard.pdf
 0
+d/home/xvitcoder/.config/install
+	install.sh
+20
+d/home/xvitcoder
+	Music
+15
+d/home/xvitcoder/Music
+	Hans Zimmer - INTERSTELLAR⎪12 STRING FINGERSTYLE GUITAR-IuEEEwgdAZs.mp3
+0
+d/home/xvitcoder
+	Music
+15
+d/home/xvitcoder/Music
+	Hans Zimmer - INTERSTELLAR⎪12 STRING FINGERSTYLE GUITAR-IuEEEwgdAZs.mp3
+0
+d/home/xvitcoder
+	Music
+15
+d/home/xvitcoder/Music
+	Hans Zimmer - INTERSTELLAR⎪12 STRING FINGERSTYLE GUITAR-IuEEEwgdAZs.mp3
+0
 d/home/xvitcoder
 	.config
 1
 d/home/xvitcoder/.config
-	bin
-5
-d/home/xvitcoder/.config/bin
-	ranger
-0
-d/home/xvitcoder/.config
-	bin
-5
-d/home/xvitcoder
-	.fzf
+	cmus
+7
+d/home/xvitcoder/.config/cmus
+	command-history
 3
-d/home
-	xvitcoder
-0
-d/
-	home
-4
-d/home
-	xvitcoder
-0
-d/home/xvitcoder
-	.config
-1
-d/home/xvitcoder/.config
-	bin
-5
-d/home/xvitcoder/.config/bin
-	imft
-4
 d
 
 # Right window history (oldest to newest):
@@ -106,30 +106,36 @@ D/home/xvitcoder
 D
 
 # Command line history (oldest to newest):
-:sort
-:vs
+:set mouse=n
+:set mouse=v
 :view
-:set viewcolumns=*{name}..,6{}.
-:set viewcolumns=*{name}..,6{}.<cr>
 :q
-:touch test.java
-:touch test.html
-:touch Jenkinsfile
-:touch Dockerfile
-:touch test.ttf
-:touch test.php
-:touch test.py
-:open 
-:touch imft
+:filter *..
+:filter /.git/
+:filter
+:.,$!:q
+:ex
+:file
+:gruvbox.theme
+:touch gruvbox.theme
 
 # Search history (oldest to newest):
-/i
 
 # Prompt history (oldest to newest):
+pinstall-tools.sh
+pArch Linux.mp4
 
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/xvitcoder/Trash/000_JetBrainsMono-Bold-Italic.ttf
+""/home/xvitcoder/Trash/000_JetBrainsMono-Bold.ttf
+""/home/xvitcoder/Trash/000_JetBrainsMono-ExtraBold-Italic.ttf
+""/home/xvitcoder/Trash/000_JetBrainsMono-ExtraBold.ttf
+""/home/xvitcoder/Trash/000_JetBrainsMono-Italic.ttf
+""/home/xvitcoder/Trash/000_JetBrainsMono-Medium-Italic.ttf
+""/home/xvitcoder/Trash/000_JetBrainsMono-Medium.ttf
+""/home/xvitcoder/Trash/000_JetBrainsMono-Regular.ttf
 
 # Directory stack (oldest to newest):
 
@@ -188,6 +194,36 @@ t/home/xvitcoder/Trash/000_vifminfo
 	/home/xvitcoder/Workspace/test/vifminfo
 t/home/xvitcoder/Trash/000_vifmrc
 	/home/xvitcoder/Workspace/test/vifmrc
+t/home/xvitcoder/Trash/000_ranger
+	/home/xvitcoder/.config/ranger
+t/home/xvitcoder/Trash/000_imgt.sh
+	/home/xvitcoder/.config/bin/imgt.sh
+t/home/xvitcoder/Trash/000_vifmimg
+	/home/xvitcoder/vifmimg
+t/home/xvitcoder/Trash/000_.bash_history
+	/home/xvitcoder/.bash_history
+t/home/xvitcoder/Trash/000_.bash_logout
+	/home/xvitcoder/.bash_logout
+t/home/xvitcoder/Trash/000_.bash_profile
+	/home/xvitcoder/.bash_profile
+t/home/xvitcoder/Trash/000_.bashrc
+	/home/xvitcoder/.bashrc
+t/home/xvitcoder/Trash/000_JetBrainsMono-Bold-Italic.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-Bold-Italic.ttf
+t/home/xvitcoder/Trash/000_JetBrainsMono-Bold.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-Bold.ttf
+t/home/xvitcoder/Trash/000_JetBrainsMono-ExtraBold-Italic.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-ExtraBold-Italic.ttf
+t/home/xvitcoder/Trash/000_JetBrainsMono-ExtraBold.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-ExtraBold.ttf
+t/home/xvitcoder/Trash/000_JetBrainsMono-Italic.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-Italic.ttf
+t/home/xvitcoder/Trash/000_JetBrainsMono-Medium-Italic.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-Medium-Italic.ttf
+t/home/xvitcoder/Trash/000_JetBrainsMono-Medium.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-Medium.ttf
+t/home/xvitcoder/Trash/000_JetBrainsMono-Regular.ttf
+	/home/xvitcoder/Downloads/JetBrainsMono-Regular.ttf
 
 # State:
 f

@@ -12,15 +12,15 @@
 'c
 	/home/xvitcoder/.config
 	..
-1598603033
+1598787931
 'e
 	/etc
 	..
 1598603125
 'h
 	/home/xvitcoder/
-	..
-1598603033
+	.ideavimrc
+1598789006
 'i
 	/home/xvitcoder/.config/install
 	..
@@ -46,57 +46,60 @@ b/home/xvitcoder/Workspace/
 al
 q1
 v1
-oh
+ov
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/xvitcoder/Video
-	Arch Linux.mp4
-0
-d/home/xvitcoder
-	Screenshots
-16
-d/home/xvitcoder/Screenshots
-	2020-08-30-@09-58-53-scrot.png
-0
-d/home/xvitcoder
-	Downloads
-14
-d/home/xvitcoder/Downloads
-	IntelliJIDEA_ReferenceCard.pdf
-0
-d/home/xvitcoder/.config/install
-	install.sh
-20
-d/home/xvitcoder
-	Music
-15
-d/home/xvitcoder/Music
-	Hans Zimmer - INTERSTELLAR⎪12 STRING FINGERSTYLE GUITAR-IuEEEwgdAZs.mp3
-0
-d/home/xvitcoder
-	Music
-15
-d/home/xvitcoder/Music
-	Hans Zimmer - INTERSTELLAR⎪12 STRING FINGERSTYLE GUITAR-IuEEEwgdAZs.mp3
-0
-d/home/xvitcoder
-	Music
-15
-d/home/xvitcoder/Music
-	Hans Zimmer - INTERSTELLAR⎪12 STRING FINGERSTYLE GUITAR-IuEEEwgdAZs.mp3
-0
 d/home/xvitcoder
 	.config
 1
 d/home/xvitcoder/.config
-	cmus
-7
-d/home/xvitcoder/.config/cmus
-	command-history
-3
+	vifm
+26
+d/home/xvitcoder/.config/vifm
+	scripts
+1
+d/home/xvitcoder/.config/vifm/scripts
+	README
+1
+d/home/xvitcoder/.config/vifm
+	vifm-help.txt
+2
+d/home/xvitcoder/.config
+	install
+16
+d/home/xvitcoder
+	.config
+1
+d/home/xvitcoder/.config/install
+	media
+0
+d/home/xvitcoder/.config
+	WORKSTATION-SPECS.md
+28
+d/home/xvitcoder
+	.zshrc
+30
+d/home
+	xvitcoder
+0
+d/
+	mnt
+8
+d/mnt
+	..
+0
+d/
+	opt
+9
+d/opt
+	maven
+1
+d/home/xvitcoder
+	.ideavimrc
+20
 d
 
 # Right window history (oldest to newest):
@@ -106,18 +109,22 @@ D/home/xvitcoder
 D
 
 # Command line history (oldest to newest):
-:set mouse=n
-:set mouse=v
-:view
-:q
-:filter *..
-:filter /.git/
-:filter
-:.,$!:q
-:ex
-:file
-:gruvbox.theme
-:touch gruvbox.theme
+:!echo %c:p
+:echo %c:p
+:alacritty %c
+:!alacritty %c
+:!alacritty %f &
+:!print %d
+:!print %d | pbcopy
+:!print %d | xsel
+:touch GitStatus.sh
+:echo expand('%"c')
+:co,!
+:compare:
+:compare
+:,
+:ruleh
+:.!!
 
 # Search history (oldest to newest):
 

@@ -14,6 +14,7 @@ set nofollowlinks
 set runexec
 set timefmt=%y.%m.%d\ %H:%M:%S
 set wildmenu
+set wildstyle=popup
 set ignorecase
 set smartcase
 set nohlsearch
@@ -39,23 +40,6 @@ set findprg='find %s %a -print ,
             \ -prune'
 " ==========================================================================
 
-" Status Bar
-" ==========================================================================
-let &statusline = ''
-let &statusline .= '%1*'           " left separator
-let &statusline .= ' %t '          " file name
-let &statusline .= ''             " left separator
-let &statusline .= '%='            " fill the whole status line
-let &statusline .= ''             " right separator
-let &statusline .= ' %A '          " file attributes
-let &statusline .= '%4* %2*'       " right separator
-let &statusline .= ' '.$RIGHTS.' ' " user and group owners of the file
-let &statusline .= '%3* %1*'       " right separator
-let &statusline .= ' %5E '         " human readable cumulative file size
-let &statusline .= '%4* %2*'       " right separator
-let &statusline .= ' %d '          " file modification date and time
-" ==========================================================================
-
 
 " Icons
 " ==========================================================================
@@ -70,7 +54,7 @@ set classify+=' ::/^copying|license$/::, ::.git/,,*.git/::/'
 " book
 set classify+=' ::*.epub,,*.fb2,,*.djvu::, ::*.pdf::'
 
-" programming 
+" programming
 set classify+=' ::*.css::, ::*.js::, ::*.java::,  ::Jenkinsfile::,  ::Dockerfile::,  ::*.md::,
               \  ::*.php::, ::*.py::,  ::*.swift::,  ::*.rust::,
               \ ::*.htm,,*.html,,**.[sx]html,,*.xml::'
@@ -115,16 +99,35 @@ nnoremap <silent> S :sort<cr>
 " force file editing rather than opening it
 nnoremap E :edit<cr>
 
+" New tab
+map tn :tabnew<cr>
+
+" Close tab
+map tc :tabclose<cr>
+
 " toggle visibility of preview window
-nnoremap <silent> w :vs<cr>
+nnoremap <silent> <Space> :vs<cr>
 vnoremap <silent> w :only<cr> :view<cr>gv
 
 " PDF scroling
 map > :!vifmimg inc<CR>
 map < :!vifmimg dec<CR>
 
-noremap <silent> <C-S-Left> :vertical resize +1<CR>
-noremap <silent> <C-S-Right> :vertical resize -1<CR>
+" reload config
+nnoremap ,! :write | restart<cr>
+
+" Open console in current directory
+nnoremap ,t :!alacritty &<cr>
+
+
+" Yank current directory path into the clipboard
+" nnoremap yd :!echo %d | xclip %i<cr>
+
+" Yank current file path into the clipboard
+" nnoremap yf :!echo %c:p | xclip %i<cr>
+
+" Yank current file name into the clipboard
+" nnoremap yn :!echo %c:p | xclip %i<cr>
 " ==========================================================================
 
 
@@ -204,8 +207,8 @@ filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
 fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
           \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
           \*.as[fx]
-        \ vifmimg videopreview %px %py %pw %ph %c 
-        \ %pc 
+        \ vifmimg videopreview %px %py %pw %ph %c
+        \ %pc
         \ vifmimg clear
         " \ ffprobe -pretty %c 2>&1
 
@@ -252,4 +255,52 @@ fileviewer <font/*>
         \ vifmimg clear
 
 " ==========================================================================
+"
+
+" STATUS LINE "
+"""""""""""""""
+
+" COLORS "
+""""""""""
+
+" USER COLORS "
+"""""""""""""""
+highlight User1      ctermbg=214         ctermfg=232        cterm=none
+highlight User2      ctermbg=240          ctermfg=34         cterm=none
+highlight User3      ctermbg=242          ctermfg=15         cterm=none
+highlight User4      ctermbg=237          ctermfg=26         cterm=none
+highlight User5      ctermbg=23          ctermfg=magenta    cterm=none
+highlight User6      ctermbg=magenta     ctermfg=23         cterm=none
+highlight User7      ctermbg=15          ctermfg=34         cterm=none
+highlight User8      ctermbg=magenta     ctermfg=white      cterm=none
+highlight User9      ctermbg=242          ctermfg=15        cterm=none
+
+"""""""""""""""""
+"   SEGMENTS    "
+"""""""""""""""""
+
+" LEFT SEGMENT "
+""""""""""""""""
+let $CUR_DIR="%1* %t %2*"               " current dir
+let $CUR_FILE_SZ="%3* %E %4*"       " current file size
+
+" SEPARATOR "
+"""""""""""""
+let $SEPARATOR="%="                 " middle separator
+
+" RIGHT SEGMENT "
+"""""""""""""""""
+let $PERMS="%9* %A "            " perms
+let $USER="%1* %u "                 " user
+
+
+" GIT SUPPORT "
+"""""""""""""""
+" let $GIT="%5* %{system('sh ~/.config/vifm/scripts/GitStatus.sh')} %6*"
+
+
+" SET STATUSLINE "
+""""""""""""""""""
+" execute 'set' 'statusline="' . $CUR_DIR . $CUR_FILE_SZ . $GIT . $SEPARATOR . $PERMS . $USER .'"'
+execute 'set' 'statusline="' . $CUR_DIR . $CUR_FILE_SZ . $SEPARATOR . $PERMS . $USER .'"'
 

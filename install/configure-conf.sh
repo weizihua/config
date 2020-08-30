@@ -47,6 +47,9 @@ sudo chsh -s /bin/zsh $USER
 
 vboxmanage setproperty machinefolder ~/VirtualBox
 
+mkdir -p $HOME/.local/share/qutebrowser
+touch $HOME/.local/share/qutebrowser/blocked-hosts
+
 rm -rf $HOME/config
 cd $HOME 
 

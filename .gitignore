@@ -43,3 +43,7 @@ kdenliverc
 evolution/
 RawTherapee/
 vifm/vifminfo
+cmus/cache
+cmus/command-history
+cmus/lib.pl
+

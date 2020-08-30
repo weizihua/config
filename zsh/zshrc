@@ -79,22 +79,25 @@ export FONTPREVIEW_PREVIEW_TEXT="ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nno
 
 # ------------------------------
 
-
 # ------------------------------
 # Aliases
 # ------------------------------
 # Java
+# ------------------------------
 alias mvn-new="mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4"
 
 # Kubernetes
+# ------------------------------
 alias kube-current="kubectl config current-context"
 alias kube-info="kubectl cluster-info"
 alias k="kubectl"
 
+alias fm="sh ~/.local/bin/vifmrun"
 alias vim="nvim"
 alias vifm='sh ~/.local/bin/vifmrun'
 
 # Configuration Files
+# ------------------------------
 alias cfg-alacritty="cd ~/.config/alacritty/ && nvim ~/.config/alacritty/alacritty.yml"
 alias cfg-zsh="cd ~/.config/zsh/ && nvim ~/.config/zsh/zshrc"
 alias cfg-vim="cd ~/.config/nvim/ && nvim init.vim"
@@ -114,26 +117,32 @@ alias reload-cfg-zsh="source ~/.zshrc"
 alias intellij-cheatsheet="evince ~/Workspace/Documentation/IntelliJIDEA_ReferenceCard.pdf"
 
 # Others
+# ------------------------------
 alias h="hostname"
 alias tree="tree -C"
 alias http-server="python -m SimpleHTTPServer 5000"
 
 # Vim
+# ------------------------------
 alias notes="cd ~/Notes && vim -c VimwikiUISelect"
 alias notes-personal='cd ~/Notes && vim -c "call vimwiki#base#goto_index(1)"'
 alias notes-work='cd ~/Notes && vim -c "call vimwiki#base#goto_index(2)"'
 
 # Docker
+# ------------------------------
 alias docker-clean="docker system prune -a"
 
 # Kubernetes
+# ------------------------------
 
 # Pacman
+# ------------------------------
 alias pacman-list="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 alias pacman-count="sudo ls /var/cache/pacman/pkg | wc -l"
 alias pacman-size="du -sh /var/cache/pacman/pkg"
 
 # Git
+# ------------------------------
 alias gs="git status"
 alias gb="fgb"
 alias gbm="git checkout master"
@@ -158,6 +167,7 @@ alias gmm="git merge master"
 alias gmd="git merge develop"
 
 # get fastest mirrors
+# ------------------------------
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
@@ -175,6 +185,7 @@ alias jctl="journalctl -p 3 -xb"
 
 
 # youtube-dl
+# ------------------------------
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
 alias yta-flac="youtube-dl --extract-audio --audio-format flac "
@@ -187,17 +198,19 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
 alias catc="bat"
 
-alias trash-clear="rm -vrf ~/Trash/*"
+alias trash-clear="rm -vrf ~/.trash/*"
 
 
 # SSH
 # ------------------------------
 
 # Bookmarks
+# ------------------------------
 alias config='cd ~/.config'
 alias cf='cd ~/.config'
 alias ci='cd ~/.config/install'
-alias trash="cd ~/Trash"
+alias trash="cd ~/.trash"
+
 
 # ------------------------------
 # Initialization code

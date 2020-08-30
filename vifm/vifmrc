@@ -6,7 +6,7 @@ colorscheme = gruvbox
 set millerview
 set vicmd=nvim
 set trash
-set trashdir=~/Trash
+set trashdir=~/.trash
 set undolevels=1000
 set dotdirs=
 set vimhelp
@@ -211,7 +211,6 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
         \ %pc
         \ vifmimg clear
         " \ ffprobe -pretty %c 2>&1
-
 
 
 " PDF

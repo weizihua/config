@@ -116,6 +116,8 @@ map < :!vifmimg dec<CR>
 " reload config
 nnoremap ,! :write | restart<cr>
 
+nnoremap ,t :!alacritty &<cr>
+
 nnoremap * ggVG
 
 " Yank current directory path into the clipboard

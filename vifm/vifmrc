@@ -116,9 +116,7 @@ map < :!vifmimg dec<CR>
 " reload config
 nnoremap ,! :write | restart<cr>
 
-" Open console in current directory
-nnoremap ,t :!alacritty &<cr>
-
+nnoremap * ggVG
 
 " Yank current directory path into the clipboard
 " nnoremap yd :!echo %d | xclip %i<cr>

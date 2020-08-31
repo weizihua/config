@@ -183,6 +183,8 @@ alias merge='xrdb -merge ~/.Xresources'
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
+alias weather="weather --country Moldova --city Cahul"
+
 
 # youtube-dl
 # ------------------------------

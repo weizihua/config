@@ -18,6 +18,8 @@ nnoremap <localleader>q :x<CR>
 " }}}
 "
 
+let g:default_browser = "qutebrowser"
+
 " ===== Neovim Providers ===== {{{
 "
 " Disable perl provider
@@ -30,7 +32,7 @@ let g:loaded_python_provider = 0
 let g:loaded_ruby_provider = 0
 
 " Disable npm provider
-let g:loaded_node_provider = 0
+" let g:loaded_node_provider = 1
 
 " }}}
 "
@@ -333,14 +335,20 @@ nnoremap >wm <Plug>VimwikiUISelect
 " ===== Instant Markdown Preview ===== {{{
 "let g:instant_markdown_slow = 1
 let g:instant_markdown_autostart = 0
+let g:instant_markdown_autoscroll = 1
+let g:instant_markdown_browser = g:default_browser
+let g:instant_markdown_port = 1111
 "let g:instant_markdown_open_to_the_world = 1
 "let g:instant_markdown_allow_unsafe_content = 1
 "let g:instant_markdown_allow_external_content = 0
 "let g:instant_markdown_mathjax = 1
+"let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
 " }}}
 
 " ===== File type settings ===== {{{
 au BufRead,BufNewFile *.md setlocal wrap linebreak nolist
+
+" command! MDPreview :15Term grip README.md<CR> OpenURL http://localhost:6419<CR>
 " }}}
 
 " ===== FZF ===== {{{
@@ -806,6 +814,15 @@ map <leader>vs :VsplitVifm<CR>
 map <leader>sp :SplitVifm<CR>
 map <leader>dv :DiffVifm<CR>
 map <leader>tv :TabVifm<CR>
+" }}}
+"
+
+
+" ===== Open URL ===== {{{
+let g:open_url_browser_default = "qutebrowser"
+" :OpenURL <url>
+" :OpenIn <browser> <url>
+" :OpenSearchURL <engine> <url>
 " }}}
 "
 

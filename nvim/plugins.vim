@@ -69,6 +69,7 @@ Plug 'gyim/vim-boxdraw'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ap/vim-css-color'
 Plug 'vifm/vifm.vim'
+Plug 'dhruvasagar/vim-open-url'
 call plug#end()
 
 

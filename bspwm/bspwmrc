@@ -4,7 +4,7 @@
 sxhkd &
 
 # Polybar
-polybar example &
+$HOME/.config/polybar/launch.sh
 
 # Picom
 picom --config ~/.picom.conf &

@@ -22,6 +22,9 @@ mkdir -p $HOME/.k9s
 func_print "Installing neovim python provider" 3
 python -m pip install --user --upgrade pynvim
 
+func_print "Installing neovim node provider" 3
+sudo npm install -g neovim
+
 func_print "Installing tmux plugin manager" 3
 git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 
@@ -36,6 +39,7 @@ ln -s --relative $HOME/.config/X/xprofile $HOME/.xprofile
 ln -s --relative $HOME/.config/X/xresources $HOME/.Xresources
 ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
 ln -s --relative $HOME/.config/picom/picom.conf $HOME/.picom.conf
+ln -s --relative $HOME/.config/streamlink/streamlinkrc $HOME/.streamlinkrc
 ln $HOME/.config/k9s/skin.yml $HOME/.k9s/skin.yml
 
 func_print "Creating application links" 3

@@ -44,8 +44,9 @@ func_iterate_install "${packages[@]}"
 func_print "Installing software for category 'Multimedia'" 5
 
 packages=(
-vlc
 mplayer
+mpv
+streamlink
 simplescreenrecorder
 flameshot
 imagemagick
@@ -68,7 +69,6 @@ func_print "Installing software for category 'Office'" 5
 
 packages=(
 libreoffice
-freeoffice
 evince
 evolution
 zathura
@@ -148,6 +148,8 @@ nmap
 net-tools
 youtube-dl
 reflector
+pass
+figlet
 )
 
 func_iterate_install "${packages[@]}"

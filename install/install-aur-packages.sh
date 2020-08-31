@@ -23,6 +23,7 @@ golangci-lint-bin
 apvlv
 pv
 poppler
+freeoffice
 )
 
 func_iterate_install_aur "${packages[@]}"

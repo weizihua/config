@@ -17,6 +17,7 @@ k9s
 go
 go-tools
 nodejs
+npm
 ansible
 helm
 vagrant
@@ -33,6 +34,7 @@ kubectl
 jq
 highlight
 httpie
+s3cmd
 )
 
 func_iterate_install "${packages[@]}"

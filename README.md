@@ -5,6 +5,7 @@ Arch Linux Config Files
 - run `sh install/install.sh`
 - reboot
 - run `sh install/run-after.sh`
+- Run something else
 
 # problems
 - yay install asks confirmation

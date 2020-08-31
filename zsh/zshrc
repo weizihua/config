@@ -93,6 +93,7 @@ alias kube-info="kubectl cluster-info"
 alias k="kubectl"
 
 alias fm="sh ~/.local/bin/vifmrun"
+alias f="fzf"
 alias vim="nvim"
 alias vifm='sh ~/.local/bin/vifmrun'
 
@@ -221,7 +222,7 @@ alias trash="cd ~/.trash"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # ! IMPORTTANT, install ripgrep tool
 # export FZF_DEFAULT_OPTS='--height=70% --preview="ccat {}" --preview-window=right:40%:wrap'
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" --glob "!*.class" --glob "!target/*" --glob "!.idea/*" --glob "!.settings/*" --glob "!.DS_Store"'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.npm/*" --glob "!.git/*" --glob "!*.class" --glob "!target/*" --glob "!.idea/*" --glob "!.settings/*" --glob "!.DS_Store"'
 
 
 # ------------------------------

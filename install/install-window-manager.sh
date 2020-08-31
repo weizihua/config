@@ -9,7 +9,7 @@ func_print "Installation of window manager software" 4
 ###############################################################################
 
 packages=(
-xorg-init
+xorg-xinit
 xorg-server
 xorg-xmodmap
 xorg-xrandr
@@ -27,7 +27,7 @@ lightdm
 lightdm-webkit2-greeter
 papirus-icon-theme
 materia-gtk-theme
-archlinux-background
+archlinux-wallpaper
 thunar
 thunar-archive-plugin
 thunar-volman

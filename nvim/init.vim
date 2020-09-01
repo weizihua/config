@@ -581,6 +581,7 @@ nnoremap <silent><leader>gb :call fzf#run({
 nnoremap \gg :GitGutterSignsToggle<CR>
 nnoremap \gl :GitGutterLineHighlightsToggle<CR>
 " }}}
+"
 
 " ===== Tmux ===== {{{
 " tmux-navigation

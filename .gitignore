@@ -1,49 +1,42 @@
-# All not needed apps
-configstore/
-htop/
-mc/
-karabiner/
-lf/
-oni/
-kitty/
-nvim/.netrwhist
-pgcli/
-neofetch/
-coc/
-mutt/
-msmtp/
-gcloud/
-htop/
-pcmanfm/
-libfm/
-VirtualBox/
-yay/
-vimb/
-libreoffice/
-tmux/
-JetBrains/
-Dharkael/
-nitrogen/
-pulse/
-pulseaudio-ctl/
-GIMP/
-Thunar/
-gtk-2.0/
-inkscape/
-vlc/
-xfce4/
-dconf/
-Kingsoft/
-Trolltech.conf
-Slack/
-autostart/
-skypeforlinux/
-QtProject.conf
-kdenliverc
-evolution/
-RawTherapee/
-vifm/vifminfo
+# Ignore everything
+*
+
+# But descend into directories
+!*/
+
+# Recursively allow files under subtree
+!/alacritty
+!/X
+!/bin
+!/bspwm
+
+# Allow cmus dir, but ignore some inner files
+!/cmus
 cmus/cache
 cmus/command-history
 cmus/lib.pl
 
+!/dunst
+!/git
+!/gtk-3.0
+!/idea
+!/install
+!/k9s
+!/nvim
+!/picom
+!/polybar
+!/qutebrowser
+!/streamlink
+!/sxhkd
+!/sxiv
+!/tmux
+
+# Allow vifm dir, but ignore some inner files
+!/vifm
+vifminfo
+
+!/zsh
+!/*.md
+!/betterlockscreenrc
+!/mimeapps.list
+!.gitignore

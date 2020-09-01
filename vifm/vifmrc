@@ -4,6 +4,7 @@ colorscheme = gruvbox
 " Options
 " ==========================================================================
 set millerview
+" set milleroptions+=rpreview:all
 set vicmd=nvim
 set trash
 set trashdir=~/.trash
@@ -83,12 +84,14 @@ set classify+=' ::*.doc,,*.docx::, ::*.xls,,*.xls[mx]::,
 
 " Bookmarks
 " ==========================================================================
-mark h ~/
-mark c ~/.config
-mark i ~/.config/install
-mark t /tmp
-mark u /usr
-mark e /etc
+" bmark h ~/
+bmark! ~/ h
+bmark! ~/Notes n
+bmark! ~/.config c
+bmark! ~/.config/install i
+bmark! /tmp t
+bmark! /usr u
+bmark! /etc e
 " ==========================================================================
 
 " Mappings
@@ -116,9 +119,48 @@ map < :!vifmimg dec<CR>
 " reload config
 nnoremap ,! :write | restart<cr>
 
-nnoremap ,t :!alacritty &<cr>
+nnoremap <space>t :!alacritty &<cr>
 
 nnoremap * ggVG
+
+" toggle notes
+nnoremap <silent> <C-x>n  : set nomillerview | vsplit | bmgo n<cr>
+nnoremap <silent> <C-x>N  : set millerview | only | bmgo h<cr>
+
+nnoremap <silent> <space>ww :only<cr> :view<cr>gv
+
+nnoremap <silent> <space>wp  : if system('echo '.&milleroptions.' | grep rpreview:all')
+                    \|     set milleroptions-=rpreview:all
+                    \| else
+                    \|     set milleroptions+=rpreview:all
+                    \| endif<cr>
+
+
+nnoremap <silent> <space>wm  : if system('echo '.&millerview.' | grep 0')
+                    \|     set millerview
+                    \| else
+                    \|     set nomillerview
+                    \| endif<cr>
+
+nnoremap <silent> <space>wl  : if system('echo '.&lsview.' | grep 0')
+                    \|     set nomillerview
+                    \|     set lsview
+                    \| else
+                    \|     set nolsview
+                    \| endif<cr>
+
+nnoremap <silent> <space>ws  : split<cr>
+nnoremap <silent> <space>wv  : vsplit<cr>
+nnoremap <silent> <space>wo  : only<cr>
+
+nnoremap <silent> <A-h>  : wincmd -<cr>
+nnoremap <silent> <A-l>  : wincmd +<cr>
+nnoremap <silent> <A-j>  : wincmd <<cr>
+nnoremap <silent> <A-k>  : wincmd ><cr>
+nnoremap <silent> <C-k>  : wincmd K<cr>
+nnoremap <silent> <C-j>  : wincmd J<cr>
+nnoremap <silent> <C-h>  : wincmd H<cr>
+nnoremap <silent> <C-l>  : wincmd L<cr>
 
 " Yank current directory path into the clipboard
 " nnoremap yd :!echo %d | xclip %i<cr>

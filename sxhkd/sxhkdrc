@@ -181,6 +181,10 @@ super + alt + ctrl + 0
 # Make screenshot
 super + alt + ctrl + 2
     $HOME/'.local/bin/dmenu-scrot.sh'
+
+# Pass
+super + alt + ctrl + 8
+    passmenu -fn 'JetBrains Mono:Regular:size=14' -p '🡲'
 # --------------------------
 
 

@@ -636,6 +636,10 @@ key_bindings:
   - { key: H,        mods: Alt,     chars: "\x1bh"                       }
   - { key: L,        mods: Alt,     chars: "\x1bl"                       }
 
+  - { key: Return,   mods: Shift,   chars: "\x1b[13;2u" }
+  - { key: Return,   mods: Control, chars: "\x1b[13;5u" }
+
+
   # (Windows, Linux, and BSD only)
   #- { key: V,        mods: Control|Shift,           action: Paste            }
   #- { key: C,        mods: Control|Shift,           action: Copy             }

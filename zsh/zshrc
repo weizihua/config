@@ -126,12 +126,6 @@ alias h="hostname"
 alias tree="tree -C"
 alias http-server="python -m SimpleHTTPServer 5000"
 
-# Vim
-# ------------------------------
-alias notes="cd ~/Notes && vim -c VimwikiUISelect"
-alias notes-personal='cd ~/Notes && vim -c "call vimwiki#base#goto_index(1)"'
-alias notes-work='cd ~/Notes && vim -c "call vimwiki#base#goto_index(2)"'
-
 # Docker
 # ------------------------------
 alias docker-clean="docker system prune -a"
@@ -214,10 +208,11 @@ alias trash-clear="rm -vrf ~/.trash/*"
 
 # Bookmarks
 # ------------------------------
-alias config='cd ~/.config'
-alias cf='cd ~/.config'
-alias ci='cd ~/.config/install'
-alias trash="cd ~/.trash"
+alias cdconfig='cd ~/.config'
+alias cdinstall='cd ~/.config/install'
+alias cdnotes='cd ~/Notes'
+alias cdpassword-store='cd ~/.password-store'
+alias cdtrash="cd ~/.trash"
 
 
 # ------------------------------

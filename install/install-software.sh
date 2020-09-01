@@ -138,6 +138,7 @@ cronie
 gvfs
 xsel
 dnsutils
+nfs-utils
 iotop
 iftop
 nmon

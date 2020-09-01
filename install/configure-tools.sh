@@ -29,6 +29,9 @@ cd vifmimg
 cp vifmimg $HOME/.local/bin
 cp vifmrun $HOME/.local/bin
 
+# Add default helm repository
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+
 ###############################################################################
 
 func_print "Configuration Done" 11

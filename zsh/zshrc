@@ -16,7 +16,7 @@ ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 #COMPLETION_WAITING_DOTS="true"
@@ -180,6 +180,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 alias merge='xrdb -merge ~/.Xresources'
+
+alias mail='neomutt'
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"

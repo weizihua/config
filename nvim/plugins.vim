@@ -70,6 +70,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ap/vim-css-color'
 Plug 'vifm/vifm.vim'
 Plug 'dhruvasagar/vim-open-url'
+Plug 'neomutt/neomutt.vim'
 call plug#end()
 
 

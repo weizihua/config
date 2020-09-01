@@ -25,7 +25,11 @@ cmus/lib.pl
 !/nvim
 !/picom
 !/polybar
+
+# Allow vifm dir, but ignore some inner files
 !/qutebrowser
+qutebrowser/autoconfig.yml
+
 !/streamlink
 !/sxhkd
 !/sxiv

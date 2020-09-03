@@ -1,30 +1,33 @@
 #!/bin/bash
-#changelog
-#v0.3
-#added 1. Notifications 2.unique names for each type (for quick launch) 3.better photo editor (pinta) 4.dmenu title
-#v0.4
-#1.Added variable for notification timeouts. 2. Show link in notification
-
 
 IMG_PATH=$HOME'/Screenshots'
-UL=fb
 EDIT=gimp
+CLIPBOARD='xclip -selection clipboard -target image/png -i'
 TIME=3000 #Miliseconds notification should remain visible
 
+prog="Fullscreen
+Section"
 
-prog="1.fullscreen
-2.delayed_fullscreen
-3.section
-4.edit_fullscreen"
+prog_args="Capture
+Edit
+Clipboard"
 
-cmd=$(dmenu -fn 'JetBrains Mono:Regular:size=14' -p '🡲' <<< "$prog")
+cmd_prog=$(dmenu -fn 'JetBrains Mono:Regular:size=14' -p 'Screenshot' <<< "$prog")
+cmd_args=$(dmenu -fn 'JetBrains Mono:Regular:size=14' -p 'Action' <<< "$prog_args")
+
+askArgruments () {
+    case ${cmd_args%% *} in
+        Capture) scrot $1 '%d.%m.%Y-%H:%M:%S-$wx$h.png' -q 100  && notify-send -u low -t $TIME 'Scrot' 'Fullscreen shot taken and saved'  ;;
+        Edit) scrot $1 '%d.%m.%Y-%H:%M:%S-$wx$h.png' -q 100 -e "$EDIT \$f"  && notify-send -u low -t $TIME 'Scrot' 'Fullscreen shot edited and saved' ;;
+        Clipboard) scrot $1 '%d.%m.%Y-%H:%M:%S-$wx$h.png' -q 100 -e "$CLIPBOARD \$f; rm -rf \$f"  && notify-send -u low -t $TIME 'Scrot' 'Fullscreen shot copied to clipboard' ;;
+    esac 
+}
 
 cd $IMG_PATH
-case ${cmd%% *} in
-
-	1.fullscreen)	scrot -d 1 '%Y-%m-%d-@%H-%M-%S-scrot.png'  && notify-send -u low -t $TIME 'Scrot' 'Fullscreen taken and saved'  ;;
-	2.delayed_fullscreen)	scrot -d 4 '%Y-%m-%d-@%H-%M-%S-scrot.png'  && notify-send -u low -t $TIME 'Scrot' 'Fullscreen Screenshot saved'    ;;
-	3.section)	scrot -s '%Y-%m-%d-@%H-%M-%S-scrot.png' && notify-send -u low -t $TIME 'Scrot' 'Screenshot of section saved'    ;;
-	4.edit_fullscreen)	scrot -d 1 '%Y-%m-%d-@%H-%M-%S-scrot.png' -e "$EDIT \$f"  && notify-send -u low -t $TIME 'Scrot' 'Screenshot edited and saved' ;;
-  	*)		exec "'${cmd}'"  ;;
+case ${cmd_prog%% *} in
+	Fullscreen)	 
+        askArgruments "-d 1" ;;
+    Section)
+        askArgruments "-s" ;;
 esac
+

@@ -10,7 +10,9 @@
     branch = auto
     interactive = auto
     diff = auto
+
 [credential]
 	helper = cache --timeout=2500000
+
 [push]
 	default = simple

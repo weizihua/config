@@ -1,16 +1,19 @@
 # Styles...
 foreground: &foreground "#f8f8f2"
-background: &background "#282828"
+background: &background "#aa282828"
 current_line: &current_line "#44475a"
 selection: &selection "#44475a"
 comment: &comment "#6272a4"
 cyan: &cyan "#8be9fd"
-green: &green "#50fa7b"
+green: &green "#98971a"
 orange: &orange "#ffb86c"
 pink: &pink "#ff79c6"
 purple: &purple "#bd93f9"
-red: &red "#ff5555"
-yellow: &yellow "#f1fa8c"
+red: &red "#cc241d"
+yellow: &yellow "#d79921"
+dark_yellow: &dark_yellow "#999900"
+blue: &blue "#556a7d"
+light_blue: &light_blue "#7AA6DA"
 
 # Skin...
 k9s:
@@ -18,10 +21,10 @@ k9s:
   body:
     fgColor: *foreground
     bgColor: *background
-    logoColor: *purple
+    logoColor: *green
   # ClusterInfoView styles.
   info:
-    fgColor: *pink
+    fgColor: *green
     sectionColor: *foreground
   # Dialog styles.
   dialog:
@@ -40,19 +43,19 @@ k9s:
       focusColor: *current_line
     menu:
       fgColor: *foreground
-      keyColor: *pink
+      keyColor: *blue
       # Used for favorite namespaces
-      numKeyColor: *pink
+      numKeyColor: *blue
     # CrumbView attributes for history navigation.
     crumbs:
       fgColor: *foreground
-      bgColor: *current_line
+      bgColor: *green
       activeColor: *current_line
     # Resource status and update styles
     status:
-      newColor: *cyan
-      modifyColor: *purple
-      addColor: *green
+      newColor: *blue
+      modifyColor: *yellow
+      addColor: *light_blue
       errorColor: *red
       highlightcolor: *orange
       killColor: *comment
@@ -61,9 +64,9 @@ k9s:
     title:
       fgColor: *foreground
       bgColor: *current_line
-      highlightColor: *orange
-      counterColor: *purple
-      filterColor: *pink
+      highlightColor: *dark_yellow
+      counterColor: *dark_yellow
+      filterColor: *foreground
   views:
     # Charts skins...
     charts:
@@ -102,5 +105,5 @@ k9s:
       fgColor: *foreground
       bgColor: *background
       indicator:
-        fgColor: *foreground
-        bgColor: *purple
+        fgColor: *background
+        bgColor: *blue

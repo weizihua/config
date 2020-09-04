@@ -32,6 +32,7 @@ cp vifmrun $HOME/.local/bin
 # Add some helm repository
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo add elastic https://helm.elastic.co
 
 ###############################################################################
 

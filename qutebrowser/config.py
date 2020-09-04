@@ -11,7 +11,7 @@ base03 = "#665c54"
 base04 = "#bdae93"
 base05 = "#d5c4a1"
 base06 = "#ebdbb2"
-base07 = "#fbf1c7"
+base07 = "#F5F5F5"
 base08 = "#fb4934"
 base09 = "#fe8019"
 base0A = "#fabd2f"
@@ -179,7 +179,7 @@ c.colors.statusbar.insert.bg = '#b8bb26'
 c.colors.statusbar.passthrough.fg = base00
 
 # Background color of the statusbar in passthrough mode.
-c.colors.statusbar.passthrough.bg = base0C
+c.colors.statusbar.passthrough.bg = base0F
 
 # Foreground color of the statusbar in private browsing mode.
 c.colors.statusbar.private.fg = base00
@@ -203,16 +203,16 @@ c.colors.statusbar.command.private.bg = base00
 c.colors.statusbar.caret.fg = base00
 
 # Background color of the statusbar in caret mode.
-c.colors.statusbar.caret.bg = base0E
+c.colors.statusbar.caret.bg = base0A
 
 # Foreground color of the statusbar in caret mode with a selection.
 c.colors.statusbar.caret.selection.fg = base00
 
 # Background color of the statusbar in caret mode with a selection.
-c.colors.statusbar.caret.selection.bg = base0D
+c.colors.statusbar.caret.selection.bg = base0A
 
 # Background color of the progress bar.
-c.colors.statusbar.progress.bg = base0D
+c.colors.statusbar.progress.bg = base0A
 
 # Default foreground color of the URL in the statusbar.
 c.colors.statusbar.url.fg = base05
@@ -225,11 +225,11 @@ c.colors.statusbar.url.hover.fg = base05
 
 # Foreground color of the URL in the statusbar on successful load
 # (http).
-c.colors.statusbar.url.success.http.fg = base0C
+c.colors.statusbar.url.success.http.fg = base05
 
 # Foreground color of the URL in the statusbar on successful load
 # (https).
-c.colors.statusbar.url.success.https.fg = base0B
+c.colors.statusbar.url.success.https.fg = base05
 
 # Foreground color of the URL in the statusbar when there's a warning.
 c.colors.statusbar.url.warn.fg = base0E
@@ -368,6 +368,8 @@ config.bind("<Space>wo", "window-only")
 config.bind("<Space>to", "tab-only")
 config.bind("<Space>tp", "tab-pin")
 config.bind("<Space>tc", "tab-clone")
+
+config.bind('<Ctrl-v>', 'leave-mode', mode='passthrough')
 
 
 #  config.bind("<Meta-w>", "tab-close", mode="normal")

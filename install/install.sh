@@ -14,7 +14,7 @@ mkdir $HOME/Desktop
 mkdir $HOME/Screenshots
 mkdir $HOME/Video
 mkdir $HOME/Music
-mkdir $HOME/Photo
+mkdir $HOME/Photos
 mkdir $HOME/.trash
 # ---------------
 

@@ -9,8 +9,14 @@ xset r rate 200 100
 # Remap caps lock to escape
 setxkbmap -option caps:escape
 
+# Remap alt to win
+setxkbmap -option altwin:swap_alt_win
+
 # Swap mouse for left handed
 xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
+
+# Increase the mouse wheel speed (conf file is in ~/.imwheelrc)
+imwheel
 
 export PATH="$PATH:$HOME/.local/bin"
 

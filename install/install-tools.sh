@@ -24,7 +24,7 @@ pip install mdv
 # Speed test
 pip install speedtest-cli
 
-# Speed yaml processor
+# yaml processor
 pip install yq
 
 func_print "Installing nodejs tools" 5

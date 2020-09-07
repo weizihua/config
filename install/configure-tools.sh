@@ -13,19 +13,19 @@ func_print "Applying tools configuration" 4
 ###############################################################################
 
 # Install fontpreview
-git clone https://github.com/sdushantha/fontpreview
-cd fontpreview
+git clone https://github.com/sdushantha/fontpreview /tmp/fontpreview
+cd /tmp/fontpreview
 sudo make install
 
 # Install epub thumbnailer
 pip install Pillow
-git clone https://github.com/marianosimone/epub-thumbnailer
-cd epub-thumbnailer
+git clone https://github.com/marianosimone/epub-thumbnailer /tmp/epub-thumbnailer
+cd /tmp/epub-thumbnailer
 sudo python install.py install
 
 # Install vifming
-git clone https://github.com/cirala/vifmimg
-cd vifmimg
+git clone https://github.com/cirala/vifmimg /tmp/vifmimg
+cd /tmp/vifmimg
 cp vifmimg $HOME/.local/bin
 cp vifmrun $HOME/.local/bin
 

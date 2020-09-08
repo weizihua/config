@@ -16,6 +16,7 @@ archlinux-wallpaper
 slack-desktop
 skypeforlinux-stable-bin
 kops
+kind
 arch-silence-grub-theme-git
 betterlockscreen
 sxiv-rifle

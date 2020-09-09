@@ -219,8 +219,8 @@ XF86Audio{Raise,Lower}Volume
     pulseaudio-ctl {up,down} 2
 
 # Change volume
-{f11,f12}
-    pulseaudio-ctl {up,down} 2
+{F11,F12}
+    pulseaudio-ctl {down,up} 2
 
 # Mute volume
 super + f10

@@ -40,6 +40,7 @@ ln -s --relative $HOME/.config/X/xresources $HOME/.Xresources
 ln -s --relative $HOME/.config/git/gitconfig $HOME/.gitconfig
 ln -s --relative $HOME/.config/picom/picom.conf $HOME/.picom.conf
 ln -s --relative $HOME/.config/streamlink/streamlinkrc $HOME/.streamlinkrc
+ln -s --relative $HOME/.config/imwheel/imwheelrc $HOME/.imwheelrc
 ln $HOME/.config/k9s/skin.yml $HOME/.k9s/skin.yml
 
 func_print "Creating application links" 3

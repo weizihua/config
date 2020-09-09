@@ -223,6 +223,6 @@ XF86Audio{Raise,Lower}Volume
     pulseaudio-ctl {down,up} 2
 
 # Mute volume
-super + f10
+F10
     pulseaudio-ctl mute
 # --------------------------

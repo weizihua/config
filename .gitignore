@@ -6,3 +6,9 @@ helm/
 VirtualBox/
 vifminfo
 qutebrowser/autoconfig.yml
+Thunar/
+dconf/
+libfm/
+pcmanfm/
+xfce4/
+

@@ -29,9 +29,7 @@ imwheel
 papirus-icon-theme
 materia-gtk-theme
 archlinux-wallpaper
-thunar
-thunar-archive-plugin
-thunar-volman
+nautilus
 arandr
 lxappearance
 lxrandr

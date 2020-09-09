@@ -159,7 +159,7 @@ super + shift + e
 
 # Start Thunar UI file manager
 super + alt + shift + Return
-    thunar
+    nautilus
 
 # Start IntelliJ Idea
 super + shift + i

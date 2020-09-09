@@ -61,11 +61,11 @@
 `passwd`
 
 #### 17. Mount efi partition
-`mkdir /boot/efi`  
-`mount /dev/sda1 /boot/efi`
+`mkdir /boot/EFI`  
+`mount /dev/sda1 /boot/EFI`
 
 #### 18. Install grub
-`grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB`
+`grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB`
 
 #### 19. Generate grub config
 `grub-mkconfig -o /boot/grub/grub.cfg`

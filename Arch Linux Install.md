@@ -74,3 +74,21 @@
 `exit`  
 `reboot`
 
+---
+
+## Apply configuration
+
+#### 1. Clone the config repo
+`git clone https://github.com/xvitcoder/config`
+
+#### 2. Cd to install directory
+`cd config/install`
+
+#### 3. Run the configuration
+`sh install.sh`
+
+#### 4. Reboot
+
+#### 5. After booting into the UI, run the `post-install.sh` script
+`cd .config/install`  
+`sh post-install.sh`

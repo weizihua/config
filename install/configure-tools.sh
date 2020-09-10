@@ -34,6 +34,7 @@ helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo add elastic https://helm.elastic.co
 helm repo add jenkinsci https://charts.jenkins.io
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
 ###############################################################################
 

@@ -1,5 +1,7 @@
 # Arch linux installation instruction
 
+## Install base system
+
 #### 1. Check if EFI is supported
 `ls /sys/firware/efi/efivars`
 > If the directory contains files, then the system supports EFI

@@ -97,7 +97,7 @@ alias kube-current="kubectl config current-context"
 alias kube-info="kubectl cluster-info"
 alias k="kubectl"
 
-alias fm="sh ~/.local/bin/vifmrun"
+alias fm="sh ~/.local/bin/vifmrun ."
 alias f="fzf"
 alias vim="nvim"
 alias vifm='sh ~/.local/bin/vifmrun'

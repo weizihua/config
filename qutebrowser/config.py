@@ -315,6 +315,7 @@ c.url.searchengines = {
         'yt': 'https://www.youtube.com/results?search_query={}',
         'st': 'https://stackoverflow.com/search?q={}',
         'aw': 'https://wiki.archlinux.org/?search={}',
+        'docker': 'https://hub.docker.com/search?q={}&type=image',
 }
 
 c.completion.height = '35%'

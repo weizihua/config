@@ -35,6 +35,8 @@ helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo add elastic https://helm.elastic.co
 helm repo add jenkinsci https://charts.jenkins.io
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo add openebs https://openebs.github.io/charts
+
 
 ###############################################################################
 

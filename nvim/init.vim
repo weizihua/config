@@ -347,6 +347,8 @@ let g:instant_markdown_port = 1111
 
 " ===== File type settings ===== {{{
 au BufRead,BufNewFile *.md setlocal wrap linebreak nolist
+nnoremap <leader>pp :InstantMarkdownPreview<CR>
+nnoremap <leader>ps :InstantMarkdownStop<CR>
 
 " command! MDPreview :15Term grip README.md<CR> OpenURL http://localhost:6419<CR>
 " }}}

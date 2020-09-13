@@ -35,6 +35,7 @@ jq
 highlight
 httpie
 s3cmd
+postgresql-client
 )
 
 func_iterate_install "${packages[@]}"

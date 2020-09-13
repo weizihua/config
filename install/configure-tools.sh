@@ -36,6 +36,13 @@ helm repo add elastic https://helm.elastic.co
 helm repo add jenkinsci https://charts.jenkins.io
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo add openebs https://openebs.github.io/charts
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+
+# Install istio
+curl -L https://istio.io/downloadIstio | sh -
+mv istio* $HOME/.local/istio
+cp $HOME/.local/istio/bin/istioctl $HOME/.local/bin
 
 
 ###############################################################################

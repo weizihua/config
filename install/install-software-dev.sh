@@ -22,6 +22,7 @@ ansible
 helm
 vagrant
 jdk-openjdk
+visualvm
 maven
 gradle
 docker
@@ -36,6 +37,7 @@ highlight
 httpie
 s3cmd
 postgresql-client
+pygmentize
 )
 
 func_iterate_install "${packages[@]}"

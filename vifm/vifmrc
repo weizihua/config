@@ -162,6 +162,12 @@ nnoremap <silent> <C-j>  : wincmd J<cr>
 nnoremap <silent> <C-h>  : wincmd H<cr>
 nnoremap <silent> <C-l>  : wincmd L<cr>
 
+command! FZFlocate :set noquickview | :execute 'goto' fnameescape(term('locate $HOME | fzf --height 10 2>/dev/tty'))
+command! FZFfind :set noquickview | :execute 'goto' fnameescape(term('find | fzf 2>/dev/tty'))
+
+nnoremap <c-g> :FZFlocate<cr>
+nnoremap <c-f> :FZFfind<cr>
+
 " Yank current directory path into the clipboard
 " nnoremap yd :!echo %d | xclip %i<cr>
 
@@ -278,6 +284,10 @@ fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm
         \ vifmimg draw %px %py %pw %ph %c
         \ %pc
         \ vifmimg clear
+
+filetype *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.gif,*.ico
+       \ {View with sxiv}
+       \ sxiv %c %i &,
 
 fileviewer *.gif
         \ vifmimg gifpreview %px %py %pw %ph %c

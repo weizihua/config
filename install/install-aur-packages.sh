@@ -21,10 +21,11 @@ arch-silence-grub-theme-git
 betterlockscreen
 sxiv-rifle
 golangci-lint-bin
-apvlv
 pv
 poppler
 freeoffice
+docker-credential-pass
+jvmtop
 )
 
 func_iterate_install_aur "${packages[@]}"

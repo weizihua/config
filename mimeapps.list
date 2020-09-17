@@ -5,7 +5,9 @@ x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
 text/html=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/mailto=userapp-Evolution-R168P0.desktop
+application/pdf=org.gnome.Evince.desktop
 
 [Added Associations]
-application/pdf=sxiv.desktop;org.gnome.Evince.desktop;apvlv.desktop;
+application/pdf=org.gnome.Evince.desktop;xpdf.desktop;sxiv.desktop;
 x-scheme-handler/mailto=userapp-Evolution-R168P0.desktop;
+image/png=sxiv.desktop;feh.desktop;

@@ -100,27 +100,36 @@ alias k="kubectl"
 alias fm="sh ~/.local/bin/vifmrun ."
 alias f="fzf"
 alias vim="nvim"
+alias idea="idea.sh"
 alias vifm='sh ~/.local/bin/vifmrun'
+
+function open {
+    xdg-open $1 2>/dev/null &
+}
+
+# Java
+alias j11='sudo archlinux-java set java-11-openjdk'
+alias j14='sudo archlinux-java set java-14-openjdk'
 
 # Configuration Files
 # ------------------------------
-alias cfg-alacritty="cd ~/.config/alacritty/ && nvim ~/.config/alacritty/alacritty.yml"
-alias cfg-zsh="cd ~/.config/zsh/ && nvim ~/.config/zsh/zshrc"
-alias cfg-vim="cd ~/.config/nvim/ && nvim init.vim"
-alias cfg-ideavim="cd ~/.config/idea && nvim ~/.ideavimrc"
-alias cfg-tmux="cd ~/.config/tmux/ && nvim tmux.conf"
-alias cfg-ranger="cd ~/.config/ranger/ && nvim rc.conf"
-alias cfg-sxhkd="cd ~/.config/sxhkd/ && nvim sxhkdrc"
-alias cfg-bspwm="cd ~/.config/bspwm/ && nvim bspwmrc"
-alias cfg-polybar="cd ~/.config/polybar/ && nvim config"
-alias cfg-install="cd ~/.config/install/ && nvim install.sh"
-alias cfg-qutebrowser="cd ~/.config/qutebrowser/ && nvim config.py"
-alias cfg-vifm="cd ~/.config/vifm/ && nvim vifmrc"
+alias cfg-alacritty="nvim ~/.config/alacritty/alacritty.yml"
+alias cfg-zsh="nvim ~/.config/zsh/zshrc"
+alias cfg-vim="nvim ~/.config/nvim/init.vim"
+alias cfg-ideavim="nvim ~/.config/idea/ideavimrc"
+alias cfg-tmux="nvim ~/.config/tmux/tmux.conf"
+alias cfg-ranger="nvim ~/.config/ranger/rc.conf"
+alias cfg-sxhkd="nvim ~/.config/sxhkd/sxhkdrc"
+alias cfg-bspwm="nvim ~/.config/bspwm/bspwmrc"
+alias cfg-polybar="nvim ~/.config/polybar/config"
+alias cfg-install="nvim ~/.config/install/install.sh"
+alias cfg-qutebrowser="nvim ~/.config/qutebrowser/config.py"
+alias cfg-vifm="nvim ~/.config/vifm/vifmrc"
 
 # Reload Configuration Files
 alias reload-cfg-zsh="source ~/.zshrc"
 
-alias intellij-cheatsheet="evince ~/Workspace/Documentation/IntelliJIDEA_ReferenceCard.pdf"
+alias intellij-cheatsheet="nohup evince ~/Workspace/Documentation/IntelliJIDEA_ReferenceCard.pdf &"
 
 # Others
 # ------------------------------
@@ -187,7 +196,6 @@ alias jctl="journalctl -p 3 -xb"
 
 alias weather="weather --country Moldova --city Cahul"
 
-
 # youtube-dl
 # ------------------------------
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
@@ -223,8 +231,9 @@ alias cdtrash="cd ~/.trash"
 # Initializa FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # ! IMPORTTANT, install ripgrep tool
-# export FZF_DEFAULT_OPTS='--height=70% --preview="ccat {}" --preview-window=right:40%:wrap'
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.npm/*" --glob "!.git/*" --glob "!*.class" --glob "!target/*" --glob "!.idea/*" --glob "!.settings/*" --glob "!.DS_Store"'
+# export FZF_DEFAULT_OPTS='--height=70% --preview="bat {}" --preview-window=right:40%:wrap'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.npm/*" --glob "!.git/*" --glob "!.cache/*" --glob "!~.m2/*" --glob "!*.class" --glob "!target/*" --glob "!.idea/*" --glob "!.settings/*" --glob "!.DS_Store"'
+# export FZF_DEFAULT_COMMAND='rg --f'
 
 
 # ------------------------------

@@ -12,8 +12,8 @@ prog_args="Capture
 Edit
 Clipboard"
 
-cmd_prog=$(dmenu -fn 'JetBrains Mono:Regular:size=14' -p 'Screenshot' <<< "$prog")
-cmd_args=$(dmenu -fn 'JetBrains Mono:Regular:size=14' -p 'Action' <<< "$prog_args")
+cmd_prog=$(rofi -dmenu -p 'Screenshot' -lines 2 <<< "$prog")
+cmd_args=$(rofi -dmenu -p 'Action' -lines 3 <<< "$prog_args")
 
 askArgruments () {
     case ${cmd_args%% *} in

@@ -6,8 +6,13 @@ super + Return
 	alacritty
 
 # program launcher
-super + @space
-	dmenu_run -fn 'JetBrains Mono:Regular:size=14' -p '🡲'
+super + space
+    rofi -show run
+	# dmenu_run -fn 'JetBrains Mono:Regular:size=14' -p '🡲'
+
+# File finder
+super + alt + @space
+	$HOME/.config/bin/dmenu-file-finder.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -163,7 +168,7 @@ super + alt + shift + Return
 
 # Start IntelliJ Idea
 super + shift + i
-    export _JAVA_AWT_WM_NONREPARENTING=1 && ~/.local/idea/bin/idea.sh nosplash
+    ~/.local/idea/bin/idea.sh nosplash
 
 # Start file manager
 super + shift + Return

@@ -18,6 +18,7 @@ xorg-xrdb
 bspwm
 sxhkd
 dmenu
+rofi
 xdo
 xdotool
 feh

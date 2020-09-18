@@ -612,6 +612,8 @@ au BufWinLeave *.* mkview
 au BufWinEnter *.* silent! loadview
 " }}}
 
+au BufNewFile,BufRead /*.rasi setf css
+
 " ===== Table mode ===== {{{
 let g:table_mode_corner='|'
 " }}}

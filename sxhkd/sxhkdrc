@@ -10,10 +10,6 @@ super + space
     rofi -show run
 	# dmenu_run -fn 'JetBrains Mono:Regular:size=14' -p '🡲'
 
-# File finder
-super + alt + @space
-	$HOME/.config/bin/dmenu-file-finder.sh
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

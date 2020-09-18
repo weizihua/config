@@ -1,0 +1,4 @@
+path-sep "/"
+up-icon "go-previous"
+oc-cmd "nvim"
+icon-theme "Adwaita"

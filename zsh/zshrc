@@ -125,6 +125,7 @@ alias cfg-polybar="nvim ~/.config/polybar/config"
 alias cfg-install="nvim ~/.config/install/install.sh"
 alias cfg-qutebrowser="nvim ~/.config/qutebrowser/config.py"
 alias cfg-vifm="nvim ~/.config/vifm/vifmrc"
+alias cfg-rofi="nvim ~/.config/rofi/config.rasi"
 
 # Reload Configuration Files
 alias reload-cfg-zsh="source ~/.zshrc"

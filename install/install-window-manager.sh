@@ -32,6 +32,7 @@ materia-gtk-theme
 archlinux-wallpaper
 nautilus
 arandr
+clipmenu
 lxappearance
 lxrandr
 nitrogen

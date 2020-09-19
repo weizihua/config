@@ -8,7 +8,19 @@ super + Return
 # program launcher
 super + space
     rofi -show run
-	# dmenu_run -fn 'JetBrains Mono:Regular:size=14' -p '🡲'
+
+super + ctrl + space
+    rofi -show drun
+
+super + ctrl + alt + space
+    rofi -show find
+
+super + ctrl + alt + shift + space
+    rofi -show file-browser
+
+super + ctrl + v
+    clipmenu -p "clipboard" -lines 10
+    # CM_LAUNCHER="rofi" CM_MAX_CLIPS=10 CM_OUTPUT_CLIP=1 clipmenu -p "clipboard" -lines 10
 
 # make sxhkd reload its configuration files:
 super + Escape

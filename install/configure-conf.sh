@@ -32,6 +32,7 @@ rm $HOME/.zshrc
 
 func_print "Creating configuration links" 3
 ln -s --relative $HOME/.config/zsh/zshrc $HOME/.zshrc
+ln -s --relative $HOME/.config/zsh/zshenv $HOME/.zshenv
 ln -s --relative $HOME/.config/tmux/tmux.conf $HOME/.tmux.conf
 ln -s --relative $HOME/.config/nvim/init.vim $HOME/.vimrc
 ln -s --relative $HOME/.config/idea/ideavimrc $HOME/.ideavimrc

@@ -7,10 +7,7 @@ super + Return
 
 # program launcher
 super + space
-    rofi -show run
-
-super + ctrl + space
-    rofi -show drun
+    dmenu_run -fn 'JetBrains Mono:Regular:size=14' -p 'Run'
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -189,32 +186,29 @@ super + alt + shift + p
 super + shift + m
     alacritty -e cmus
 
-# Reboot or Poweroff
 super + alt + ctrl + 0
     $HOME/'.local/bin/dmenu-poweroff.sh'
 
-# Start configuration files
 super + alt + ctrl + 1
     $HOME'/.local/bin/dmenu-cfg.sh'
 
-# Make screenshot
 super + alt + ctrl + 2
-    $HOME/'.local/bin/dmenu-scrot.sh'
+    $HOME/'.local/bin/dmenu-screenshot.sh'
 
 super + ctrl + alt + 3
-    rofi -show file-browser
+    $HOME/'.local/bin/dmenu-file-browser.sh'
 
 super + ctrl + alt + 4
-    rofi -show clipmenu:~/.config/rofi/scripts/clipmenu.sh
+    $HOME/'.local/bin/dmenu-clipboard.sh'
 
 super + ctrl + alt + 5
-    rofi -show calc
+    $HOME/'.local/bin/dmenu-calc.sh'
 
 super + ctrl + alt + 7
-    rofi -show find:~/.config/rofi/scripts/find.sh
+    $HOME/'.local/bin/dmenu-file-finder.sh'
 
 super + alt + ctrl + 8
-    rofi-pass
+    $HOME/'.local/bin/dmenu-pass.sh'
 
 
 

@@ -22,6 +22,7 @@ ansible
 helm
 vagrant
 jdk-openjdk
+jdk11-openjdk
 visualvm
 maven
 gradle

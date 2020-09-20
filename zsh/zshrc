@@ -81,7 +81,8 @@ alias cfg-qutebrowser="nvim ~/.config/qutebrowser/config.py"
 alias cfg-vifm="nvim ~/.config/vifm/vifmrc"
 alias cfg-rofi="nvim ~/.config/rofi/config.rasi"
 
-alias ce="find ~/.config -type f | grep -Ev \".git/|`cat .config/.gitignore | sed '/^$/d' | sed 's/.*/&/' | tr '\n' '|' | sed '$s/|$/\n/'`\" | fzf --preview='bat --color=always --style=header,grid --line-range :300 {}' | xargs -r $EDITOR"
+alias ce="find ~/.config -type f | grep -Ev \".git/|`cat .config/.gitignore | sed '/^$/d' | sed 's/.*/&/' | tr '\n' '|' | sed '$s/|$/\n/'`\" | fzf --preview='bat --color=always --style=header,grid --line-range :300 {}' | xargs -I '{}' -r $EDITOR {}"
+alias ne="find ~/Notes -type f | grep -Ev \".git\" | fzf --preview='bat --color=always --style=header,grid --line-range :300 {}' | xargs -I '{}' -r $EDITOR {}"
 
 # Reload Configuration Files
 alias reload-cfg-zsh="source ~/.zshrc"
@@ -144,7 +145,7 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
-alias merge='xrdb -merge ~/.Xresources'
+alias reload-xresources='xrdb -merge ~/.Xresources'
 
 alias mail='neomutt'
 

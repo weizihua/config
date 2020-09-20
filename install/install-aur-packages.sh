@@ -26,6 +26,7 @@ poppler
 freeoffice
 docker-credential-pass
 jvmtop
+menu-calc
 )
 
 func_iterate_install_aur "${packages[@]}"

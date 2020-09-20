@@ -51,8 +51,7 @@ simplescreenrecorder
 flameshot
 imagemagick
 meld
-scrot
-maim
+maim 
 mpd
 rawtherapee
 exiv2

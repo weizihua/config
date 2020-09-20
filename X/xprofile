@@ -2,6 +2,12 @@
 #
 # ~/.xinitrc
 
+# ENV variable needed by X window
+export PATH="$PATH:$HOME/.local/bin"
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+export _JAVA_AWT_WM_NONREPARENTING=1
+# export SUDO_ASKPASS=$HOME/.config/bin/dmenu-ask-pass.sh
+
 
 # Set the keyboard repeat and delay
 xset r rate 200 100
@@ -20,12 +26,5 @@ imwheel
 
 # Enable clipboard manager
 clipmenud &
-
-export PATH="$PATH:$HOME/.local/bin"
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
-export _JAVA_AWT_WM_NONREPARENTING=1
-export SUDO_ASKPASS=$HOME/.config/bin/dmenu-ask-pass.sh
-
-xdg-settings set default-web-browser org.qutebrowser.qutebrowser.desktop
 
 

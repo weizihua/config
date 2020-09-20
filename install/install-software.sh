@@ -153,6 +153,7 @@ reflector
 pass
 figlet
 libqalculate
+tldr
 )
 
 func_iterate_install "${packages[@]}"

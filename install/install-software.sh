@@ -52,6 +52,7 @@ flameshot
 imagemagick
 meld
 scrot
+maim
 mpd
 rawtherapee
 exiv2
@@ -145,6 +146,7 @@ nmon
 glances
 neofetch
 man
+tldr
 nmap
 net-tools
 youtube-dl

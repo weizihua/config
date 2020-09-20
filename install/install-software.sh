@@ -151,6 +151,7 @@ youtube-dl
 reflector
 pass
 figlet
+libqalculate
 )
 
 func_iterate_install "${packages[@]}"

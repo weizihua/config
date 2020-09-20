@@ -24,7 +24,7 @@ export CM_SELECTION="clipboard"
 export CM_DEBUG=0
 export CM_OUTPUT_CLIP=0
 export CM_MAX_CLIPS=10
-export CM_LAUNCHER="rofi"
+export CM_LAUNCHER="rofi-script"
 
 # Preferred editor remote sessions
 if [[ -n $SSH_CONNECTION ]]; then

@@ -6,6 +6,7 @@ INSTALL_DIR="$(dirname "$(readlink -f "$0")")"
 # ---------------
 mkdir -p $HOME/.local/bin
 mkdir -p $HOME/.local/go/bin
+mkdir -p $HOME/.mpd/playlists
 mkdir $HOME/Downloads
 mkdir $HOME/Documents
 mkdir $HOME/Workspace

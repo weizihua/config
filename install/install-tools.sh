@@ -45,6 +45,17 @@ func_print "Installing binary tools" 5
 # Telescope is a share console tool
 wget -c https://github.com/gravitational/teleconsole/releases/download/0.4.0/teleconsole-v0.4.0-linux-amd64.tar.gz -O - | sudo tar -xvz -C /usr/local/bin
 
+# Install rofi calc plugin
+git clone https://github.com/svenstaro/rofi-calc /tmp/rofi-calc
+cd /tmp/rofi-calc
+autoreconf -i
+mkdir build
+cd /tmp/rofi-calc/build
+../configure
+make
+sudo make install
+
+
 
 ###############################################################################
 

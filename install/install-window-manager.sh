@@ -19,6 +19,8 @@ bspwm
 sxhkd
 dmenu
 rofi
+rofi-mpd
+rofi-pass
 xdo
 xdotool
 feh

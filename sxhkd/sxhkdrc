@@ -12,13 +12,6 @@ super + space
 super + ctrl + space
     rofi -show drun
 
-super + ctrl + alt + space
-    rofi -show find
-
-super + ctrl + alt + shift + space
-    rofi -show file-browser
-
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

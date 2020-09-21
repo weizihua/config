@@ -1,12 +1,17 @@
 #!/bin/bash
 #
-# ~/.xinitrc
+# ~/.xprofile
 
 # ENV variable needed by X window
-export PATH="$PATH:$HOME/.local/bin"
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+# --------------------------------
+
+# Needed by Intellij to open the window correctly
 export _JAVA_AWT_WM_NONREPARENTING=1
-# export SUDO_ASKPASS=$HOME/.config/bin/dmenu-ask-pass.sh
+
+# Used for Java AWT UI settings
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true ${_JAVA_OPTIONS}"
+
+# --------------------------------
 
 
 # Set the keyboard repeat and delay
@@ -20,11 +25,4 @@ setxkbmap -option altwin:swap_alt_win
 
 # Swap mouse for left handed
 xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
-
-# Increase the mouse wheel speed (conf file is in ~/.imwheelrc)
-imwheel
-
-# Enable clipboard manager
-clipmenud &
-
 

@@ -9,7 +9,7 @@
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Used for Java AWT UI settings
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true ${_JAVA_OPTIONS}"
+# export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true ${_JAVA_OPTIONS}"
 
 # --------------------------------
 

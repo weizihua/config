@@ -211,7 +211,7 @@ super + alt + ctrl + 8
     $HOME/'.local/bin/dmenu-pass.sh'
 
 super + alt + ctrl + 9
-    wallpaper.sh ~/Photos/Wallpapers
+    wallpaper.sh ~/Pictures/Wallpapers
 
 
 # --------------------------

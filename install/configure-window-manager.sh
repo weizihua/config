@@ -20,6 +20,9 @@ sudo cp -r $INSTALL_DIR/media/lightdm-webkit-themes/arch /usr/share/lightdm-webk
 sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter/' /etc/lightdm/lightdm.conf
 sudo sed -i 's|webkit_theme.*|webkit_theme\t    = arch|' /etc/lightdm/lightdm-webkit2-greeter.conf
 
+# Download wallpapers
+git clone https://github.com/xvitcoder/Wallpapers $HOME/Pictures
+
 ###############################################################################
 
 func_print "Configuration Done" 11

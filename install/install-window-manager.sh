@@ -17,7 +17,9 @@ xorg-xdpyinfo
 xorg-xrdb
 bspwm
 sxhkd
+nitrogen
 dmenu
+picom
 xdo
 xdotool
 feh
@@ -34,11 +36,8 @@ arandr
 clipmenu
 lxappearance
 lxrandr
-nitrogen
-picom
 playerctl
 python-pywal
-volumeicon
 )
 
 func_iterate_install "${packages[@]}"

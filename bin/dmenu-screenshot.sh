@@ -12,8 +12,8 @@ prog_args=" Capture
  Edit
  Clipboard"
 
-cmd_prog=$(dmenu -fn 'JetBrains Mono:Regular:size=14' -p ' Screenshot' -i <<< "$prog")
-cmd_args=$(dmenu -fn 'JetBrains Mono:Regular:size=14' -p ' Action' -i <<< "$prog_args")
+cmd_prog=$(dmen.sh -p ' Screenshot' -i <<< "$prog")
+cmd_args=$(dmen.sh -p ' Action' -i <<< "$prog_args")
 
 askArgruments () {
     filename=$(date +%s).png

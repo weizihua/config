@@ -11,3 +11,4 @@ application/pdf=org.gnome.Evince.desktop
 application/pdf=org.gnome.Evince.desktop;xpdf.desktop;sxiv.desktop;
 x-scheme-handler/mailto=userapp-Evolution-R168P0.desktop;
 image/png=sxiv.desktop;feh.desktop;
+video/x-matroska=mpv.desktop;

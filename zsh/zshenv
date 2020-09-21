@@ -3,6 +3,7 @@ export LANG=en_US.UTF-8
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/go/bin"
 export PATH="$PATH:$HOME/.local/idea/bin"
+export PATH="$PATH:$HOME/.config/bin"
 
 export GOPATH="$HOME/.local/go"
 export GO111MODULE="on"

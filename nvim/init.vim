@@ -42,11 +42,13 @@ autocmd BufWinEnter * silent! :%foldopen!
 
 " ===== Settings ===== {{{
 syntax enable
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme wal
 " hi Normal ctermfg=252 ctermbg=234
 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
+hi! CursorLine cterm=NONE
 
 " hide tilde on blank lines
 let &fcs='eob: '

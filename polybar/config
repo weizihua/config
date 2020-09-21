@@ -17,16 +17,21 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-background = #dd1c1c1c
-; background = #aa222222
+; background = #dd1c1c1c
+; background-alt = #444
+; foreground = #dfdfdf
+; foreground-alt = #555
+; primary = #ffb52a
+; secondary = #e60053
+; alert = #bd2c40
+
+background = ${xrdb:color0:#dd1c1c1c}
+foreground = ${xrdb:color7:#dfdfdf}
 background-alt = #444
-;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -203,7 +208,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 ;   
 format-prefix = " "
-format-prefix-foreground = #cd1f3f
+; format-prefix-foreground = ${colors.secondary}
 ; format-underline = ${colors.secondary}
 
 ; Available tags:
@@ -262,7 +267,7 @@ label = %gb_used%/%gb_total%
 
 format = Mem <label>
 format-prefix = " "
-format-prefix-foreground = #cd1f3f
+; format-prefix-foreground = ${colors.secondary}
 ; format-underline = #3384d0
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
@@ -328,8 +333,8 @@ date-alt = " %a %b %d, %Y"
 time = %l:%M%p
 time-alt = %l:%M%p
 format-prefix = " "
-format-prefix-foreground = #3384d0
-format-foreground = #fefefe
+; format-prefix-foreground = ${colors.secondary}
+; format-foreground = #fefefe
 ; format-background = #668bd7
 ; format-underline = #ffb52a
 label = "%date% %time% "
@@ -409,14 +414,14 @@ format-warn = <ramp> <label-warn>
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
+; label-warn-foreground = ${colors.secondary}
 
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
-ramp-foreground = #fefe00
+; ramp-foreground = #fefe00
 
 [settings]
 screenchange-reload = true

@@ -2,7 +2,7 @@
 
 choices="vim\nideavim\nzsh\nbspwm\nsxhkd\nvifm\npolybar\ntmux\nqutebrowser\nalacritty"
 
-chosen=$(echo -e "$choices" | dmenu -fn 'JetBrains Mono:Regular:size=14' -p 'Edit Config' -i)
+chosen=$(echo -e "$choices" | dmen.sh -p 'Edit Config' -i)
 
 case "$chosen" in
     vim) alacritty -e nvim -- $HOME/.config/nvim/init.vim ;;

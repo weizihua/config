@@ -7,7 +7,7 @@ super + Return
 
 # program launcher
 super + space
-    dmenu_run -fn 'JetBrains Mono:Regular:size=14' -p 'Run'
+    dmen_run.sh -p 'Run'
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -210,6 +210,8 @@ super + ctrl + alt + 7
 super + alt + ctrl + 8
     $HOME/'.local/bin/dmenu-pass.sh'
 
+super + alt + ctrl + 9
+    wallpaper.sh ~/Photos/Wallpapers
 
 
 # --------------------------

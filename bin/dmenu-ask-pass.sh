@@ -6,5 +6,5 @@ prompt="${1:-[$caller]}"
 promptfg=black promptbg=red hidden=white
 font="Liberation Sans-20:Bold"
 
-dmenu -p "$prompt" -fn "$font" \
+dmen.sh -p "$prompt" -fn "$font" \
   -nf "$hidden" -nb "$hidden" -sf "$promptfg" -sb "$promptbg" <&-

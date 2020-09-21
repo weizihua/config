@@ -1,3 +1,3 @@
 #!/bin/bash
 
-= --dmenu=dmenu -- -fn 'JetBrains Mono:Regular:size=14' -p 'Calculate'
+= --dmenu=dmen.sh -- -p 'Calculate'

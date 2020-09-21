@@ -25,6 +25,7 @@ Plug 'SirVer/ultisnips'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 Plug 'morhetz/gruvbox'
+Plug 'dylanaraps/wal.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

@@ -62,7 +62,7 @@ set hlsearch
 set tabstop=4
 set shiftwidth=4
 set autowrite
-set cursorline
+set nocursorline
 set autoread
 set splitbelow
 set splitright

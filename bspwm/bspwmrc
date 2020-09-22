@@ -20,7 +20,7 @@ $HOME/.config/polybar/launch.sh
 picom --config ~/.picom.conf &
 
 # Background
-nitrogen --set-centered /usr/share/backgrounds/archlinux/archlinux-cloud.png &
+# nitrogen --set-centered /usr/share/backgrounds/archlinux/archlinux-cloud.png &
 
 # Color schemas
 wal -R
@@ -29,7 +29,6 @@ wal -R
 
 # source the colors.
 . "${HOME}/.cache/wal/colors.sh"
-
 
 # BSPWM Config
 # -----------------------------------------------------

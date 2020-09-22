@@ -12,12 +12,7 @@ source ~/.config/nvim/functions.vim
 " Reload vimrc
 nnoremap <localleader>! :source ~/.vimrc<CR> :echo "Config reloaded..."<CR>
 
-" Write and Quit
-nnoremap <localleader>w :w<CR>
-nnoremap <localleader>q :x<CR>
-" }}}
-"
-
+" Global variables
 let g:default_browser = "qutebrowser"
 
 " ===== Neovim Providers ===== {{{
@@ -30,10 +25,6 @@ let g:loaded_python_provider = 0
 
 " Disable ruby provider
 let g:loaded_ruby_provider = 0
-
-" Disable npm provider
-" let g:loaded_node_provider = 1
-
 " }}}
 "
 
@@ -48,7 +39,7 @@ colorscheme wal
 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
-hi! CursorLine cterm=NONE
+hi! CursorLine cterm=NONE ctermbg=NONE
 
 " hide tilde on blank lines
 let &fcs='eob: '
@@ -83,7 +74,6 @@ set sessionoptions+=tabpages,globals
 set ttimeoutlen=0
 set foldmethod=marker
 
-
 filetype plugin indent on
 set autoindent
 
@@ -112,7 +102,7 @@ set signcolumn=yes
 
 " unicode symbols
 
-let g:airline_theme='onedark'
+" let g:airline_theme='onedark'
 let g:airline_left_sep = ''
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
@@ -832,4 +822,3 @@ let g:open_url_browser_default = "qutebrowser"
 " :OpenSearchURL <engine> <url>
 " }}}
 "
-

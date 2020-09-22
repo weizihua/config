@@ -72,6 +72,7 @@ Plug 'ap/vim-css-color'
 Plug 'vifm/vifm.vim'
 Plug 'dhruvasagar/vim-open-url'
 Plug 'neomutt/neomutt.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 

@@ -1,5 +1,7 @@
 export LANG=en_US.UTF-8
 
+export TERM=screen-256color
+
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/go/bin"
 export PATH="$PATH:$HOME/.local/idea/bin"

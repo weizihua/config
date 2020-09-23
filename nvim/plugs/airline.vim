@@ -1,0 +1,21 @@
+let g:airline_theme='onedark'
+let g:airline_left_sep = ''
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_sep = ''
+
+let g:airline_powerline_fonts = 1
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1
+let g:airline_theme='base16'
+" let g:airline_theme='papercolor'
+let g:airline#extensions#taboo#enabled = 1
+let g:airline#extensions#vimagit#enabled = 1
+let g:airline#extensions#virtualenv#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#fnamemod = ':t'

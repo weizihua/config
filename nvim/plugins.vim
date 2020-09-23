@@ -6,7 +6,6 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-surround'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
@@ -73,6 +72,10 @@ Plug 'vifm/vifm.vim'
 Plug 'dhruvasagar/vim-open-url'
 Plug 'neomutt/neomutt.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'mbbill/undotree'
 call plug#end()
 
 

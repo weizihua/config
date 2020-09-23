@@ -1,0 +1,1 @@
+iabbrev @@ xvitcoder@gmail.com

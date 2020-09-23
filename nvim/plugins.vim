@@ -71,11 +71,12 @@ Plug 'ap/vim-css-color'
 Plug 'vifm/vifm.vim'
 Plug 'dhruvasagar/vim-open-url'
 Plug 'neomutt/neomutt.vim'
+Plug 'mbbill/undotree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
-Plug 'mbbill/undotree'
+Plug 'lambdalisue/glyph-palette.vim'
 call plug#end()
 
 
@@ -85,4 +86,5 @@ nnoremap <localleader>±c :PlugClean<CR>
 nnoremap <localleader>±u :PlugUpdate<CR>
 nnoremap <localleader>±U :PlugUpgrade<CR>
 nnoremap <localleader>±s :PlugStatus<CR>
+Plug 'mbbill/undotree'
 

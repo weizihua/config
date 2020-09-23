@@ -1,12 +1,18 @@
 syntax enable
+colorscheme wal
 
-" hi Normal ctermfg=252 ctermbg=234
+" Customize colors
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
-hi! CursorLine cterm=NONE ctermbg=NONE
-colorscheme wal
-" colorscheme gruvbox
+" hi! CursorLine cterm=NONE ctermbg=NONE
 
+" hi Normal ctermbg=None
+" hi cursorline cterm=none term=none
+" autocmd WinEnter * setlocal cursorline
+" autocmd WinLeave * setlocal nocursorline
+" highlight CursorLine guibg=#303000 ctermbg=136
+" highlight CursorLine guibg=#303000 ctermbg=232 ctermfg=231
+" hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
 
 " Settings
 set nowrap
@@ -18,7 +24,7 @@ set hlsearch
 set tabstop=4
 set shiftwidth=4
 set autowrite
-set nocursorline
+set cursorline
 set autoread
 set splitbelow
 set splitright

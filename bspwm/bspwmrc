@@ -28,6 +28,7 @@ if [[ -f "$HOME/.cache/wal/sequences" ]]; then
     . "${HOME}/.cache/wal/colors.sh"
 else
     # Background
+    wal -q -i /usr/share/backgrounds/custom/default.jpg
     nitrogen --set-centered /usr/share/backgrounds/custom/default.jpg &
 fi
 

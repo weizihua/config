@@ -1,11 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/$USER/.oh-my-zsh
 
-# color scheme changer
-(cat ~/.cache/wal/sequences &)
+if [[ -f "~/.cache/wal/sequences" ]]; then
+    # color scheme changer
+    (cat ~/.cache/wal/sequences &)
 
-# Import the colors.
-. "${HOME}/.cache/wal/colors.sh"
+    # Import the colors.
+    . "${HOME}/.cache/wal/colors.sh"
+fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

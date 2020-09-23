@@ -20,15 +20,19 @@ $HOME/.config/polybar/launch.sh
 picom --config ~/.picom.conf &
 
 # Background
-# nitrogen --set-centered /usr/share/backgrounds/archlinux/archlinux-cloud.png &
+if [[ -f "$HOME/.cache/wal/sequences" ]]; then
+    # Color schemas
+    wal -R
 
-# Color schemas
-wal -R
+    # Import the colors.
+    . "${HOME}/.cache/wal/colors.sh"
+else
+    # Background
+    nitrogen --set-centered /usr/share/backgrounds/custom/default.jpg &
+fi
 
 # -----------------------------------------------------
 
-# source the colors.
-. "${HOME}/.cache/wal/colors.sh"
 
 # BSPWM Config
 # -----------------------------------------------------

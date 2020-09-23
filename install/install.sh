@@ -15,7 +15,8 @@ mkdir $HOME/Desktop
 mkdir $HOME/Screenshots
 mkdir $HOME/Video
 mkdir $HOME/Music
-mkdir $HOME/Photos
+mkdir $HOME/Pictures
+mkdir $HOME/Temporary
 mkdir $HOME/.trash
 # ---------------
 

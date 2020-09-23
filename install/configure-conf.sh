@@ -46,6 +46,7 @@ ln $HOME/.config/k9s/skin.yml $HOME/.k9s/skin.yml
 
 func_print "Creating application links" 3
 
+# Copy all bins to .local/bin
 FILES=$HOME/.config/bin/*
 for f in $FILES
 do

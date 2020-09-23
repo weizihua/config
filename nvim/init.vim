@@ -102,7 +102,7 @@ set signcolumn=yes
 
 " unicode symbols
 
-" let g:airline_theme='onedark'
+let g:airline_theme='onedark'
 let g:airline_left_sep = ''
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''

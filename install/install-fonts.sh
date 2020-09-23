@@ -2,7 +2,9 @@
 #set -e
 
 # Load utils
-source ./utils.sh
+INSTALL_DIR="$(dirname "$(readlink -f "$0")")"
+
+source $INSTALL_DIR/utils.sh
 
 ###############################################################################
 
@@ -27,6 +29,9 @@ ttf-font-awesome
 )
 
 func_iterate_install "${packages[@]}"
+
+mkdir -p $HOME/.local/share/fonts
+cp -r $INSTALL_DIR/media/fonts/* $HOME/.local/share/fonts
 
 ###############################################################################
 

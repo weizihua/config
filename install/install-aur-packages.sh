@@ -31,6 +31,11 @@ menu-calc
 
 func_iterate_install_aur "${packages[@]}"
 
+# cd /tmp
+# wget https://www.softmaker.net/down/softmaker-freeoffice-978-amd64.tgz -O /tmp/freeoffice.tgz
+# tar xvzf freeoffice.tgz
+# ./installfreeoffice
+
 ###############################################################################
 
 func_print "Software has been installed" 11

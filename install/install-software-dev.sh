@@ -18,6 +18,7 @@ go
 go-tools
 nodejs
 npm
+vscode
 ansible
 helm
 vagrant

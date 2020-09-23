@@ -1,9 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/$USER/.oh-my-zsh
 
-if [[ -f "~/.cache/wal/sequences" ]]; then
+if [[ -f "$HOME/.cache/wal/sequences" ]]; then
     # color scheme changer
-    (cat ~/.cache/wal/sequences &)
+    (cat $HOME/.cache/wal/sequences &)
 
     # Import the colors.
     . "${HOME}/.cache/wal/colors.sh"

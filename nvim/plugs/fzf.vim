@@ -1,10 +1,10 @@
 nnoremap <leader>fa :Rg<CR>
-nnoremap <leader>ff :FZF<CR>
+nnoremap <leader>ff :execute 'FZF' FindRootDirectory()<CR>
 nnoremap <leader>fF :GFiles<CR>
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader><leader> :Buffers<CR>
-nnoremap <leader>ft :BTags<CR>
-nnoremap <leader>fT :Tags<CR>
+nnoremap <leader>ft :Tags<CR>
+nnoremap <leader>fT :BTags<CR>
 nnoremap <leader>fC :Commits<CR>
 nnoremap <leader>fc :BCommits<CR>
 nnoremap <leader>fm :Marks<CR>
@@ -15,6 +15,47 @@ let g:fzf_action = {
             \ 'ctrl-t': 'tab split',
             \ 'ctrl-s': 'split',
             \ 'ctrl-v': 'vsplit' }
+
+" let g:fzf_colors =
+"             \ { 'fg': ['fg', 'Normal'],
+"             \ 'bg': ['bg', 'Normal'],
+"             \ 'spinner': ['spinner', '208'],
+"             \ 'marker': ['marker', '208'],
+"             \ 'hl': ['hl', '202']}
+
+let $FZF_DEFAULT_OPTS = "--reverse --keep-right --cycle 
+            \ --bind='ctrl-p:toggle-preview'"
+
+
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'Normal', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['Keyword', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+
+" Always enable preview window on the right with 60% width
+let g:fzf_preview_window = 'right:50%:hidden'
+
+" [Tags] Command to generate tags file
+let g:fzf_tags_command = 'ctags -R'
+
+" [Commands] --expect expression for directly executing the command
+let g:fzf_commands_expect = 'alt-enter,ctrl-x'
+
+let g:fzf_layout = { 'window': {
+            \ 'width': 0.9,
+            \ 'height': 0.3,
+            \ 'border': 'sharp' } }
 
 " nnoremap <silent><leader>mm :call fzf#run({
 "             \ 'source': GetMakefileTargets(),

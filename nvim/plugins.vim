@@ -77,6 +77,7 @@ Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 

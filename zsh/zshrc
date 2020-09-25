@@ -438,5 +438,9 @@ fgshow() {
                 {}
 FZF-EOF"
 }
+
+ignore() {
+    echo "$1" >> .gitignore
+}
 # ------------------------------
 

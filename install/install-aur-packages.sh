@@ -27,6 +27,7 @@ freeoffice
 docker-credential-pass
 jvmtop
 menu-calc
+java-lombok
 )
 
 func_iterate_install_aur "${packages[@]}"

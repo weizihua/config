@@ -1,7 +1,14 @@
 syntax enable
+
+
 colorscheme wal
 
-" Customize colors
+" Customized colors
+" https://github.com/dylanaraps/wal.vim/blob/master/colors/wal.vim
+hi Pmenu ctermbg=2 ctermfg=7
+hi PmenuSel ctermbg=3 ctermfg=0
+hi PmenuSbar ctermbg=0 ctermfg=1
+
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE
 " hi! CursorLine cterm=NONE ctermbg=NONE
@@ -14,6 +21,7 @@ hi! NonText ctermbg=NONE guibg=NONE
 " highlight CursorLine guibg=#303000 ctermbg=232 ctermfg=231
 " hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
 
+
 " Settings
 set nowrap
 set hidden
@@ -24,7 +32,7 @@ set hlsearch
 set tabstop=4
 set shiftwidth=4
 set autowrite
-set cursorline
+set nocursorline
 set autoread
 set splitbelow
 set splitright

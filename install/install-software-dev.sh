@@ -40,6 +40,7 @@ httpie
 s3cmd
 postgresql-client
 pygmentize
+ctags
 )
 
 func_iterate_install "${packages[@]}"

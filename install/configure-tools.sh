@@ -46,6 +46,8 @@ cp $HOME/.local/istio/bin/istioctl $HOME/.local/bin
 
 # Install VSCode extensions
 code --install-extension dlasagno.wal-theme
+code --install-extension vscodevim.vim
+code --install-extension gabrielbb.vscode-lombok
 code --install-extension vscjava.vscode-java-pack
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension formulahendry.docker-explorer

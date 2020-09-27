@@ -112,6 +112,79 @@ if len(args) == 0:
 }
 endsnippet
 
+snippet ex "class exception" b
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+/**
+ * ${1:<description>}
+ *
+ * @author Vitalie Mudrenco
+ * @version `! date "+%d.%m.%Y"`
+ */
+@ResponseStatus(code = HttpStatus.${3:NOT_FOUND})
+public class ${2:`!p
+snip.rv = snip.basename or "untitled"`} extends ${3:RuntimeException} {
+    public $2(${4:Long} ${5:param}) {
+        super(String.format("$6", ${7:`!p snip.rv = t[5]`}));
+    }$0
+}
+endsnippet
+
+
+snippet ent "create entity" b
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * ${1:<description>}
+ *
+ * @author Vitalie Mudrenco
+ * @version `! date "+%d.%m.%Y"`
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "${2:`!p import re
+snip.rv = re.sub(r'(?<!^)(?=[A-Z])', '_', t[2]).lower()`}")
+public class ${2:`!p 
+snip.rv = snip.basename or "untitled"`} implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false, insertable = false, updatable = false)
+    private Long id;
+
+	$0
+}
+endsnippet
+
+snippet repo "create jpa repository" b
+import org.springframework.data.jpa.repository.JpaRepository;
+
+/**
+ * ${1:<description>}
+ *
+ * @author Vitalie Mudrenco
+ * @version `! date "+%d.%m.%Y"`
+ */
+public interface ${2:`!p 
+snip.rv = snip.basename or "untitled"`} extends JpaRepository<${3:`!p snip.rv = t[2].replace("Repository", "")`}, Long> {
+	$0
+}
+endsnippet
 
 snippet enum "create enum" b
 /**
@@ -135,6 +208,17 @@ endsnippet
 
 snippet ff "final field" b
 ${1:private} final ${2:String} ${3:`!p snip.rv = t[2].lower()`};
+endsnippet
+
+snippet ffs "final static field" b
+${1:private} static final ${2:String} ${3:`!p snip.rv = t[2].lower()`};
+endsnippet
+
+snippet col "Entity column" b
+${6:@NotNull}
+@Column(name = "${3:`!p import re
+snip.rv = re.sub(r'(?<!^)(?=[A-Z])', '_', t[3]).lower()`}"${4:, nullable = ${5:false}})
+${1:private} ${2:String} ${3:field};
 endsnippet
 
 snippet cn "Constructor" b
@@ -166,13 +250,13 @@ public static void main(String[] args) {
 endsnippet
 
 snippet mt "method throws" b
-${1:private} ${2:void} ${3:method}($4) ${5:throws $6 }{
+${1:public} ${2:void} ${3:method}($4) ${5:throws $6 }{
 	$0
 }
 endsnippet
 
 snippet m  "method" b
-${1:private} ${2:void} ${3:method}($4) {
+${1:public} ${2:void} ${3:method}($4) {
 	$0
 }
 endsnippet
@@ -393,6 +477,10 @@ endsnippet
 
 snippet pa "package" b
 package $0
+endsnippet
+
+snippet ser "Default serialVersionUID" b
+private static final long serialVersionUID = 1L;
 endsnippet
 
 snippet p "print" b

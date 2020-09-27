@@ -47,7 +47,14 @@ nnoremap <M-]> 5zl
 nnoremap <leader>ip :echom expand('%:p')<CR>
 " }}}
 
+" ===== Completion ===== {{{
+" make C-j and C-k scroll in completion instead of C-n and C-p
+" inoremap <expr> <tab> ((pumvisible())?("\<C-y>"):("\<tab>"))
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+" }}}
 
+inoremap <C-CR> <Esc>o
 nnoremap <S-CR> o<Esc>k
 nnoremap <M-CR> O<Esc>j
 " nnoremap <Space> o<Esc>k

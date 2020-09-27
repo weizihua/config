@@ -13,14 +13,12 @@ snippet ti "Inline tag" b
 <${1:tag}>${2:content}</${1/([\w:._-]+).*/$1/}>
 endsnippet
 
-snippet prod "Product tag" b
-<product>
-  <name>${1:name}</name>
-  <catalog>${2:catalog}</catalog>
-  <tag>${3:tag}</tag>
-  <details>
-    <version>${4:version}</version>
-    <attr>${5:attr}</attr>
-  </details>
-</product>
+snippet dep "Maven Dependency" b
+<dependency>
+	<groupId>$1</groupId>
+	<artifactId>$2</artifactId>
+	<version>$3</version>
+	<scope>$4</scope>
+	<optional>$6</optional>
+</dependency>
 endsnippet

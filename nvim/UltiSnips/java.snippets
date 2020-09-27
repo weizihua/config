@@ -133,6 +133,10 @@ snippet f "field" b
 ${1:private} ${2:String} ${3:`!p snip.rv = t[2].lower()`};
 endsnippet
 
+snippet ff "final field" b
+${1:private} final ${2:String} ${3:`!p snip.rv = t[2].lower()`};
+endsnippet
+
 snippet cn "Constructor" b
 public `!p snip.rv = snip.basename or "untitled"`(${1:}) {
 	$0

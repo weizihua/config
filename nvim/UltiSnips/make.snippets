@@ -1,0 +1,20 @@
+snippet makejava "Default makefile"
+all: test build 
+
+
+clean:
+	mvn clean 
+
+compile:
+	mvn clean compile
+
+build:
+	mvn clean build
+
+test:
+	mvn clean test
+
+run:
+	mvn spring-boot:run
+
+endsnippet

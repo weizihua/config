@@ -39,7 +39,7 @@ snippet post "Make POST request" !b
 # $1
 # ----------------------------------------------
 POST /api/${1:resource}
-Content-type: application:json
+Content-type: application/json
 {
 	"$2": "$3"$0
 }
@@ -52,7 +52,7 @@ snippet put "Make PUT request" !b
 # $1
 # ----------------------------------------------
 PUT /api/${1:resource}/${2:1}
-Content-type: application:json
+Content-type: application/json
 {
 	"$3": "$4"$0
 }

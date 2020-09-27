@@ -13,6 +13,7 @@ source ~/.config/nvim/plugs/togglers.vim
 source ~/.config/nvim/plugs/airline.vim
 source ~/.config/nvim/plugs/abbreviations.vim
 source ~/.config/nvim/plugs/buffers.vim
+source ~/.config/nvim/plugs/ultisnip.vim
 source ~/.config/nvim/plugs/coc.vim
 source ~/.config/nvim/plugs/easy-align.vim
 source ~/.config/nvim/plugs/easy-motion.vim
@@ -36,7 +37,6 @@ source ~/.config/nvim/plugs/tabs.vim
 source ~/.config/nvim/plugs/terminal.vim
 source ~/.config/nvim/plugs/text.vim
 source ~/.config/nvim/plugs/tmux.vim
-source ~/.config/nvim/plugs/ultisnip.vim
 source ~/.config/nvim/plugs/undotree.vim
 source ~/.config/nvim/plugs/vifm.vim
 source ~/.config/nvim/plugs/vimgo.vim

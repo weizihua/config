@@ -10,3 +10,5 @@ au FileType java nnoremap <buffer> <localleader>0 :CocCommand java.clean.workspa
 
 " Execute current java file
 au FileType java nnoremap <buffer> <leader>rr :exec '15Term java ' . expand("%:t")<CR>
+
+nmap <leader>rd :CocCommand java.debug.vimspector.start<CR>

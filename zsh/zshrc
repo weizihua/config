@@ -1,14 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/$USER/.oh-my-zsh
 
-if [[ -f "$HOME/.cache/wal/sequences" ]]; then
-    # color scheme changer
-    (cat $HOME/.cache/wal/sequences &)
-
-    # Import the colors.
-    . "${HOME}/.cache/wal/colors.sh"
-fi
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -80,14 +72,12 @@ alias cfg-zsh="nvim ~/.config/zsh/zshrc"
 alias cfg-vim="nvim ~/.config/nvim/init.vim"
 alias cfg-ideavim="nvim ~/.config/idea/ideavimrc"
 alias cfg-tmux="nvim ~/.config/tmux/tmux.conf"
-alias cfg-ranger="nvim ~/.config/ranger/rc.conf"
 alias cfg-sxhkd="nvim ~/.config/sxhkd/sxhkdrc"
 alias cfg-bspwm="nvim ~/.config/bspwm/bspwmrc"
 alias cfg-polybar="nvim ~/.config/polybar/config"
 alias cfg-install="nvim ~/.config/install/install.sh"
 alias cfg-qutebrowser="nvim ~/.config/qutebrowser/config.py"
 alias cfg-vifm="nvim ~/.config/vifm/vifmrc"
-alias cfg-rofi="nvim ~/.config/rofi/config.rasi"
 
 alias cf="echo \"$HOME/.config/alacritty/alacritty.yml\n$HOME/.config/zsh/zshrc\"| fzf | xargs -I '{}' -r $EDITOR {}"
 alias ce="find ~/.config -type f | grep -Ev \".git/|`cat $HOME/.config/.gitignore | sed '/^$/d' | sed 's/.*/&/' | tr '\n' '|' | sed '$s/|$/\n/'`\" | fzf --preview='bat --color=always --style=header,grid --line-range :300 {}' | xargs -I '{}' -r $EDITOR {}"
@@ -441,6 +431,18 @@ FZF-EOF"
 
 ignore() {
     echo "$1" >> .gitignore
+}
+
+mktouch() {
+    if [ $# -lt 1 ]; then
+        echo "Missing argument";
+        return 1;
+    fi
+
+    for f in "$@"; do
+        mkdir -p -- "$(dirname -- "$f")"
+        touch -- "$f"
+    done
 }
 # ------------------------------
 

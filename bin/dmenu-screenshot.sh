@@ -12,8 +12,8 @@ prog_args=" Capture
  Edit
  Clipboard"
 
-cmd_prog=$(dmen.sh -p ' Screenshot' -i <<< "$prog")
-cmd_args=$(dmen.sh -p ' Action' -i <<< "$prog_args")
+cmd_prog=$(dmenu.sh -p ' Screenshot' -i <<< "$prog")
+cmd_args=$(dmenu.sh -p ' Action' -i <<< "$prog_args")
 
 askArgruments () {
     filename=$(date +%s).png

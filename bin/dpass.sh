@@ -1,7 +1,3 @@
 #!/bin/bash
-# dmen.sh -p "$1" <&- && echo
 
-# Import the colors
-. "${HOME}/.cache/wal/colors.sh"
-
-dmen.sh -p "$1" -nf "$color0" <&-
+dmenu.sh -p "$1" -nf "#1e1e1e" <&-

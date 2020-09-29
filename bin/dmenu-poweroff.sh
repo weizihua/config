@@ -2,7 +2,7 @@
 
 choices=" Lock\n Logout\n Reboot\n Poweroff"
 
-chosen=$(echo -e "$choices" | dmen.sh -p ' Computer' -i)
+chosen=$(echo -e "$choices" | dmenu.sh -p ' Computer' -i)
 
 case "$chosen" in
     *Lock) betterlockscreen -l dimblur ;;

@@ -24,6 +24,7 @@ set scrolloff=4
 set nowrap
 set rulerformat='%2l-%S%[ +%x%]'
 set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
+set shellcmdflag=-ic
 
 " what should be saved automatically between vifm runs
 set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,phistory,fhistory
@@ -167,6 +168,8 @@ command! FZFfind :set noquickview | :execute 'goto' fnameescape(term('find | fzf
 
 nnoremap <c-g> :FZFlocate<cr>
 nnoremap <c-f> :FZFfind<cr>
+
+nnoremap N :!mktouch<space>
 
 " Yank current directory path into the clipboard
 " nnoremap yd :!echo %d | xclip %i<cr>

@@ -2,7 +2,7 @@
 
 choices="vim\nideavim\nzsh\nbspwm\nsxhkd\nvifm\npolybar\ntmux\nqutebrowser\nalacritty"
 
-chosen=$(echo -e "$choices" | dmen.sh -p 'Edit Config' -i)
+chosen=$(echo -e "$choices" | dmenu.sh -p 'Edit Config' -i)
 
 case "$chosen" in
     vim) alacritty -e nvim -- $HOME/.config/nvim/init.vim ;;
@@ -15,5 +15,4 @@ case "$chosen" in
     tmux) alacritty -e nvim -- $HOME/.config/tmux/tmux.conf ;;
     qutebrowser) alacritty -e nvim -- $HOME/.config/qutebrowser/config.py ;;
     alacritty) alacritty -e nvim -- $HOME/.config/alacritty/alacritty.yml ;;
-    rofi) alacritty -e nvim -- $HOME/.config/rofi/config.rasi ;;
 esac

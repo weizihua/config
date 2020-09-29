@@ -78,6 +78,9 @@ Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
 Plug 'dense-analysis/ale'
+Plug 'voldikss/vim-floaterm'
+Plug 'apalmer1377/factorus'
+Plug 'puremourning/vimspector'
 call plug#end()
 
 

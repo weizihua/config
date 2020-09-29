@@ -3,7 +3,7 @@
 # Configuration
 # ---------------
 
-DEFAULT_WALLPAPER="0022.jpg"
+DEFAULT_WALLPAPER="0002.jpg"
 
 INSTALL_DIR="$(dirname "$(readlink -f "$0")")"
 

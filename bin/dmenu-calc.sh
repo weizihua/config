@@ -1,3 +1,3 @@
 #!/bin/bash
 
-= --dmenu=dmen.sh -- -p 'Calculate'
+= --dmenu=dmenu.sh -- -p 'Calculate'

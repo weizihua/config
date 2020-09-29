@@ -1,4 +1,4 @@
-nnoremap <silent> <leader>e :execute "Fern " . getcwd() " -drawer -toggle -reveal=%"<CR>
+nnoremap <silent> <localleader>1 :execute "Fern " . getcwd() " -drawer -toggle -reveal=%"<CR>
 " nnoremap <silent> <leader>e :execute "Fern " . getcwd() " -drawer -reveal=%"<CR>
 
 

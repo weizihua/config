@@ -1,16 +1,17 @@
 syntax enable
 
 
-colorscheme wal
+" colorscheme wal
+colorscheme gruvbox
 
 " Customized colors
 " https://github.com/dylanaraps/wal.vim/blob/master/colors/wal.vim
-hi Pmenu ctermbg=2 ctermfg=7
-hi PmenuSel ctermbg=3 ctermfg=0
-hi PmenuSbar ctermbg=0 ctermfg=1
+" hi Pmenu ctermbg=2 ctermfg=7
+" hi PmenuSel ctermbg=3 ctermfg=0
+" hi PmenuSbar ctermbg=0 ctermfg=1
 
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
+" hi! Normal ctermbg=NONE guibg=NONE
+" hi! NonText ctermbg=NONE guibg=NONE
 " hi! CursorLine cterm=NONE ctermbg=NONE
 
 " hi Normal ctermbg=None

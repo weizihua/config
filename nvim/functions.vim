@@ -6,6 +6,7 @@ function! ToggleHiddenAll()
         set noruler
         set laststatus=0
         set showtabline=0
+        set signcolumn=no
         set noshowcmd
     else
         let s:hidden_all = 0
@@ -13,6 +14,7 @@ function! ToggleHiddenAll()
         set ruler
         set laststatus=2
         set showtabline=0
+        set signcolumn=yes
         set showcmd
     endif
 endfunction

@@ -7,7 +7,7 @@ super + Return
 
 # program launcher
 super + space
-    dmen_run.sh -p 'Run'
+    dmenu_run.sh -p 'Run' 
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -232,10 +232,10 @@ XF86Audio{Raise,Lower}Volume
     pulseaudio-ctl {up,down} 2
 
 # Change volume
-{F11,F12}
+super + {F11,F12}
     pulseaudio-ctl {down,up} 2
 
 # Mute volume
-F10
+super + F10
     pulseaudio-ctl mute
 # --------------------------

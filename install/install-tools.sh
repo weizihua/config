@@ -14,6 +14,7 @@ pip install mycli
 # pip install pgcli
 # pip install sqlline
 pip install iredis
+pip install neovim-remote
 
 # Markdown preview in browser
 pip install grip

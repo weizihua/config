@@ -19,8 +19,8 @@
 [colors]
 background = #dd1c1c1c
 background-alt = #444
-foreground = #dfdfdf
-foreground-alt = #555
+foreground = #FFF
+foreground-alt = #909090
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40

@@ -12,7 +12,7 @@ set vim-multiple-cursors
 set nowrap
 set hidden
 " set nonumber
-" set norelativenumber
+set relativenumber
 set incsearch
 set hlsearch
 set tabstop=4

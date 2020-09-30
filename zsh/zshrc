@@ -107,6 +107,7 @@ alias pacman-list="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse 
 alias pacman-count="sudo ls /var/cache/pacman/pkg | wc -l"
 alias pacman-size="du -sh /var/cache/pacman/pkg"
 alias pacman="sudo pacman"
+alias pacman-fix="sudo pacman -Syu elinks"
 
 alias systemctl="sudo systemctl"
 

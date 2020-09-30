@@ -26,3 +26,5 @@ coc/
 configstore/
 vscode-sqltools/
 QtProject.conf
+evince
+libreoffice

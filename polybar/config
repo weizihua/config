@@ -296,7 +296,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp11s0
+interface = eno1
 interval = 3.0
 
 ; Available tokens:
@@ -406,6 +406,8 @@ animation-discharging-framerate = 750
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 70
+
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
 
 format = <ramp> <label>
 ; format-underline = #f50a4d

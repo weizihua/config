@@ -14,7 +14,11 @@ imwheel
 clipmenud &
 
 # Background
-nitrogen --set-scaled `cat $HOME/.cache/nitrogen/current_wallpaper`
+if [[ ! -f $HOME/.cache/nitrogen/current_wallpaper ]]; then
+    nitrogen --set-scaled /usr/share/backgrounds/custom/default.jpg
+else
+    nitrogen --set-scaled `cat $HOME/.cache/nitrogen/current_wallpaper`
+fi
 
 # Polybar
 $HOME/.config/polybar/launch.sh

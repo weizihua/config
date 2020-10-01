@@ -29,6 +29,9 @@ cd /tmp/vifmimg
 cp vifmimg $HOME/.local/bin
 cp vifmrun $HOME/.local/bin
 
+# Configure vagrant
+vagrant plugin install vagrant-disksize
+
 # Add some helm repository
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 helm repo add bitnami https://charts.bitnami.com/bitnami

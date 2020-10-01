@@ -28,7 +28,7 @@ print_bit() {
 
 INTERVAL=3
 # INTERFACES="enp11s0 enp12s0"
-INTERFACES=`ip -o link show | awk -F': ' '{print $2}' | grep enp | tr '\n' ' '`
+INTERFACES=`ip -o link show | awk -F': ' '{print $2}' | grep en | tr '\n' ' '`
 
 declare -A bytes
 

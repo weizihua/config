@@ -105,6 +105,21 @@ The file content example
 
 ---
 
+## Create and configure user
+
+#### 1. Create user
+`useradd -m -g users -G wheel <username>`
+
+#### 2. Set user password
+`passwd <username>`
+
+#### 3. Allow user sudo access
+> Uncomment the line `# %wheel ALL=(ALL) ALL`
+
+`EDITOR=nvim visudo`
+
+---
+
 ## Apply configuration
 
 #### 1. Clone the config repo

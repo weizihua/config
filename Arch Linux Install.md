@@ -118,6 +118,8 @@ The file content example
 
 `EDITOR=nvim visudo`
 
+#### 4. Login as new user
+
 ---
 
 ## Apply configuration

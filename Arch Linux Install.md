@@ -78,6 +78,33 @@
 
 ---
 
+## Arch linux configure network
+
+#### 1. Create a file for network ethernet adapter `/etc/systemd/network/eno1.network`
+The file name does not matter, but it should have the extension `.network`  
+The file content example
+
+> [Match]  
+> Name=eno1
+>   
+> [Network]  
+> Address=192.168.0.10  
+> Gateway=192.168.0.1  
+> DNS=192.168.0.1  
+> DNS=8.8.8.8
+
+#### 2. Add nameservers in `/etc/resolve.conf`
+> nameserver 192.168.0.1  
+> nameserver 8.8.8.8
+
+#### 3. Enable network services
+`systemctl enable systemd-networkd`  
+`systemctl enable systemd-resolved`  
+
+#### 4. Reboot
+
+---
+
 ## Apply configuration
 
 #### 1. Clone the config repo

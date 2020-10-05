@@ -41,6 +41,7 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm repo add openebs https://openebs.github.io/charts
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+helm repo add grafana https://grafana.github.io/helm-charts
 
 # Install istio
 curl -L https://istio.io/downloadIstio | sh -

@@ -12,7 +12,6 @@ set undolevels=1000
 set dotdirs=
 set vimhelp
 set nofollowlinks
-set runexec
 set timefmt=%y.%m.%d\ %H:%M:%S
 set wildmenu
 set wildstyle=popup

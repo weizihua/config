@@ -28,6 +28,7 @@ docker-credential-pass
 jvmtop
 menu-calc
 java-lombok
+dive
 )
 
 func_iterate_install_aur "${packages[@]}"

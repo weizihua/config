@@ -316,6 +316,7 @@ c.url.searchengines = {
         'st': 'https://stackoverflow.com/search?q={}',
         'aw': 'https://wiki.archlinux.org/?search={}',
         'docker': 'https://hub.docker.com/search?q={}&type=image',
+        'bible': 'https://www.bible.com/search/bible?q={}',
 }
 
 c.completion.height = '35%'

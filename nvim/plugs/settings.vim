@@ -14,7 +14,7 @@ colorscheme gruvbox
 " hi! NonText ctermbg=NONE guibg=NONE
 " hi! CursorLine cterm=NONE ctermbg=NONE
 
-" hi Normal ctermbg=None
+hi Normal ctermbg=None
 " hi cursorline cterm=none term=none
 " autocmd WinEnter * setlocal cursorline
 " autocmd WinLeave * setlocal nocursorline

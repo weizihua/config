@@ -42,6 +42,7 @@ helm repo add openebs https://openebs.github.io/charts
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 helm repo add grafana https://grafana.github.io/helm-charts
+helm repo add jetstack https://charts.jetstack.io
 
 # Install istio
 curl -L https://istio.io/downloadIstio | sh -

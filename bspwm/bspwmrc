@@ -8,7 +8,7 @@
 sxhkd &
 
 # Increase the mouse wheel speed (conf file is in ~/.imwheelrc)
-imwheel
+# imwheel
 
 # Clipmenu
 clipmenud &

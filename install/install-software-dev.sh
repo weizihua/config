@@ -27,6 +27,7 @@ visualvm
 maven
 gradle
 docker
+docker-compose
 python-pip
 virtualbox-host-modules-arch
 virtualbox

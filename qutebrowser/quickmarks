@@ -11,3 +11,6 @@ docker https://hub.docker.com/repositories
 aws https://eu-central-1.console.aws.amazon.com/console/home?region=eu-central-1#
 start https://start.spring.io/
 bible https://www.bible.com/bible/1996/DEU.5.VDCL
+bible.fidela https://www.bible.com/bible/903/DEU.5.BTF2015
+bible.ru https://www.bible.com/bible/167/DEU.5.%D0%A1%D0%98%D0%9D%D0%9E%D0%94
+bible.kjv https://www.bible.com/bible/1/DEU.5.KJV

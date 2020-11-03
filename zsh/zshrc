@@ -108,6 +108,7 @@ alias pacman-count="sudo ls /var/cache/pacman/pkg | wc -l"
 alias pacman-size="du -sh /var/cache/pacman/pkg"
 alias pacman="sudo pacman"
 alias pacman-fix="sudo pacman -Syu elinks"
+alias pacman-fix-permissions="sudo pacman -S archlinux-keyring"
 
 alias systemctl="sudo systemctl"
 

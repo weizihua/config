@@ -149,6 +149,8 @@ tldr
 nmap
 net-tools
 youtube-dl
+dialog
+netctl
 reflector
 pass
 figlet

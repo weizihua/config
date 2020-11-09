@@ -23,7 +23,12 @@ xset r rate 200 100
 setxkbmap -option caps:escape
 
 # Remap alt to win
-setxkbmap -option altwin:swap_alt_win
+# setxkbmap -option altwin:swap_alt_win
+
+# Remap F13 to PrintScreen
+# Remap F14 to Scroll Lock
+# Remap F15 to Pause
+setxkbmap -option "apple:alupckeys"
 
 # Configure US and RU keyboard layouts
 setxkbmap -model pc105 -layout us,ru -variant ,phonetic_winkeys -option 'grp:alt_caps_toggle'

@@ -30,14 +30,10 @@ menu-calc
 java-lombok
 skaffold
 dive
+jmeter
 )
 
 func_iterate_install_aur "${packages[@]}"
-
-# cd /tmp
-# wget https://www.softmaker.net/down/softmaker-freeoffice-978-amd64.tgz -O /tmp/freeoffice.tgz
-# tar xvzf freeoffice.tgz
-# ./installfreeoffice
 
 ###############################################################################
 

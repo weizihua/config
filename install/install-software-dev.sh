@@ -34,6 +34,7 @@ virtualbox
 terraform
 aws-cli
 kubectl
+minikube
 jq
 highlight
 httpie

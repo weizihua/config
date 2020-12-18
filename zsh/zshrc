@@ -96,7 +96,8 @@ alias http-server="python -m SimpleHTTPServer 5000"
 
 # Docker
 # ------------------------------
-alias docker-clean="docker system prune -a"
+alias docker-clean-images="docker system prune -a"
+alias docker-rm-all="docker rm -f $(docker ps -a -q)"
 
 # Kubernetes
 # ------------------------------

@@ -47,11 +47,15 @@ func_print "Installing binary tools" 5
 wget -c https://github.com/gravitational/teleconsole/releases/download/0.4.0/teleconsole-v0.4.0-linux-amd64.tar.gz -O - | sudo tar -xvz -C /usr/local/bin
 
 # IntelliJ Idea
-wget wget https://download-cf.jetbrains.com/idea/ideaIU-2020.2.2.tar.gz -O /tmp/idea.tar.gz
+wget https://download-cf.jetbrains.com/idea/ideaIU-2020.2.2.tar.gz -O /tmp/idea.tar.gz
 cd /tmp
 tar -zxvf idea.tar.gz
 mv /tmp/idea-* $HOME/.local/idea
 rm idea.tar.gz
+
+# Install RSocket Client 
+wget https://github.com/making/rsc/releases/download/0.6.1/rsc-x86_64-pc-linux -O $HOME/.local/bin/rsc
+chmod +x $HOME/.local/bin/rsc
 
 ###############################################################################
 

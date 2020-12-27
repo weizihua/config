@@ -19,6 +19,10 @@ export SUDO_ASKPASS=$HOME/.local/bin/dpass.sh
 # Set the keyboard repeat and delay
 xset r rate 200 100
 
+# Disable sleep
+xset -dpms
+xset s off
+
 # Remap caps lock to escape
 setxkbmap -option caps:escape
 

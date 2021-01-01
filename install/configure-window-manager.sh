@@ -28,6 +28,10 @@ sudo cp -r $INSTALL_DIR/media/lightdm-webkit-themes/arch /usr/share/lightdm-webk
 sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter/' /etc/lightdm/lightdm.conf
 sudo sed -i 's|webkit_theme.*|webkit_theme\t    = arch|' /etc/lightdm/lightdm-webkit2-greeter.conf
 
+# Create the change wallpaper nautilus script
+mkdir -p $HOME/.local/share/nautilus/scripts
+ln $HOME/.config/bin/change-wallpaper.sh $HOME/.local/share/nautilus/scripts/set-as-wallpaper
+
 
 ###############################################################################
 

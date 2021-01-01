@@ -8,6 +8,7 @@ x-scheme-handler/mailto=userapp-Evolution-R168P0.desktop
 application/pdf=org.gnome.Evince.desktop
 x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-3TCHW0.desktop
+/home/xvitcoder/Pictures/Wallpapers=nautilus-folder-handler.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Evince.desktop;xpdf.desktop;sxiv.desktop;

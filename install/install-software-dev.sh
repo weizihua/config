@@ -42,6 +42,7 @@ s3cmd
 postgresql-client
 pygmentize
 ctags
+pgadmin4
 )
 
 func_iterate_install "${packages[@]}"

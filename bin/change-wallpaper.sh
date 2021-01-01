@@ -15,26 +15,30 @@ if [[ ! -f `cat $NITROGEN_PATH` ]]; then
     rm -rf $NITROGEN_PATH
 fi
 
-if [[ ! -f "${NITROGEN_PATH}" ]]; then
-    files=($WALLPAPER_DIR/*)
-    WALLPAPER_FILENAME="${files[0]}"
-else
-    files=($WALLPAPER_DIR/*)
+if [ -z "$1" ]; then
+    if [[ ! -f "${NITROGEN_PATH}" ]]; then
+        files=($WALLPAPER_DIR/*)
+        WALLPAPER_FILENAME="${files[0]}"
+    else
+        files=($WALLPAPER_DIR/*)
 
-    total=$(expr ${#files[@]} - 1)
-    i=0
-    for f in "${files[@]}"; do
-        if [[ $i == $total ]]; then
-            WALLPAPER_FILENAME="${files[0]}"
-            break
-        else
-            if [[ $f == $(cat $NITROGEN_PATH) ]]; then
-                WALLPAPER_FILENAME="${files[$i+1]}"
+        total=$(expr ${#files[@]} - 1)
+        i=0
+        for f in "${files[@]}"; do
+            if [[ $i == $total ]]; then
+                WALLPAPER_FILENAME="${files[0]}"
                 break
+            else
+                if [[ $f == $(cat $NITROGEN_PATH) ]]; then
+                    WALLPAPER_FILENAME="${files[$i+1]}"
+                    break
+                fi
             fi
-        fi
-        i=$(( i + 1 ))
-    done
+            i=$(( i + 1 ))
+        done
+    fi
+else
+    WALLPAPER_FILENAME="$1"
 fi
 
 echo "$WALLPAPER_FILENAME" > $NITROGEN_PATH

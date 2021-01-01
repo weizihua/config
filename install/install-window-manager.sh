@@ -32,6 +32,7 @@ papirus-icon-theme
 materia-gtk-theme
 archlinux-wallpaper
 nautilus
+filemanager-actions
 arandr
 clipmenu
 lxappearance

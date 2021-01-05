@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="afp://192.168.0.5/" added="2021-01-03T09:12:38.031455Z" modified="2021-01-03T09:12:38.031458Z" visited="2021-01-03T09:12:38.031456Z">
+    <title>NAS</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-01-03T09:12:38.031457Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="nfs://192.168.0.5/volume1/Dropbox" added="2021-01-03T09:45:58.180842Z" modified="2021-01-03T09:45:58.180847Z" visited="2021-01-03T09:45:58.180843Z">
+    <title>Dropbox</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-01-03T09:45:58.180845Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="nfs://192.168.0.5/volume1/AdventPioneers" added="2021-01-03T09:48:01.677806Z" modified="2021-01-03T10:05:30.491868Z" visited="2021-01-03T10:05:30.491866Z">
+    <title>AdventPioneers</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-01-03T10:05:30.491867Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="nfs://192.168.0.5/volume1/Photos" added="2021-01-03T09:49:42.432117Z" modified="2021-01-03T09:49:42.432121Z" visited="2021-01-03T09:49:42.432118Z">
+    <title>Photos</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-01-03T09:49:42.432119Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="nfs://192.168.0.5/volume1/Work" added="2021-01-03T09:54:30.483885Z" modified="2021-01-03T10:05:56.401190Z" visited="2021-01-03T10:05:56.401188Z">
+    <title>Work</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-01-03T10:05:56.401189Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

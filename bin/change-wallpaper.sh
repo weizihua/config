@@ -15,7 +15,9 @@ if [[ ! -f `cat $NITROGEN_PATH` ]]; then
     rm -rf $NITROGEN_PATH
 fi
 
-if [ -z "$1" ]; then
+# If the input param is a directory then iterate over it
+# if the input param is a file, then use it
+if [ -d "$1" ]; then
     if [[ ! -f "${NITROGEN_PATH}" ]]; then
         files=($WALLPAPER_DIR/*)
         WALLPAPER_FILENAME="${files[0]}"
@@ -38,7 +40,7 @@ if [ -z "$1" ]; then
         done
     fi
 else
-    WALLPAPER_FILENAME="$1"
+    WALLPAPER_FILENAME="$WALLPAPER_DIR/$1"
 fi
 
 echo "$WALLPAPER_FILENAME" > $NITROGEN_PATH

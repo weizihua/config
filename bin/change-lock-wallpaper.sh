@@ -5,7 +5,7 @@
 
 # Change the wallpaper 
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
-WALLPAPER_FILENAME="$1"
+WALLPAPER_FILENAME="$WALLPAPER_DIR/$1"
 
 notify-send -u low -t 3000 'Lock Wallpaper' "Changed wallpaper to $(basename $WALLPAPER_FILENAME)"
 

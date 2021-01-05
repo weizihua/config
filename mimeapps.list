@@ -16,3 +16,6 @@ x-scheme-handler/mailto=userapp-Evolution-R168P0.desktop;
 image/png=sxiv.desktop;feh.desktop;
 video/x-matroska=mpv.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-3TCHW0.desktop;
+text/x-objcsrc=nvim.desktop;
+application/vnd.ms-excel=freeoffice-planmaker.desktop;
+image/jpeg=feh.desktop;sxiv.desktop;

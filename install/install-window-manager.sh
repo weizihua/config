@@ -33,6 +33,7 @@ materia-gtk-theme
 archlinux-wallpaper
 nautilus
 filemanager-actions
+gvfs-nfs
 arandr
 clipmenu
 lxappearance

@@ -151,7 +151,7 @@ super + alt + shift + b
 	firefox
 
 super + shift + b
-	qutebrowser
+    qutebrowser
 
 super + shift + e
 	evolution

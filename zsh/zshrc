@@ -50,6 +50,7 @@ alias mvn-new="mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archet
 alias kube-current="kubectl config current-context"
 alias kube-info="kubectl cluster-info"
 alias k="kubectl"
+alias mk="minikube"
 
 alias fm="sh ~/.local/bin/vifmrun ."
 alias f="fzf"
@@ -63,7 +64,7 @@ function open {
 
 # Java
 alias j11='sudo archlinux-java set java-11-openjdk'
-alias j14='sudo archlinux-java set java-14-openjdk'
+alias j15='sudo archlinux-java set java-15-openjdk'
 
 # Configuration Files
 # ------------------------------

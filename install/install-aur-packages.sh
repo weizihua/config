@@ -31,6 +31,7 @@ java-lombok
 skaffold
 dive
 jmeter
+jmtpfs
 )
 
 func_iterate_install_aur "${packages[@]}"

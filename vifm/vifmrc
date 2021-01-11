@@ -23,7 +23,7 @@ set scrolloff=4
 set nowrap
 set rulerformat='%2l-%S%[ +%x%]'
 set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
-set shellcmdflag=-ic
+" set shellcmdflag=-ic
 
 " what should be saved automatically between vifm runs
 set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,phistory,fhistory
@@ -288,8 +288,8 @@ fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm
         \ vifmimg clear
 
 filetype *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.gif,*.ico
-       \ {View with sxiv}
-       \ sxiv %c %i &,
+       \ {View with feh}
+       \ feh %c %i &,
 
 fileviewer *.gif
         \ vifmimg gifpreview %px %py %pw %ph %c

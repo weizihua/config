@@ -373,6 +373,8 @@ config.bind("<Space>tc", "tab-clone")
 
 config.bind('<Ctrl-v>', 'leave-mode', mode='passthrough')
 
+config.bind('<Space>vv', 'spawn -d mpv --osc=no {url}')
+
 
 #  config.bind("<Meta-w>", "tab-close", mode="normal")
 #  config.unbind("-")

@@ -11,7 +11,6 @@ dconf/
 libfm/
 pcmanfm/
 xfce4/
-cmus/
 Code - OSS/
 JetBrains/
 gcloud/
@@ -37,3 +36,7 @@ autostart
 teams
 glade.conf
 nvim/.netrwhist
+cmus/playlists
+cmus/search-history
+cmus/command-history
+cmus/cache

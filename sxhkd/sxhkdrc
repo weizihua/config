@@ -169,7 +169,6 @@ super + shift + i
 super + shift + Return
     alacritty -e vifmrun
 
-
 # lockscreen
 super + alt + ctrl + q
     betterlockscreen -l dimblur

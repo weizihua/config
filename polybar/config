@@ -71,8 +71,9 @@ modules-left = bspwm
 modules-center =
 modules-right = cmus sep filesystem sep pulseaudio sep xkeyboard sep memory sep cpu sep temperature sep battery sep network-traffic sep date
 
-tray-position = right
-tray-padding = 2
+; tray-position = right
+tray-position = none
+; tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm

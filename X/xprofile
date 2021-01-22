@@ -40,10 +40,14 @@ setxkbmap -model pc105 -layout us,ru -variant ,phonetic_winkeys -option 'grp:alt
 
 # Swap mouse for left handed
 # xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
+xinput set-prop "$(xinput list --name-only | grep -i 'TrackPoint')" "libinput Left Handed Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Logitech')" "libinput Left Handed Enabled" 1
 
 # Enable Thinkpad touchpad click
-xinput set-prop "SYNA8007:00 06CB:CD8C Touchpad" "libinput Tapping Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Tapping Enabled" 1
 
 # Enable Thinkpad Natural Scrolling
-xinput set-prop "SYNA8007:00 06CB:CD8C Touchpad" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'TrackPoint')" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Logitech')" "libinput Natural Scrolling Enabled" 1
 

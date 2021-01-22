@@ -231,14 +231,14 @@ XF86Audio{Raise,Lower}Volume
     pulseaudio-ctl {up,down} 2
 
 # Change volume
-{F2,F3}
+super + {F2,F3}
     pulseaudio-ctl {down,up} 2
 
 # Mute volume
-F1
+super + F1
     pulseaudio-ctl mute
 # --------------------------
 
 # Change brigtness
-{F5,F6}
+super + {F5,F6}
     xbacklight {-dec,-inc} 10

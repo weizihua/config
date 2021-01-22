@@ -15,6 +15,8 @@ xorg-xmodmap
 xorg-xrandr
 xorg-xdpyinfo
 xorg-xrdb
+xorg-xbacklight
+xorg-xinput
 bspwm
 sxhkd
 nitrogen

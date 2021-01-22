@@ -43,6 +43,7 @@ postgresql-client
 pygmentize
 ctags
 pgadmin4
+pacman-contrib
 )
 
 func_iterate_install "${packages[@]}"

@@ -33,10 +33,17 @@ setxkbmap -option caps:escape
 # Remap F14 to Scroll Lock
 # Remap F15 to Pause
 setxkbmap -option "apple:alupckeys"
+setxkbmap -option "altwin:swap_alt_win"
 
 # Configure US and RU keyboard layouts
 setxkbmap -model pc105 -layout us,ru -variant ,phonetic_winkeys -option 'grp:alt_caps_toggle'
 
 # Swap mouse for left handed
-xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
+# xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
+
+# Enable Thinkpad touchpad click
+xinput set-prop "SYNA8007:00 06CB:CD8C Touchpad" "libinput Tapping Enabled" 1
+
+# Enable Thinkpad Natural Scrolling
+xinput set-prop "SYNA8007:00 06CB:CD8C Touchpad" "libinput Natural Scrolling Enabled" 1
 

@@ -59,6 +59,7 @@ mp3info
 sox
 cmus
 ffmpegthumbnailer
+alsa-tools
 )
 
 func_iterate_install "${packages[@]}"
@@ -151,6 +152,7 @@ net-tools
 youtube-dl
 dialog
 netctl
+networkmanager
 reflector
 pass
 figlet
@@ -167,6 +169,16 @@ func_print "Installing software for category 'Drivers'" 5
 packages=(
 mesa
 xf86-video-intel
+)
+
+func_iterate_install "${packages[@]}"
+
+###############################################################################
+
+func_print "Installing software for category 'System'" 5
+
+packages=(
+ntp
 )
 
 func_iterate_install "${packages[@]}"

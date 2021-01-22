@@ -69,7 +69,7 @@ font-3 = FontAwesome:size=10;2
 
 modules-left = bspwm
 modules-center =
-modules-right = cmus sep filesystem sep pulseaudio sep xkeyboard sep memory sep cpu sep temperature sep network-traffic sep date
+modules-right = cmus sep filesystem sep pulseaudio sep xkeyboard sep memory sep cpu sep temperature sep battery sep network-traffic sep date
 
 tray-position = right
 tray-padding = 2
@@ -373,17 +373,29 @@ label-muted-foreground = #666
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 98
+full-at = 100
 
-format-charging = <animation-charging> <label-charging>
+label-full = %percentage%%
+format-full =  <label-full>
+
+; format-charging =  <label-charging>
+
+label-charging = %percentage%% %time%
+format-charging = <label-charging>
+; format-charging =   <animation-charging> <label-charging>
 ; format-charging-underline = #ffb52a
 
 format-discharging = <animation-discharging> <label-discharging>
 ; format-discharging-underline = ${self.format-charging-underline}
+;
+; label-discharging = %percentage%% %time%
+; format-discharging = <label-discharging>
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 ; format-full-underline = ${self.format-charging-underline}
+;
+
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -407,7 +419,7 @@ type = internal/temperature
 thermal-zone = 0
 warn-temperature = 70
 
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon8/temp1_input
 
 format = <ramp> <label>
 ; format-underline = #f50a4d

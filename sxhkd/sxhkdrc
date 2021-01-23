@@ -242,3 +242,8 @@ super + F1
 # Change brigtness
 super + {F5,F6}
     xbacklight {-dec,-inc} 10
+
+# Change temperature
+super + shift + {F5,F6}
+    . $HOME/'.local/bin/change-display-temperature.sh' {dec,inc}
+

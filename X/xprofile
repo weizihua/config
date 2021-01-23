@@ -15,6 +15,11 @@ export SUDO_ASKPASS=$HOME/.local/bin/dpass.sh
 
 # --------------------------------
 
+# Set the display color temperature
+# Values can be from 1000-10000
+temperature=2500
+echo ${temperature} >/tmp/DISPLAY_TEMPERATURE
+sct $temperature
 
 # Set the keyboard repeat and delay
 xset r rate 200 100
@@ -48,6 +53,7 @@ xinput set-prop "$(xinput list --name-only | grep -i 'Logitech')" "libinput Left
 
 # Enable Thinkpad touchpad click
 xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Tapping Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Click Method Enabled" 0 1
 
 # Enable Thinkpad Natural Scrolling
 xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Natural Scrolling Enabled" 1

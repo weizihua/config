@@ -32,6 +32,7 @@ skaffold
 dive
 jmeter
 jmtpfs
+sct
 )
 
 func_iterate_install_aur "${packages[@]}"

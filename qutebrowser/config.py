@@ -358,6 +358,8 @@ config.bind(",,", "set content.user_stylesheets default.css")
 config.bind("<Space>dd", "download-open")
 config.bind("<Space>dc", "download-cancel")
 config.bind("<Space>dC", "download-clear")
+config.bind('<Space>dv', 'spawn -d alacritty -e youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]" {url} -o ~/Downloads/%(title)s.%(ext)s')
+config.bind('<Space>da', 'spawn -d alacritty -e youtube-dl --extract-audio --audio-format mp3 {url} -o ~/Downloads/%(title)s.%(ext)s')
 
 # Messages
 config.bind("<Space>mm", "messages")
@@ -371,9 +373,11 @@ config.bind("<Space>to", "tab-only")
 config.bind("<Space>tp", "tab-pin")
 config.bind("<Space>tc", "tab-clone")
 
+# Youtube Video 
+config.bind('<Space>vv', 'spawn -d mpv --osc=no {url}')
+
 config.bind('<Ctrl-v>', 'leave-mode', mode='passthrough')
 
-config.bind('<Space>vv', 'spawn -d mpv --osc=no {url}')
 
 
 #  config.bind("<Meta-w>", "tab-close", mode="normal")

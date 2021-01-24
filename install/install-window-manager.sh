@@ -42,6 +42,7 @@ clipmenu
 lxappearance
 lxrandr
 playerctl
+cli-visualizer
 python-pywal
 )
 

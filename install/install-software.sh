@@ -158,6 +158,7 @@ pass
 figlet
 libqalculate
 tldr
+sshfs
 )
 
 func_iterate_install "${packages[@]}"

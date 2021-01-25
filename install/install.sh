@@ -17,6 +17,7 @@ mkdir $HOME/Video
 mkdir $HOME/Music
 mkdir $HOME/Pictures
 mkdir $HOME/Temporary
+mkdir $HOME/Mount
 mkdir $HOME/.trash
 # ---------------
 

@@ -41,7 +41,7 @@ setxkbmap -option "apple:alupckeys"
 setxkbmap -option "altwin:swap_alt_win"
 
 # Configure US and RU keyboard layouts
-setxkbmap -model pc105 -layout us,ru -variant ,phonetic_winkeys -option 'grp:alt_caps_toggle'
+setxkbmap -model pc105 -layout us,ru,ro -variant ,phonetic_winkeys,std -option 'grp:alt_caps_toggle'
 
 # Disable touchscreen
 xinput disable "$(xinput list --name-only | grep -i 'Touchscreen')"

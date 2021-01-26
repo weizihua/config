@@ -14,6 +14,7 @@ pulseaudio-ctl
 polybar
 archlinux-wallpaper
 slack-desktop
+viber
 skypeforlinux-stable-bin
 kops
 kind

@@ -341,6 +341,8 @@ c.hints.chars = "1234567890"
 c.input.insert_mode.auto_leave = True
 #  c.input.insert_mode.auto_load = True
 
+# Default zoom
+c.zoom.default = 125
 
 # --------------------------------------
 # Bindings

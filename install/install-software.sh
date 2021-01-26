@@ -153,6 +153,7 @@ youtube-dl
 dialog
 netctl
 networkmanager
+networkmanager-openconnect
 reflector
 pass
 figlet
@@ -180,6 +181,8 @@ func_print "Installing software for category 'System'" 5
 
 packages=(
 ntp
+sof-firmware
+alsa-ucm-conf
 )
 
 func_iterate_install "${packages[@]}"

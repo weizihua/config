@@ -10,7 +10,7 @@ source ./utils.sh
 func_print "Installing software for category 'Editors'" 5
 
 packages=(
-neovim
+#neovim
 )
 
 func_iterate_install "${packages[@]}"

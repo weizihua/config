@@ -47,3 +47,10 @@ func_iterate_install_aur() {
         func_install_aur $name
     done
 }
+
+is_laptop() {
+    type=$(hostnamectl status | grep Chassis | cut -f2 -d ":" | tr -d ' ')
+    [[ "$type" =~ laptop ]] && return
+
+    false
+}

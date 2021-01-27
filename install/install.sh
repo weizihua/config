@@ -28,7 +28,11 @@ echo "Installing System"
 sh $INSTALL_DIR/install-audio.sh
 sh $INSTALL_DIR/install-bluetooth.sh
 sh $INSTALL_DIR/install-printers.sh
-sh $INSTALL_DIR/install-laptop.sh
+
+# Install laptop dependencies if it is a laptop
+if is_laptop; then
+    sh $INSTALL_DIR/install-laptop.sh
+fi
 
 echo "Installing Fonts"
 sh $INSTALL_DIR/install-fonts.sh

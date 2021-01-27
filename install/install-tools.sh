@@ -19,9 +19,6 @@ pip install neovim-remote
 # Markdown preview in browser
 pip install grip
 
-# Markdown preview in terminal
-pip install mdv
-
 # Speed test
 pip install speedtest-cli
 

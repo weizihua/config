@@ -44,7 +44,6 @@ clipmenu
 lxappearance
 lxrandr
 playerctl
-python-pywal
 )
 
 func_iterate_install "${packages[@]}"

@@ -6,76 +6,105 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'godlygeek/tabular'
+
+" Filetypes
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'plasticboy/vim-markdown'
-Plug 'easymotion/vim-easymotion'
+Plug 'fatih/vim-go'
+Plug 'vimwiki/vimwiki'
+Plug 'mrk21/yaml-vim'
+Plug 'cespare/vim-toml'
+Plug 'tpope/vim-dotenv'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'Shougo/neco-vim'
+Plug 'neoclide/coc-neco'
+Plug 'neomutt/neomutt.vim'
+
+" Color scheme
+Plug 'morhetz/gruvbox'
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'luochen1990/rainbow'
+
+" UI
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
-Plug 'jreybert/vimagit'
-Plug 'fatih/vim-go'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'majutsushi/tagbar'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'SirVer/ultisnips'
+Plug 'gcmt/taboo.vim'
+Plug 'ryanoasis/vim-devicons'
+
+" Editor
+Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
+Plug 'easymotion/vim-easymotion'
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-colorscheme-switcher'
-Plug 'morhetz/gruvbox'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'vimwiki/vimwiki'
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'haya14busa/incsearch.vim'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-unimpaired'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'SirVer/ultisnips'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'tommcdo/vim-exchange'
+Plug 'ap/vim-css-color'
+
+" Additional functionality
 Plug 'airblade/vim-rooter'
 Plug 'pbrisbin/vim-mkdir'
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'tmux-plugins/vim-tmux-focus-events'
-Plug 'melonmanchan/vim-tmux-resizer'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'schickling/vim-bufonly'
+Plug 'tpope/vim-dispatch'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'neomake/neomake'
-Plug 'jtratner/vim-flavored-markdown'
-Plug 'ekalinin/Dockerfile.vim'
 Plug 'machakann/vim-swap'
-Plug 'tommcdo/vim-exchange'
-Plug 'tpope/vim-unimpaired'
-Plug 'mrk21/yaml-vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'gcmt/taboo.vim'
-Plug 'cespare/vim-toml'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'tpope/vim-dotenv'
 Plug 'diepm/vim-rest-console'
 Plug 'vimlab/split-term.vim'
 Plug 'sjl/gundo.vim'
 Plug 'mileszs/ack.vim'
-Plug 'tpope/vim-dispatch'
-Plug 'scrooloose/nerdcommenter'
-Plug 'xvitcoder/dbext.vim'
-Plug 'luochen1990/rainbow'
-" Plug 'Shougo/neco-vim'
-" Plug 'neoclide/coc-neco'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'vifm/vifm.vim'
+Plug 'mbbill/undotree'
+Plug 'dhruvasagar/vim-open-url'
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'jreybert/vimagit'
+
+" TMUX support
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'melonmanchan/vim-tmux-resizer'
+Plug 'christoomey/vim-tmux-navigator'
+
+" COC and vimscript completion for coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
+
+" Drawing
 Plug 'vim-scripts/DrawIt'
 Plug 'gyim/vim-boxdraw'
-Plug 'ryanoasis/vim-devicons'
-Plug 'ap/vim-css-color'
-Plug 'vifm/vifm.vim'
-Plug 'dhruvasagar/vim-open-url'
-Plug 'neomutt/neomutt.vim'
-Plug 'mbbill/undotree'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Fern
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
-" Plug 'dense-analysis/ale'
+
+" DB
+Plug 'xvitcoder/dbext.vim'
+
+" Debugger
+Plug 'puremourning/vimspector'
+
+
 Plug 'voldikss/vim-floaterm'
+
+" --- NOT TESTED ---
 " Plug 'apalmer1377/factorus'
-" Plug 'puremourning/vimspector'
+" --- NOT TESTED ---
 call plug#end()
 
 
@@ -85,5 +114,3 @@ nnoremap <localleader>±c :PlugClean<CR>
 nnoremap <localleader>±u :PlugUpdate<CR>
 nnoremap <localleader>±U :PlugUpgrade<CR>
 nnoremap <localleader>±s :PlugStatus<CR>
-Plug 'mbbill/undotree'
-

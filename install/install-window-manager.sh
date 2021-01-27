@@ -15,6 +15,8 @@ xorg-xmodmap
 xorg-xrandr
 xorg-xdpyinfo
 xorg-xrdb
+xorg-xbacklight
+xorg-xinput
 bspwm
 sxhkd
 nitrogen
@@ -43,7 +45,6 @@ lxappearance
 lxrandr
 playerctl
 cli-visualizer
-python-pywal
 )
 
 func_iterate_install "${packages[@]}"

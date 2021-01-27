@@ -47,10 +47,17 @@ ln $HOME/.config/k9s/skin.yml $HOME/.k9s/skin.yml
 func_print "Creating application links" 3
 
 # Copy all bins to .local/bin
-FILES=$HOME/.config/bin/*
+FILES=$HOME/.config/bin/*.sh
 for f in $FILES
 do
     ln $HOME/.config/bin/`basename $f` $HOME/.local/bin/`basename $f`
+done
+
+# Add the nautilus scripts
+FILES=$HOME/.config/bin/nautilus-scripts/*
+for f in $FILES
+do
+    ln $HOME/.config/bin/nautilus-scripts/`basename $f` $HOME/.local/share/nautilus/scripts/`basename $f`
 done
 
 

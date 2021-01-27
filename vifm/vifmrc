@@ -105,6 +105,9 @@ nnoremap E :edit<cr>
 " New tab
 map tn :tabnew<cr>
 
+" New Next
+map tt :tabnext<cr>
+
 " Close tab
 map tc :tabclose<cr>
 

@@ -10,7 +10,7 @@ source ./utils.sh
 func_print "Installing software for category 'Editors'" 5
 
 packages=(
-neovim
+#neovim
 )
 
 func_iterate_install "${packages[@]}"
@@ -59,6 +59,7 @@ mp3info
 sox
 cmus
 ffmpegthumbnailer
+alsa-tools
 )
 
 func_iterate_install "${packages[@]}"
@@ -151,11 +152,14 @@ net-tools
 youtube-dl
 dialog
 netctl
+networkmanager
+networkmanager-openconnect
 reflector
 pass
 figlet
 libqalculate
 tldr
+sshfs
 )
 
 func_iterate_install "${packages[@]}"
@@ -172,6 +176,24 @@ xf86-video-intel
 func_iterate_install "${packages[@]}"
 
 ###############################################################################
+
+func_print "Installing software for category 'System'" 5
+
+packages=(
+ntp
+sof-firmware
+alsa-ucm-conf
+)
+
+func_iterate_install "${packages[@]}"
+
+###############################################################################
+
+func_print "Enabling services" 5
+
+systemctl enable NetworkManager
+systemctl enable ntpd
+systemctl disable systemd-networkd-wait-online
 
 func_print "Software has been installed" 11
 

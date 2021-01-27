@@ -15,6 +15,11 @@ export SUDO_ASKPASS=$HOME/.local/bin/dpass.sh
 
 # --------------------------------
 
+# Set the display color temperature
+# Values can be from 1000-10000
+temperature=2500
+echo ${temperature} >/tmp/DISPLAY_TEMPERATURE
+sct $temperature
 
 # Set the keyboard repeat and delay
 xset r rate 200 100
@@ -33,10 +38,25 @@ setxkbmap -option caps:escape
 # Remap F14 to Scroll Lock
 # Remap F15 to Pause
 setxkbmap -option "apple:alupckeys"
+setxkbmap -option "altwin:swap_alt_win"
 
 # Configure US and RU keyboard layouts
-setxkbmap -model pc105 -layout us,ru -variant ,phonetic_winkeys -option 'grp:alt_caps_toggle'
+setxkbmap -model pc105 -layout us,ru,ro -variant ,phonetic_winkeys,std -option 'grp:alt_caps_toggle'
+
+# Disable touchscreen
+xinput disable "$(xinput list --name-only | grep -i 'Touchscreen')"
 
 # Swap mouse for left handed
-xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
+# xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
+xinput set-prop "$(xinput list --name-only | grep -i 'TrackPoint')" "libinput Left Handed Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Logitech')" "libinput Left Handed Enabled" 1
+
+# Enable Thinkpad touchpad click
+xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Tapping Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Click Method Enabled" 0 1
+
+# Enable Thinkpad Natural Scrolling
+xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'TrackPoint')" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "$(xinput list --name-only | grep -i 'Logitech')" "libinput Natural Scrolling Enabled" 1
 

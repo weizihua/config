@@ -10,6 +10,9 @@ func_print "Installation of laptop software" 4
 
 packages=(
 tlp
+fprintd
+acpi
+acpi_call
 )
 
 func_iterate_install "${packages[@]}"

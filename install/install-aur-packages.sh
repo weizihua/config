@@ -10,10 +10,12 @@ func_print "Installation of AUR software" 4
 ###############################################################################
 
 packages=(
+neovim-nightly-bin
 pulseaudio-ctl
 polybar
 archlinux-wallpaper
 slack-desktop
+viber
 skypeforlinux-stable-bin
 kops
 kind
@@ -33,6 +35,8 @@ dive
 jmeter
 jmtpfs
 grpcurl
+sct
+glow
 )
 
 func_iterate_install_aur "${packages[@]}"

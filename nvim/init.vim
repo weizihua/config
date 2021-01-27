@@ -23,7 +23,7 @@ source ~/.config/nvim/plugs/floaterm.vim
 source ~/.config/nvim/plugs/git.vim
 source ~/.config/nvim/plugs/instant-markdown-preview.vim
 source ~/.config/nvim/plugs/java.vim
-" source ~/.config/nvim/plugs/vimspector.vim
+source ~/.config/nvim/plugs/vimspector.vim
 source ~/.config/nvim/plugs/ale.vim
 source ~/.config/nvim/plugs/json.vim
 source ~/.config/nvim/plugs/kubernetes.vim

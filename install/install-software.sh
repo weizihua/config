@@ -189,5 +189,11 @@ func_iterate_install "${packages[@]}"
 
 ###############################################################################
 
+func_print "Enabling services" 5
+
+systemctl enable NetworkManager
+systemctl enable ntpd
+systemctl disable systemd-networkd-wait-online
+
 func_print "Software has been installed" 11
 

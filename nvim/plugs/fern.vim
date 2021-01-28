@@ -1,5 +1,6 @@
-nnoremap <silent> <localleader>1 :execute "Fern " . getcwd() " -drawer -toggle -reveal=%"<CR>
-" nnoremap <silent> <leader>e :execute "Fern " . getcwd() " -drawer -reveal=%"<CR>
+nnoremap <silent> <a-1> :execute "Fern " . getcwd() " -drawer -toggle -reveal=%"<CR>
+" nnoremap <silent> <localleader>1 :execute "Fern " . getcwd() " -drawer -reveal=%"<CR>
+" nnoremap <silent> <a-1> :execute "Fern " . getcwd() " -drawer -reveal=%"<CR>
 
 
 let g:fern#drawer_width = 50

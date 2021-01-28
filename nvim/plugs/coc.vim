@@ -1,5 +1,5 @@
 " Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-jedi', 'coc-yaml', 'coc-java', 'coc-java-debug', 'coc-xml', 'coc-python', 'coc-markdownlint', 'coc-cmake']
+let g:coc_global_extensions = ['coc-json', 'coc-sql', 'coc-jedi', 'coc-yaml', 'coc-java', 'coc-java-debug', 'coc-xml', 'coc-python', 'coc-markdownlint', 'coc-cmake']
 
 " TextEdit might fail if hidden is not set.
 set hidden

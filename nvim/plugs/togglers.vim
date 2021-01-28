@@ -1,5 +1,5 @@
-nnoremap <localleader>3 :TagbarToggle<CR>
-nnoremap <localleader>0 :UltiSnipsEdit<CR>
+nnoremap <a-3> :TagbarToggle<CR>
+nnoremap <a-9> :UltiSnipsEdit<CR>
 " nnoremap <F11> :call ToggleTabBar()<CR>
 nnoremap <F12> :call ToggleHiddenAll()<CR>
 

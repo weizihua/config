@@ -37,6 +37,7 @@ jmtpfs
 grpcurl
 sct
 glow
+spring-boot-cli
 )
 
 func_iterate_install_aur "${packages[@]}"

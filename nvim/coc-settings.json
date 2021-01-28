@@ -13,5 +13,6 @@
     "java.errors.incompleteClasspath.severity": "ignore",
     "coc.preferences.extensionUpdateCheck": "daily",
     "diagnostic.displayByAle": true,
-    "diagnostic.checkCurrentLine": true
+    "diagnostic.checkCurrentLine": true,
+    "sql.database": "postgresql"
 }

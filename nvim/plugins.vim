@@ -19,6 +19,7 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'Shougo/neco-vim'
 Plug 'neoclide/coc-neco'
 Plug 'neomutt/neomutt.vim'
+Plug 'lifepillar/pgsql.vim'
 
 " Color scheme
 Plug 'morhetz/gruvbox'

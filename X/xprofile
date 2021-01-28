@@ -37,7 +37,6 @@ setxkbmap -model pc105 -layout us,ru,ro -variant ,phonetic_winkeys,std -option '
 
 # Remap alt to win
 if [[ "$COMPUTER_TYPE" =~ desktop ]]; then
-
     # Swap Alt and Win key just in case it is not an apple keyboard
     # On apple keyboard the Cmd key is already swapped
     # On apple keboard remap F13-15 to normal keys
@@ -56,19 +55,27 @@ if [[ "$COMPUTER_TYPE" =~ desktop ]]; then
 fi
 
 if [[ "$COMPUTER_TYPE" =~ laptop ]]; then
-    # Disable touchscreen
-    xinput disable "$(xinput list --name-only | grep -i 'Touchscreen')"
+    touchscreen=`xinput list --name-only | grep -i 'Touchscreen'`
+    if [ "$touchscreen" ]; then
+        xinput disable "$touchscreen"
+    fi
 
-    # Swap mouse for left handed
-    xinput set-prop "$(xinput list --name-only | grep -i 'TrackPoint')" "libinput Left Handed Enabled" 1
-    xinput set-prop "$(xinput list --name-only | grep -i 'Logitech')" "libinput Left Handed Enabled" 1
+    touchpad=`xinput list --name-only | grep -i 'Touchpad'`
+    if [ "$touchpad" ]; then
+        xinput set-prop "$touchpad" "libinput Tapping Enabled" 1
+        xinput set-prop "$touchpad" "libinput Click Method Enabled" 0 1
+        xinput set-prop "$touchpad" "libinput Natural Scrolling Enabled" 1
+    fi
 
-    # Enable Thinkpad touchpad click
-    xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Tapping Enabled" 1
-    xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Click Method Enabled" 0 1
+    trackpoint=`xinput list --name-only | grep -i 'TrackPoint'`
+    if [ "$trackpoint" ]; then
+        xinput set-prop "$trackpoint" "libinput Left Handed Enabled" 1
+        xinput set-prop "$trackpoint" "libinput Natural Scrolling Enabled" 1
+    fi
 
-    # Enable Thinkpad Natural Scrolling
-    xinput set-prop "$(xinput list --name-only | grep -i 'Touchpad')" "libinput Natural Scrolling Enabled" 1
-    xinput set-prop "$(xinput list --name-only | grep -i 'TrackPoint')" "libinput Natural Scrolling Enabled" 1
-    xinput set-prop "$(xinput list --name-only | grep -i 'Logitech')" "libinput Natural Scrolling Enabled" 1
+    logitech=`xinput list --name-only | grep -i 'Logitech'`
+    if [ "$logitech" ]; then
+        xinput set-prop "$logitech" "libinput Left Handed Enabled" 1
+        xinput set-prop "$logitech" "libinput Natural Scrolling Enabled" 1
+    fi
 fi

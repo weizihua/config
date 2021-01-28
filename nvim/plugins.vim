@@ -61,7 +61,7 @@ Plug 'neomake/neomake'
 Plug 'machakann/vim-swap'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'diepm/vim-rest-console'
-Plug 'vimlab/split-term.vim'
+" Plug 'vimlab/split-term.vim'
 Plug 'sjl/gundo.vim'
 Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }

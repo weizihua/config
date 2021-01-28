@@ -1,4 +1,4 @@
-command! DebugStart   :CocCommand java.debug.vimspector.start
+command! DebugStart  :CocCommand java.debug.vimspector.start
 command! DebugStop   :VimspectorReset
 
 nmap <F5>         <Plug>VimspectorContinue

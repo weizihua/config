@@ -5,12 +5,12 @@ nnoremap <silent><leader>m :call fzf#run({
             \ })<CR>
 
 " Make
-nnoremap <leader>mra :TTerm make all<CR>
-nnoremap <leader>mrr :TTerm make run<CR>
-nnoremap <leader>mrd :TTerm make debug<CR>
-nnoremap <leader>mrb :15Term make build<CR>
-nnoremap <leader>mrt :15Term make test<CR>
-nnoremap <leader>mrc :15Term make clean<CR>
+" nnoremap <leader>mra :TTerm make all<CR>
+" nnoremap <leader>mrr :TTerm make run<CR>
+" nnoremap <leader>mrd :TTerm make debug<CR>
+" nnoremap <leader>mrb :15Term make build<CR>
+" nnoremap <leader>mrt :15Term make test<CR>
+" nnoremap <leader>mrc :15Term make clean<CR>
 
 " Make Docker Build
 nnoremap <leader>mdbs :15Term make docker-build-snapshot<CR>

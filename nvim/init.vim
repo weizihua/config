@@ -36,7 +36,7 @@ source ~/.config/nvim/plugs/rooter.vim
 source ~/.config/nvim/plugs/search.vim
 source ~/.config/nvim/plugs/table-mode.vim
 source ~/.config/nvim/plugs/tabs.vim
-source ~/.config/nvim/plugs/terminal.vim
+" source ~/.config/nvim/plugs/terminal.vim
 source ~/.config/nvim/plugs/text.vim
 source ~/.config/nvim/plugs/tmux.vim
 source ~/.config/nvim/plugs/undotree.vim

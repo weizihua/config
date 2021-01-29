@@ -35,5 +35,5 @@ vnoremap <leader>R :s/%V//g"<left><left><left><left>
 vnoremap / <Esc>/\%V
 vnoremap ? <Esc>?\%V
 
-nnoremap <silent> <localleader>2 :call ToggleQuickFix()<CR>
+nnoremap <silent> <M-2> :call ToggleQuickFix()<CR>
 nnoremap <localleader>7 :Ack "// TODO:\|// FIXME:"<CR>

@@ -55,6 +55,10 @@ if [[ "$COMPUTER_TYPE" =~ desktop ]]; then
 fi
 
 if [[ "$COMPUTER_TYPE" =~ laptop ]]; then
+
+    # Swap Alt and Win key just in case it is not an apple keyboard
+    setxkbmap -option "altwin:swap_alt_win"
+
     touchscreen=`xinput list --name-only | grep -i 'Touchscreen'`
     if [ "$touchscreen" ]; then
         xinput disable "$touchscreen"

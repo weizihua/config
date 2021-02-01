@@ -29,6 +29,9 @@ xset r rate 200 100
 xset -dpms
 xset s off
 
+# Hide Cursor when typing
+xbanish &
+
 # Remap caps lock to escape
 setxkbmap -option caps:escape
 

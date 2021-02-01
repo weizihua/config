@@ -37,6 +37,7 @@ source ~/.config/nvim/plugs/search.vim
 source ~/.config/nvim/plugs/table-mode.vim
 source ~/.config/nvim/plugs/tabs.vim
 " source ~/.config/nvim/plugs/terminal.vim
+source ~/.config/nvim/plugs/tagbar.vim
 source ~/.config/nvim/plugs/text.vim
 source ~/.config/nvim/plugs/tmux.vim
 source ~/.config/nvim/plugs/undotree.vim
@@ -46,5 +47,7 @@ source ~/.config/nvim/plugs/vimwiki.vim
 source ~/.config/nvim/plugs/windows.vim
 source ~/.config/nvim/plugs/xml.vim
 source ~/.config/nvim/plugs/yaml.vim
-source ~/.config/nvim/plugs/dbext.vim
+
+" Database
+source ~/.config/nvim/plugs/dbui.vim
 

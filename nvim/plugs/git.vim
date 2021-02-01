@@ -7,7 +7,7 @@ nnoremap <leader>gt :Gcommit -v -q %<CR>
 nnoremap <leader>ge :Gedit<CR>
 nnoremap <leader>gr :Gread<CR>
 nnoremap <leader>gw :Gwrite<CR><CR>
-nnoremap <leader>gl :silent! Glog<CR>
+nnoremap <leader>gl :Gclog<CR>
 nnoremap <leader>gg :Ggrep<Space>
 nnoremap <leader>gm :Gmove<Space>
 " nnoremap <leader>gb :Git branch<Space>
@@ -20,10 +20,10 @@ nnoremap <leader>gdl :diffget //3<CR>
 " nnoremap [g <Plug>(GitGutterNextHunk)
 " nnoremap ]g <Plug>(GitGutterPrevHunk)
 
-nnoremap <leader>gpd :15Term git pull origin develop<CR>
-nnoremap <leader>gpm :15Term git pull origin master<CR>
-nnoremap <leader>gPd :15Term git push origin develop<CR>
-nnoremap <leader>gPm :15Term git push origin master<CR>
+nnoremap <leader>gpd :FloatermNew git pull origin develop<CR>
+nnoremap <leader>gpm :FloatermNew git pull origin master<CR>
+nnoremap <leader>gPd :FloatermNew git push origin develop<CR>
+nnoremap <leader>gPm :FloatermNew git push origin master<CR>
 
 " Switch master and develop branches
 nnoremap <leader>gbm :10Term git checkout master<CR>
@@ -39,3 +39,5 @@ nnoremap <silent><leader>gb :call fzf#run({
 " Toggle changed lines and sign
 nnoremap \gg :GitGutterSignsToggle<CR>
 nnoremap \gl :GitGutterLineHighlightsToggle<CR>
+
+

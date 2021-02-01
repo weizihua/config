@@ -15,6 +15,7 @@ pulseaudio-ctl
 polybar
 archlinux-wallpaper
 slack-desktop
+teams
 viber
 skypeforlinux-stable-bin
 kops
@@ -24,6 +25,7 @@ betterlockscreen
 sxiv-rifle
 golangci-lint-bin
 pv
+xbanish
 poppler
 freeoffice
 docker-credential-pass

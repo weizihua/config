@@ -1,18 +1,46 @@
 {
     "suggest.minTriggerInputLength": 1,
+    "coc.preferences.extensionUpdateCheck": "daily",
+    "codeLens.enable": true,
+    // diagnostics
+    "diagnostic.errorSign": " ",
+    "diagnostic.warningSign": " ",
+    "diagnostic.infoSign": "",
+    "diagnostic.hintSign": " ",
+    "suggest.completionItemKindLabels": {
+        "text": "t",
+        "method": "m",
+        "function": ""
+    },
+    "suggest.languageSourcePriority": 99,
+    "coc.source.file.priority": 2,
+    "coc.source.around.priority": 3,
+    "coc.source.buffer.priority": 4,
+    // autoformat
+    "coc.preferences.formatOnSaveFiletypes": [
+        "markdown",
+        "yaml",
+        "json",
+        "python",
+        "java"
+    ],
+    // list
+    "list.indicator": ">",
+    "list.selectedSignText": " ",
+    "coc.preferences.hoverTarget": "float",
     "java.jdt.ls.vmargs": "-javaagent:/usr/share/java/lombok/lombok.jar -Xbootclasspath/a:/usr/share/java/lombok/lombok.jar",
     "java.import.maven.enabled": true,
     "java.import.gradle.enabled": true,
     "java.home": "/usr/lib/jvm/default",
+    "java.completion.enabled": true,
+    "java.completion.guessMethodArguments": true,
     "java.implementationsCodeLens.enabled": true,
     "java.referencesCodeLens.enabled": true,
     "java.autobuild.enabled": true,
     "java.format.enabled": true,
-    "suggest.noselect": false,
-    "java.completion.guessMethodArguments": true,
     "java.errors.incompleteClasspath.severity": "ignore",
-    "coc.preferences.extensionUpdateCheck": "daily",
-    "diagnostic.displayByAle": true,
+    "suggest.noselect": false,
+    "diagnostic.displayByAle": false,
     "diagnostic.checkCurrentLine": true,
     "sql.database": "postgresql"
 }

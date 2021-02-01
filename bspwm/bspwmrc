@@ -41,10 +41,12 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config presel_feedback_color \#404040
 
-bspc rule -a Evolution desktop='^10' follow=on
-bspc rule -a Skype desktop='^9' follow=on
+bspc rule -a Evolution desktop='^7' follow=on
+bspc rule -a Skype desktop='^10' follow=on
+bspc rule -a teams desktop='^10' follow=on
 bspc rule -a TelegramDesktop desktop='^9' follow=on
-bspc rule -a Gimp desktop='^8' follow=on
-bspc rule -a rawtherapee desktop='^8' follow=on
+bspc rule -a viber desktop='^9' follow=on
+# bspc rule -a Gimp desktop='^8' follow=on
+# bspc rule -a rawtherapee desktop='^8' follow=on
 bspc rule -a Screenkey manage=off
 # -----------------------------------------------------

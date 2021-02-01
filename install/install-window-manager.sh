@@ -39,6 +39,7 @@ mtpfs
 gvfs-nfs
 gvfs-gphoto2
 gvfs-mtp
+blueman
 arandr
 clipmenu
 lxappearance

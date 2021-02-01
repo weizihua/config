@@ -95,7 +95,8 @@ Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
 
 " DB
-Plug 'xvitcoder/dbext.vim'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
 
 " Debugger
 Plug 'puremourning/vimspector'

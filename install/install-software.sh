@@ -74,6 +74,7 @@ evince
 evolution
 zathura
 xpdf
+fbreader
 )
 
 func_iterate_install "${packages[@]}"
@@ -151,8 +152,10 @@ nmap
 net-tools
 youtube-dl
 dialog
+openvpn
 netctl
 networkmanager
+networkmanager-openvpn
 networkmanager-openconnect
 reflector
 pass

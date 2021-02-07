@@ -40,6 +40,8 @@ grpcurl
 sct
 glow
 spring-boot-cli
+camunda-modeler
+alacritty-ligatures
 )
 
 func_iterate_install_aur "${packages[@]}"

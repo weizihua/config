@@ -1,5 +1,5 @@
 " Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-sql', 'coc-jedi', 'coc-yaml', 'coc-java', 'coc-java-debug', 'coc-xml', 'coc-python', 'coc-markdownlint', 'coc-cmake']
+let g:coc_global_extensions = ['coc-json', 'coc-sql', 'coc-jedi', 'coc-yaml', 'coc-java', 'coc-java-debug', 'coc-xml', 'coc-python', 'coc-markdownlint', 'coc-cmake', 'coc-snippets', 'coc-swagger', 'coc-sh']
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -137,6 +137,8 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+command -nargs=0 Swagger :CocCommand swagger.render
 
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that

@@ -20,6 +20,7 @@ Plug 'Shougo/neco-vim'
 Plug 'neoclide/coc-neco'
 Plug 'neomutt/neomutt.vim'
 Plug 'lifepillar/pgsql.vim'
+Plug 'uarun/vim-protobuf'
 
 " Color scheme
 Plug 'morhetz/gruvbox'

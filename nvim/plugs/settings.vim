@@ -23,6 +23,13 @@ hi FloatermBorder guibg=black
 " highlight CursorLine guibg=#303000 ctermbg=232 ctermfg=231
 " hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
 
+" hi FernLeafText ctermfg=130
+hi FernBranchText ctermfg=green
+hi FernBranchSymbol ctermfg=green
+hi FernLeafText ctermfg=white
+hi FernLeafSymbol ctermfg=green
+hi FernRootSymbol ctermfg=red
+hi FernRootText ctermfg=gray
 
 " Settings
 set nowrap
@@ -57,6 +64,8 @@ set foldmethod=marker
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+
+set path+=**
 
 filetype plugin indent on
 set autoindent

@@ -55,6 +55,7 @@ alias mk="minikube"
 alias fm="sh ~/.local/bin/vifmrun ."
 alias f="fzf"
 alias vim="nvim"
+alias v="nvim"
 alias idea="idea.sh"
 alias vifm='sh ~/.local/bin/vifmrun'
 

@@ -46,6 +46,8 @@ lxappearance
 lxrandr
 playerctl
 cli-visualizer
+gnome-control-center
+networkmanager-openvpn-gnome
 )
 
 func_iterate_install "${packages[@]}"

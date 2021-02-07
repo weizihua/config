@@ -1,29 +1,22 @@
-nnoremap <leader>fa :Rg<CR>
-nnoremap <leader>ff :execute 'FZF' FindRootDirectory()<CR>
-nnoremap <leader>fF :GFiles<CR>
-nnoremap <leader>fb :Buffers<CR>
-nnoremap <leader><leader> :Buffers<CR>
-nnoremap <leader>ft :Tags<CR>
-nnoremap <leader>fT :BTags<CR>
-nnoremap <leader>fC :Commits<CR>
-nnoremap <leader>fc :BCommits<CR>
-nnoremap <leader>fm :Marks<CR>
-nnoremap <leader>fs :Snippets<CR>
-nnoremap <leader>fw :Windows<CR>
+nnoremap <silent><leader>fa :Rg<CR>
+nnoremap <silent><leader>ff :execute 'FZF' FindRootDirectory()<CR>
+nnoremap <silent><leader>fF :GFiles<CR>
+nnoremap <silent><leader>fb :Buffers<CR>
+nnoremap <silent><leader><leader> :Buffers<CR>
+nnoremap <silent><leader>fT :Tags<CR>
+nnoremap <silent><leader>ft :BTags<CR>
+nnoremap <silent><leader>fC :Commits<CR>
+nnoremap <silent><leader>fc :BCommits<CR>
+nnoremap <silent><leader>fm :Marks<CR>
+nnoremap <silent><leader>fs :Snippets<CR>
+nnoremap <silent><leader>fw :Windows<CR>
 
 let g:fzf_action = {
             \ 'ctrl-t': 'tab split',
             \ 'ctrl-s': 'split',
             \ 'ctrl-v': 'vsplit' }
 
-" let g:fzf_colors =
-"             \ { 'fg': ['fg', 'Normal'],
-"             \ 'bg': ['bg', 'Normal'],
-"             \ 'spinner': ['spinner', '208'],
-"             \ 'marker': ['marker', '208'],
-"             \ 'hl': ['hl', '202']}
-
-let $FZF_DEFAULT_OPTS = "--reverse --keep-right --cycle 
+let $FZF_DEFAULT_OPTS = "--reverse --keep-right 
             \ --bind='ctrl-p:toggle-preview'"
 
 
@@ -35,7 +28,7 @@ let g:fzf_colors =
   \ 'bg+':     ['Keyword', 'CursorLine', 'CursorColumn'],
   \ 'hl+':     ['fg', 'Statement'],
   \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
+  \ 'border':  ['fg', 'Statement'],
   \ 'prompt':  ['fg', 'Conditional'],
   \ 'pointer': ['fg', 'Exception'],
   \ 'marker':  ['fg', 'Keyword'],
@@ -54,7 +47,7 @@ let g:fzf_commands_expect = 'alt-enter,ctrl-x'
 
 let g:fzf_layout = { 'window': {
             \ 'width': 0.9,
-            \ 'height': 0.3,
+            \ 'height': 0.5,
             \ 'border': 'sharp' } }
 
 " nnoremap <silent><leader>mm :call fzf#run({

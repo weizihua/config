@@ -14,8 +14,8 @@ colorscheme gruvbox
 " hi! NonText ctermbg=NONE guibg=NONE
 " hi! CursorLine cterm=NONE ctermbg=NONE
 
+hi clear SignColumn
 hi Normal ctermbg=None
-hi FloatermBorder guibg=black 
 " hi cursorline cterm=none term=none
 " autocmd WinEnter * setlocal cursorline
 " autocmd WinLeave * setlocal nocursorline
@@ -23,13 +23,7 @@ hi FloatermBorder guibg=black
 " highlight CursorLine guibg=#303000 ctermbg=232 ctermfg=231
 " hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
 
-" hi FernLeafText ctermfg=130
-hi FernBranchText ctermfg=green
-hi FernBranchSymbol ctermfg=green
-hi FernLeafText ctermfg=white
-hi FernLeafSymbol ctermfg=green
-hi FernRootSymbol ctermfg=red
-hi FernRootText ctermfg=gray
+
 
 " Settings
 set nowrap

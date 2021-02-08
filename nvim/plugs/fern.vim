@@ -4,7 +4,7 @@ nnoremap <silent> <a-1> :execute "Fern " . getcwd() . " -drawer -toggle -reveal=
 " nnoremap <silent> <a-1> :execute "Fern " . getcwd() " -drawer -reveal=%"<CR>
 
 
-" let g:fern#smart_cursor = 'hide'
+let g:fern#smart_cursor = 'hide'
 let g:fern#drawer_width = 50
 let g:fern#default_hidden = 0
 let g:fern#default_exclude = 'target'
@@ -50,3 +50,12 @@ augroup fern-custom
 augroup END
 
 let g:fern#renderer = "nerdfont"
+
+" hi FernLeafText ctermfg=130
+hi FernBranchText ctermfg=green cterm=none
+hi FernBranchSymbol ctermfg=green cterm=none
+hi FernLeafText ctermfg=white
+hi FernLeafSymbol ctermfg=green
+hi FernRootSymbol ctermfg=red
+hi FernRootText ctermfg=gray
+

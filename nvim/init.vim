@@ -11,6 +11,7 @@ source ~/.config/nvim/plugs/togglers.vim
 
 " Plugins configuration
 source ~/.config/nvim/plugs/airline.vim
+source ~/.config/nvim/plugs/git-gutter.vim
 source ~/.config/nvim/plugs/abbreviations.vim
 source ~/.config/nvim/plugs/buffers.vim
 source ~/.config/nvim/plugs/ultisnip.vim

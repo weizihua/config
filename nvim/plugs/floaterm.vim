@@ -45,3 +45,4 @@ nnoremap   <silent>   <M-f>    :FloatermUpdate --wintype=float --position=center
 tnoremap   <silent>   <M-f>    <C-\><C-n>:FloatermUpdate --wintype=float --position=center --height=0.9<CR>
 
 
+hi FloatermBorder guibg=black

@@ -1,5 +1,6 @@
 nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gd :Gvdiff<CR>
+nnoremap <leader>gdd :Gvdiff<CR>
+nnoremap <leader>gds :Gdiffsplit!<CR>
 " nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gc :Gcommit -v -q<CR>
 nnoremap <leader>ga :Gcommit --amend<CR>
@@ -26,8 +27,8 @@ nnoremap <leader>gPd :FloatermNew git push origin develop<CR>
 nnoremap <leader>gPm :FloatermNew git push origin master<CR>
 
 " Switch master and develop branches
-nnoremap <leader>gbm :10Term git checkout master<CR>
-nnoremap <leader>gbd :10Term git checkout develop<CR>
+nnoremap <leader>gbm :FloatermNew git checkout master<CR>
+nnoremap <leader>gbd :FloatermNew git checkout develop<CR>
 
 " Switch to branch
 nnoremap <silent><leader>gb :call fzf#run({
@@ -41,3 +42,11 @@ nnoremap \gg :GitGutterSignsToggle<CR>
 nnoremap \gl :GitGutterLineHighlightsToggle<CR>
 
 
+
+"Delete all Git conflict markers
+"Creates the command :GremoveConflictMarkers
+function! RemoveConflictMarkers() range
+  execute a:firstline.','.a:lastline . ' g/^<\{7}\|^|\{7}\|^=\{7}\|^>\{7}/d'
+endfunction
+"-range=% default is whole file
+command! -range=% GremoveConflictMarkers <line1>,<line2>call RemoveConflictMarkers()

@@ -33,7 +33,7 @@ configuration {
 /*	cycle: true;*/
 /*	sidebar-mode: false;*/
 /*	eh: 1;*/
-/*	auto-select: false;*/
+    /* auto-select: true; */
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
 /*	combi-modi: "window,run";*/
@@ -52,7 +52,7 @@ configuration {
 /*	scrollbar-width: 8;*/
 /*	scroll-method: 0;*/
 /*	fake-background: "screenshot";*/
-/*	window-format: "{w}    {c}   {t}";*/
+    window-format: "{w}    {c}   {t}";
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
     theme: "gruvbox-dark-hard";
@@ -96,13 +96,13 @@ configuration {
 /*	kb-accept-custom: "Control+Return";*/
 /*	kb-accept-alt: "Shift+Return";*/
 /*	kb-delete-entry: "Shift+Delete";*/
-/*	kb-mode-next: "Shift+Right,Control+Tab";*/
+    /* kb-mode-next: "Shift+Right,Super+Tab"; */
 /*	kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";*/
 /*	kb-row-left: "Control+Page_Up";*/
 /*	kb-row-right: "Control+Page_Down";*/
 /*	kb-row-up: "Up,Control+p,ISO_Left_Tab";*/
 /*	kb-row-down: "Down,Control+n";*/
-/*	kb-row-tab: "Tab";*/
+    kb-row-tab: "Tab,Super+Tab";
 /*	kb-page-prev: "Page_Up";*/
 /*	kb-page-next: "Page_Down";*/
 /*	kb-row-first: "Home,KP_Home";*/

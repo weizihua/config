@@ -1,16 +1,16 @@
 configuration {
     modi: "window";
-    width: 50;
-    lines: 15;
+    /* width: 50; */
+    /* lines: 15; */
 /*	columns: 1;*/
-    font: "JetBrains Mono 12";
+    font: "JetBrains Mono 13";
 /*	bw: 1;*/
-/*	location: 0;*/
+    /* location: 0; */
 /*	padding: 5;*/
-/*	yoffset: 0;*/
+    yoffset: -200;
 /*	xoffset: 0;*/
-/*	fixed-num-lines: true;*/
-    /* show-icons: true; */
+    fixed-num-lines: false;
+    show-icons: true;
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
@@ -92,7 +92,7 @@ configuration {
 /*	kb-remove-char-back: "BackSpace,Shift+BackSpace,Control+h";*/
 /*	kb-remove-to-eol: "Control+k";*/
 /*	kb-remove-to-sol: "Control+u";*/
-/*	kb-accept-entry: "Control+j,Control+m,Return,KP_Enter";*/
+    kb-accept-entry: "Super_L,Control+j,Control+m,Return,KP_Enter";
 /*	kb-accept-custom: "Control+Return";*/
 /*	kb-accept-alt: "Shift+Return";*/
 /*	kb-delete-entry: "Shift+Delete";*/

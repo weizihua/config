@@ -51,6 +51,7 @@ Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'ap/vim-css-color'
+Plug 'vim-scripts/XML-Folding'
 
 " Additional functionality
 Plug 'airblade/vim-rooter'

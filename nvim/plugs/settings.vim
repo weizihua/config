@@ -54,7 +54,8 @@ set switchbuf=usetab
 set showtabline=0
 set sessionoptions+=tabpages,globals
 set ttimeoutlen=0
-set foldmethod=marker
+set foldmethod=syntax
+set nofoldenable
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes

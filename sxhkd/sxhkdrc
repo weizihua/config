@@ -252,3 +252,19 @@ super + {F5,F6}
 super + shift + {F5,F6}
     . $HOME/'.local/bin/change-display-temperature.sh' {dec,inc}
 
+
+super + shift + right
+    cmus-remote --next
+
+super + alt + ctrl + l
+    cmus-remote --next
+
+super + alt + ctrl + h
+    cmus-remote --prev
+
+super + alt + ctrl + p
+    cmus-remote --pause
+
+super + alt + ctrl + s
+    cmus-remote --stop
+

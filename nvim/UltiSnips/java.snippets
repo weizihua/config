@@ -30,7 +30,7 @@ snippet cl "create class" b
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 public class ${2:`!p
 snip.rv = snip.basename or "untitled"`} {
@@ -43,7 +43,7 @@ snippet cle "class extends" b
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 public class ${2:`!p
 snip.rv = snip.basename or "untitled"`} ${3:extends ${4:Parent} }${5:implements ${6:Interface} }{
@@ -56,7 +56,7 @@ snippet clc "class with constructor, fields, setter and getters" b
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 public class `!p
 snip.rv = snip.basename or "untitled"` {
@@ -92,7 +92,7 @@ snippet clc "class with constructor, with field names" b
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 public class `!p
 snip.rv = snip.basename or "untitled"` {
@@ -120,7 +120,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 @ResponseStatus(code = HttpStatus.${3:NOT_FOUND})
 public class ${2:`!p
@@ -150,7 +150,7 @@ import lombok.NoArgsConstructor;
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 @Data
 @AllArgsConstructor
@@ -178,7 +178,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 public interface ${2:`!p 
 snip.rv = snip.basename or "untitled"`} extends JpaRepository<${3:`!p snip.rv = t[2].replace("Repository", "")`}, Long> {
@@ -191,7 +191,7 @@ snippet enum "create enum" b
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 @Getter
 @AllArgsConstructor
@@ -412,7 +412,7 @@ snippet in "interface" b
  * ${1:<description>}
  *
  * @author Vitalie Mudrenco
- * @version `! date "+%d.%m.%Y"`
+ * Created on `! date "+%d.%m.%Y"`
  */
 public interface ${2:`!p snip.rv = snip.basename or "untitled"`} ${3:extends ${4:Parent} }{
 	$0

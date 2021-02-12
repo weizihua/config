@@ -1,8 +1,4 @@
-nnoremap <M-3> :TagbarToggle<CR>
-nnoremap <M-9> :UltiSnipsEdit<CR>
-" nnoremap <F11> :call ToggleTabBar()<CR>
-nnoremap <F12> :call ToggleHiddenAll()<CR>
-
+" Global toggles
 nnoremap \f :Filetypes<CR>
 nnoremap \w :set wrap<CR>
 nnoremap \W :set nowrap<CR>

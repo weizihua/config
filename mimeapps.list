@@ -10,13 +10,21 @@ x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-KW68W0.desktop
 /home/xvitcoder/Pictures/Wallpapers=nautilus-folder-handler.desktop
 x-scheme-handler/viber=viber.desktop
+application/bpmn=camunda-modeler.desktop
+application/cmmn=camunda-modeler.desktop
+application/dmn=camunda-modeler.desktop
 
 [Added Associations]
-application/pdf=org.gnome.Evince.desktop;xpdf.desktop;sxiv.desktop;
+application/pdf=xpdf.desktop;sxiv.desktop;org.gnome.Evince.desktop;
 x-scheme-handler/mailto=userapp-Evolution-R168P0.desktop;
-image/png=sxiv.desktop;feh.desktop;
+image/png=feh.desktop;sxiv.desktop;
 video/x-matroska=mpv.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-3TCHW0.desktop;userapp-Telegram Desktop-X1YHX0.desktop;userapp-Telegram Desktop-KW68W0.desktop;
 text/x-objcsrc=nvim.desktop;
 application/vnd.ms-excel=freeoffice-planmaker.desktop;
-image/jpeg=feh.desktop;sxiv.desktop;
+image/jpeg=sxiv.desktop;feh.desktop;
+application/bpmn=camunda-modeler.desktop
+application/cmmn=camunda-modeler.desktop
+application/dmn=camunda-modeler.desktop
+application/epub+zip=FBReader.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;

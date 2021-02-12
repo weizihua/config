@@ -20,6 +20,7 @@ Plug 'Shougo/neco-vim'
 Plug 'neoclide/coc-neco'
 Plug 'neomutt/neomutt.vim'
 Plug 'lifepillar/pgsql.vim'
+Plug 'uarun/vim-protobuf'
 
 " Color scheme
 Plug 'morhetz/gruvbox'
@@ -50,6 +51,7 @@ Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'ap/vim-css-color'
+Plug 'vim-scripts/XML-Folding'
 
 " Additional functionality
 Plug 'airblade/vim-rooter'
@@ -95,7 +97,8 @@ Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
 
 " DB
-Plug 'xvitcoder/dbext.vim'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
 
 " Debugger
 Plug 'puremourning/vimspector'

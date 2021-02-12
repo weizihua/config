@@ -344,6 +344,9 @@ c.input.insert_mode.auto_leave = True
 # Default zoom
 c.zoom.default = 125
 
+
+config.load_autoconfig(False)
+
 # --------------------------------------
 # Bindings
 # --------------------------------------

@@ -33,6 +33,12 @@ let g:ale_fixers = {
       \  'java': ['google_java_format'],
       \ }
 
+
+hi ALEErrorSign ctermfg=1
+hi ALEWarningSign ctermfg=11
+hi ALEInfoSign ctermfg=3
+
+
 " let g:ale_completion_enabled = 1
 " set omnifunc=ale#completion#OmniFunc
 " let g:ale_completion_autoimport = 1

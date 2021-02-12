@@ -16,5 +16,6 @@ command MakeDebug execute "FloatermNew --name=RUN --title=DEBUG --width=0.9 --he
 command MakeTest execute "FloatermNew --name=RUN --title=DEBUG --width=0.9 --height=0.9 --autoclose=0 make test"
 command MakeClean execute "FloatermNew --name=RUN --title=DEBUG --width=0.9 --height=0.9 --autoclose=1 make clean"
 command MakeBuild execute "FloatermNew --name=RUN --title=DEBUG --width=0.9 --height=0.9 --autoclose=0 make build"
+command MakeInstall execute "FloatermNew --name=RUN --title=DEBUG --width=0.9 --height=0.9 --autoclose=0 make install"
 command MakeReimport execute "FloatermNew --name=RUN --title=DEBUG --width=0.9 --height=0.9 --autoclose=1 make reimport"
 command Terminal execute "FloatermNew --name=TERMINAL --title=TERMINAL --width=0.9 --height=0.9"

@@ -14,14 +14,15 @@ colorscheme gruvbox
 " hi! NonText ctermbg=NONE guibg=NONE
 " hi! CursorLine cterm=NONE ctermbg=NONE
 
+hi clear SignColumn
 hi Normal ctermbg=None
-hi FloatermBorder guibg=black 
 " hi cursorline cterm=none term=none
 " autocmd WinEnter * setlocal cursorline
 " autocmd WinLeave * setlocal nocursorline
 " highlight CursorLine guibg=#303000 ctermbg=136
 " highlight CursorLine guibg=#303000 ctermbg=232 ctermfg=231
 " hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
+
 
 
 " Settings
@@ -53,10 +54,13 @@ set switchbuf=usetab
 set showtabline=0
 set sessionoptions+=tabpages,globals
 set ttimeoutlen=0
-set foldmethod=marker
+set foldmethod=syntax
+set nofoldenable
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+
+set path+=**
 
 filetype plugin indent on
 set autoindent

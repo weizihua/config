@@ -31,16 +31,14 @@ vnoremap <M-down> :m '>+1<CR>gv=gv
 vnoremap <M-up> :m '<-2<CR>gv=gv
 nnoremap <M-down> :m .+1<CR>==
 nnoremap <M-up> :m .-2<CR>==
-" Not working
-" let g:move_key_modifier = 'T'
 " }}}
 
 nnoremap <silent> <localleader><space> :%s/\s\+$//e<CR> :echo "Trailing white space removed"<CR>
 
 " ===== Scroll ===== {{{
 "  vertical scroll
-nnoremap <M-[> 5zh
-nnoremap <M-]> 5zl
+" nnoremap <M-[> 5zh
+" nnoremap <M-]> 5zl
 " }}}
 
 " ===== Info ===== {{{

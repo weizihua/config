@@ -39,12 +39,15 @@ mtpfs
 gvfs-nfs
 gvfs-gphoto2
 gvfs-mtp
+blueman
 arandr
 clipmenu
 lxappearance
 lxrandr
 playerctl
 cli-visualizer
+gnome-control-center
+networkmanager-openvpn-gnome
 )
 
 func_iterate_install "${packages[@]}"

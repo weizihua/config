@@ -16,6 +16,8 @@ colorscheme gruvbox
 
 hi clear SignColumn
 hi Normal ctermbg=None
+hi VertSplit ctermbg=None
+hi CursorLineNr ctermbg=None
 " hi cursorline cterm=none term=none
 " autocmd WinEnter * setlocal cursorline
 " autocmd WinLeave * setlocal nocursorline

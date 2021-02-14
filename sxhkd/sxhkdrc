@@ -166,6 +166,10 @@ super + shift + e
 super + alt + shift + Return
     nautilus
 
+# Start vim
+super + alt + Return
+    alacritty -e nvim
+
 # Start IntelliJ Idea
 super + shift + i
     ~/.local/idea/bin/idea.sh nosplash

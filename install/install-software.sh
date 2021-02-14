@@ -163,6 +163,7 @@ figlet
 libqalculate
 tldr
 sshfs
+graphviz
 )
 
 func_iterate_install "${packages[@]}"

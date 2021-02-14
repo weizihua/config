@@ -158,10 +158,15 @@ nnoremap <silent> <A-h>  : wincmd -<cr>
 nnoremap <silent> <A-l>  : wincmd +<cr>
 nnoremap <silent> <A-j>  : wincmd <<cr>
 nnoremap <silent> <A-k>  : wincmd ><cr>
-nnoremap <silent> <C-k>  : wincmd K<cr>
-nnoremap <silent> <C-j>  : wincmd J<cr>
-nnoremap <silent> <C-h>  : wincmd H<cr>
-nnoremap <silent> <C-l>  : wincmd L<cr>
+
+nnoremap <silent> <C-k>  : wincmd k<cr>
+nnoremap <silent> <C-j>  : wincmd j<cr>
+nnoremap <silent> <C-h>  : wincmd h<cr>
+nnoremap <silent> <C-l>  : wincmd l<cr>
+nnoremap <silent> <space>wr  : wincmd x<cr>
+nnoremap <silent> <space>wo  : wincmd o<cr>
+nnoremap <silent> <space>ws  : wincmd s<cr>
+nnoremap <silent> <space>wv  : wincmd v<cr>
 
 command! FZFlocate :set noquickview | :execute 'goto' fnameescape(term('locate $HOME | fzf --height 10 2>/dev/tty'))
 command! FZFfind :set noquickview | :execute 'goto' fnameescape(term('find | fzf 2>/dev/tty'))

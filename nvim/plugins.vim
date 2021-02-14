@@ -21,6 +21,7 @@ Plug 'neoclide/coc-neco'
 Plug 'neomutt/neomutt.vim'
 Plug 'lifepillar/pgsql.vim'
 Plug 'uarun/vim-protobuf'
+Plug 'aklt/plantuml-syntax'
 
 " Color scheme
 Plug 'morhetz/gruvbox'
@@ -52,6 +53,8 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'ap/vim-css-color'
 Plug 'vim-scripts/XML-Folding'
+Plug 'weirongxu/plantuml-previewer.vim'
+Plug 'szw/vim-maximizer'
 
 " Additional functionality
 Plug 'airblade/vim-rooter'
@@ -71,6 +74,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vifm/vifm.vim'
 Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-open-url'
+Plug 'tyru/open-browser.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'

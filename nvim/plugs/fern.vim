@@ -16,9 +16,15 @@ let g:fern#renderer#nerdfont#padding = "  "
 
 function! s:init_fern() abort
     " Openers
-    nmap <buffer> S <Plug>(fern-action-open:split)
-    nmap <buffer> V <Plug>(fern-action-open:vsplit)
-    nmap <buffer> T <Plug>(fern-action-open:tabedit)
+    nmap <buffer> <c-s> <Plug>(fern-action-open:split)
+    nmap <buffer> <c-v> <Plug>(fern-action-open:vsplit)
+    nmap <buffer> <c-t> <Plug>(fern-action-open:tabedit)
+
+    " Navigation
+    nmap <buffer> <c-l> <c-w>l
+    nmap <buffer> <c-h> <c-w>h
+    nmap <buffer> <c-j> <c-w>j
+    nmap <buffer> <c-k> <c-w>k
 
     " Operations
     nmap <buffer> R <Plug>(fern-action-rename)
@@ -33,11 +39,13 @@ function! s:init_fern() abort
     nmap <buffer> Y <Plug>(fern-action-clipboard-move)
     nmap <buffer> P <Plug>(fern-action-clipboard-paste)
 
+    nmap <buffer> R <Plug>(fern-action-reload:all)
+    nmap <buffer> H <Plug>(fern-action-hidden:toggle)
+    nmap <buffer> I <Plug>(fern-action-include)
+    nmap <buffer> E <Plug>(fern-action-exclude)
+
     nmap <buffer> <C-space> <Plug>(fern-action-mark)
-    nmap <buffer> <C-r> <Plug>(fern-action-reload:all)
-    nmap <buffer> <C-h> <Plug>(fern-action-hidden:toggle)
-    nmap <buffer> <C-i> <Plug>(fern-action-include)
-    nmap <buffer> <C-e> <Plug>(fern-action-exclude)
+
     set norelativenumber
     set nonumber
     set foldmethod=manual

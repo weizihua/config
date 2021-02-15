@@ -107,6 +107,7 @@ uudeview
 arj
 cabextract
 file-roller
+atool
 )
 
 func_iterate_install "${packages[@]}"

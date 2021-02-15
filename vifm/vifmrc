@@ -171,6 +171,9 @@ nnoremap <silent> <space>wv  : wincmd v<cr>
 command! FZFlocate :set noquickview | :execute 'goto' fnameescape(term('locate $HOME | fzf --height 10 2>/dev/tty'))
 command! FZFfind :set noquickview | :execute 'goto' fnameescape(term('find | fzf 2>/dev/tty'))
 
+" Extract archive
+command! ex aunpack %c
+
 nnoremap <c-g> :FZFlocate<cr>
 nnoremap <c-f> :FZFfind<cr>
 

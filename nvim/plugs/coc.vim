@@ -138,6 +138,7 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
+" Open the Swagger browser preview
 command -nargs=0 Swagger :CocCommand swagger.render
 
 " Add (Neo)Vim's native statusline support.

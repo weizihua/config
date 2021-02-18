@@ -79,12 +79,12 @@ c.colors.completion.scrollbar.bg = base00
 c.colors.contextmenu.menu.bg = base00
 
 # Foreground color of the context menu. If set to null, the Qt default is used.
-c.colors.contextmenu.menu.fg =  base05
+c.colors.contextmenu.menu.fg = base05
 
 # Background color of the context menu’s selected item. If set to null, the Qt default is used.
 c.colors.contextmenu.selected.bg = base0A
 
-#Foreground color of the context menu’s selected item. If set to null, the Qt default is used.
+# Foreground color of the context menu’s selected item. If set to null, the Qt default is used.
 c.colors.contextmenu.selected.fg = base01
 
 # Background color for the download bar.
@@ -173,7 +173,7 @@ c.colors.statusbar.normal.bg = base00
 c.colors.statusbar.insert.fg = base00
 
 # Background color of the statusbar in insert mode.
-c.colors.statusbar.insert.bg = '#b8bb26'
+c.colors.statusbar.insert.bg = "#b8bb26"
 
 # Foreground color of the statusbar in passthrough mode.
 c.colors.statusbar.passthrough.fg = base00
@@ -300,35 +300,35 @@ c.colors.tabs.selected.even.bg = base02
 
 # ---------------------------------------------------------------
 
-c.fonts.default_family = 'Monospace'
-c.fonts.default_size = '16pt'
+c.fonts.default_family = "Monospace"
+c.fonts.default_size = "16pt"
 
 #  c.content.user_stylesheets = 'colors.css'
 
 #  c.url.default_page = 'https://www.google.com/search?hl=en'
 c.url.default_page = "about:blank"
-c.url.start_pages = 'https://www.google.com/search?hl=en'
+c.url.start_pages = "https://www.google.com/search?hl=en"
 
 c.url.searchengines = {
-        'DEFAULT': 'https://www.google.com/search?hl=en&q={}',
-        'gg': 'https://www.google.com/search?hl=en&q={}',
-        'yt': 'https://www.youtube.com/results?search_query={}',
-        'st': 'https://stackoverflow.com/search?q={}',
-        'aw': 'https://wiki.archlinux.org/?search={}',
-        'docker': 'https://hub.docker.com/search?q={}&type=image',
-        'bible': 'https://www.bible.com/search/bible?q={}',
+    "DEFAULT": "https://www.google.com/search?hl=en&q={}",
+    "gg": "https://www.google.com/search?hl=en&q={}",
+    "yt": "https://www.youtube.com/results?search_query={}",
+    "st": "https://stackoverflow.com/search?q={}",
+    "aw": "https://wiki.archlinux.org/?search={}",
+    "docker": "https://hub.docker.com/search?q={}&type=image",
+    "bible": "https://www.bible.com/search/bible?q={}",
 }
 
-c.completion.height = '35%'
+c.completion.height = "35%"
 c.completion.shrink = True
 c.completion.scrollbar.padding = 0
 c.completion.scrollbar.width = 0
 
 c.tabs.show = "never"
 c.tabs.favicons.scale = 0.8
-c.tabs.last_close = 'close'
+c.tabs.last_close = "close"
 c.tabs.mousewheel_switching = False
-c.tabs.title.format = '{audio}{index}:{current_title}'
+c.tabs.title.format = "{audio}{index}:{current_title}"
 
 #  c.content.user_stylesheets = 'darkmode.css'
 
@@ -363,8 +363,8 @@ config.bind(",,", "set content.user_stylesheets default.css")
 config.bind("<Space>dd", "download-open")
 config.bind("<Space>dc", "download-cancel")
 config.bind("<Space>dC", "download-clear")
-config.bind('<Space>dv', 'spawn -d alacritty -e youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]" {url} -o ~/Downloads/%(title)s.%(ext)s')
-config.bind('<Space>da', 'spawn -d alacritty -e youtube-dl --extract-audio --audio-format mp3 {url} -o ~/Downloads/%(title)s.%(ext)s')
+config.bind("<Space>dv", 'spawn -d alacritty -e youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]" {url} -o ~/Downloads/%(title)s.%(ext)s')
+config.bind("<Space>da", "spawn -d alacritty -e youtube-dl --extract-audio --audio-format mp3 {url} -o ~/Downloads/%(title)s.%(ext)s")
 
 # Messages
 config.bind("<Space>mm", "messages")
@@ -378,11 +378,14 @@ config.bind("<Space>to", "tab-only")
 config.bind("<Space>tp", "tab-pin")
 config.bind("<Space>tc", "tab-clone")
 
-# Youtube Video 
-config.bind('<Space>vv', 'spawn -d mpv --osc=no {url}')
+# Youtube Video
+config.bind("<Space>vv", "spawn -d mpv --osc=no {url}")
+config.bind("<Space>vl", "hint links spawn -d mpv --osc=no {hint-url}")
 
-config.bind('<Ctrl-v>', 'leave-mode', mode='passthrough')
-
+# Passthrough mode
+config.unbind("<Ctrl-v>")
+config.bind("<Ctrl-p>", "mode-enter passthrough")
+config.bind("<Ctrl-p>", "mode-leave", mode="passthrough")
 
 
 #  config.bind("<Meta-w>", "tab-close", mode="normal")

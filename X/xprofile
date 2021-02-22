@@ -54,7 +54,7 @@ if [[ "$COMPUTER_TYPE" =~ desktop ]]; then
     xmodmap -e "pointer = 3 2 1 4 5 6 7 8 9 10"
 
     # Desktop mouse 
-    xinput set-prop 14 "libinput Natural Scrolling Enabled" 1
+    xinput set-prop 10 "libinput Natural Scrolling Enabled" 1
 fi
 
 if [[ "$COMPUTER_TYPE" =~ laptop ]]; then

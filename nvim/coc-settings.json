@@ -20,9 +20,7 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "markdown",
         "yaml",
-        "json",
-        "python",
-        "java"
+        "json"
     ],
     // list
     "list.indicator": ">",

@@ -48,6 +48,7 @@ playerctl
 cli-visualizer
 gnome-control-center
 networkmanager-openvpn-gnome
+network-manager-applet
 )
 
 func_iterate_install "${packages[@]}"

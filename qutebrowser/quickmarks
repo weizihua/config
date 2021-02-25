@@ -19,3 +19,14 @@ arobsmail https://exchange.arobs.com/owa/#path=/mail/inbox
 arobsticket https://rt.arobs.com
 arobsdocs https://documentatie.arobs.com
 arobsudemy https://arobs.udemy.com/organization/home/
+bcr-pgadmin https://pgadmin-bcr-dev-tools.ostst.bcr.os/browser/
+bcr-mail https://mail.bcr.ro/CookieAuth.dll?GetLogon?curl=Z2FowaZ2F&reason=0&formdir=1
+bcr-jira https://rojira.bcr.wan:4443/secure/Dashboard.jspa
+bcr-gitlab https://gitlab.bcr.wan/users/sign_in
+bcr-artifactory https://artifactory.bcr.wan/artifactory/webapp/#/home
+bcr-kibana https://elktst.bcr.wan/login?next=%2F
+bcr-sonarqube http://sonarqube.bcr.wan:9000/sonar/sessions/new?return_to=%2Fsonar%2F
+bcr-george-fat https://george.fat.bcr.ro/
+bcr-george-uat https://login.uat.bcr.ro/users/login
+bcr-argocd https://argocd.ostst.bcr.os/applications
+bcr-openshift https://consoletst.bcr.os:8443/

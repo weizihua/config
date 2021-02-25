@@ -159,7 +159,7 @@ super + shift + b
     qutebrowser
 
 super + shift + e
-	evolution
+	geary
 
 
 # Start Thunar UI file manager

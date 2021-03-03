@@ -13,6 +13,10 @@ sxhkd &
 # Clipmenu
 clipmenud &
 
+# Network Manager Agent
+# nm-applet --sm-disable &
+# nm-applet &
+
 # Hide Cursor when typing
 # xbanish &
 

@@ -87,8 +87,8 @@ Plug 'melonmanchan/vim-tmux-resizer'
 Plug 'christoomey/vim-tmux-navigator'
 
 " COC and vimscript completion for coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'dense-analysis/ale'
 
 " Drawing
 Plug 'vim-scripts/DrawIt'
@@ -105,7 +105,7 @@ Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 
 " Debugger
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 
 
 Plug 'voldikss/vim-floaterm'

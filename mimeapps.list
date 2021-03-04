@@ -30,3 +30,6 @@ application/cmmn=camunda-modeler.desktop
 application/dmn=camunda-modeler.desktop
 application/epub+zip=FBReader.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
+text/plain=sublime_text.desktop;
+text/xml=sublime_text.desktop;
+application/json=sublime_text.desktop;

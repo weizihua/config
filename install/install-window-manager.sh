@@ -29,10 +29,8 @@ sxiv
 imagemagick
 lightdm
 lightdm-webkit2-greeter
-imwheel
 papirus-icon-theme
 materia-gtk-theme
-archlinux-wallpaper
 nautilus
 filemanager-actions
 mtpfs

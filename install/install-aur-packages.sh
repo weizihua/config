@@ -42,6 +42,7 @@ glow
 spring-boot-cli
 camunda-modeler
 alacritty-ligatures
+origin-client
 )
 
 func_iterate_install_aur "${packages[@]}"

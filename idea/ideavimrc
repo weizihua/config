@@ -11,8 +11,8 @@ set vim-multiple-cursors
 " ===== Settings {{{
 set nowrap
 set hidden
-" set nonumber
-set relativenumber
+set number
+" set relativenumber
 set incsearch
 set hlsearch
 set tabstop=4

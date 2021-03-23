@@ -5,11 +5,23 @@ let default_wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'sh': 'sh'
 let default_wiki.syntax = 'markdown'
 let default_wiki.ext = '.md'
 
-let work_wiki = copy(default_wiki)
-let work_wiki.name = 'Work'
-let work_wiki.path = '~/Notes/work'
-let work_wiki.path_html = '~/Notes/work/html'
-let work_wiki.path_pdf = '~/Notes/work/pdf'
+let system_wiki = copy(default_wiki)
+let system_wiki.name = 'System'
+let system_wiki.path = '~/Notes/system'
+let system_wiki.path_html = '~/Notes/system/html'
+let system_wiki.path_pdf = '~/Notes/system/pdf'
+
+let bcr_wiki = copy(default_wiki)
+let bcr_wiki.name = 'BCR'
+let bcr_wiki.path = '~/Notes/bcr'
+let bcr_wiki.path_html = '~/Notes/bcr/html'
+let bcr_wiki.path_pdf = '~/Notes/bcr/pdf'
+
+let arobs_wiki = copy(default_wiki)
+let arobs_wiki.name = 'AROBS'
+let arobs_wiki.path = '~/Notes/arobs'
+let arobs_wiki.path_html = '~/Notes/arobs/html'
+let arobs_wiki.path_pdf = '~/Notes/arobs/pdf'
 
 let personal_wiki = copy(default_wiki)
 let personal_wiki.name = 'Personal'
@@ -17,7 +29,7 @@ let personal_wiki.path = '~/Notes/personal'
 let personal_wiki.path_html = '~/Notes/personal/html'
 let personal_wiki.path_pdf = '~/Notes/personal/pdf'
 
-let g:vimwiki_list = [personal_wiki, work_wiki]
+let g:vimwiki_list = [personal_wiki, system_wiki, bcr_wiki, arobs_wiki]
 
 " disable folding
 let g:vim_markdown_folding_disabled = 1
@@ -38,6 +50,6 @@ let g:vim_markdown_autowrite = 1
 
 " Remap conflicting Vimwiki mappings
 " TODO: change the mapping
-nnoremap >wi <Plug>VimwikiIndex
-nnoremap >wI <Plug>VimwikiDiaryIndex
-nnoremap >wm <Plug>VimwikiUISelect
+nnoremap <leader>ni <Plug>VimwikiIndex
+nnoremap <leader>nI <Plug>VimwikiDiaryIndex
+nnoremap <leader>nm <Plug>VimwikiUISelect

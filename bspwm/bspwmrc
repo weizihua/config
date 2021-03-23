@@ -52,12 +52,13 @@ bspc config focused_border_color "#adadb2"
 # bspc config active_border_color "#ffffff"
 
 
-bspc rule -a Evolution desktop='^7' follow=on
 bspc rule -a Skype desktop='^10' follow=on
 bspc rule -a teams desktop='^10' follow=on
-bspc rule -a TelegramDesktop desktop='^9' follow=on
-bspc rule -a viber desktop='^9' follow=on
-# bspc rule -a Gimp desktop='^8' follow=on
+bspc rule -a TelegramDesktop desktop='^10' follow=on
+bspc rule -a viber desktop='^10' follow=on
+bspc rule -a Evolution desktop='^9' follow=on
+# bspc rule -a Gimp desktop='^6' follow=on
 # bspc rule -a rawtherapee desktop='^8' follow=on
 bspc rule -a Screenkey manage=off
+bspc rule -a 0x260002f state=floating
 # -----------------------------------------------------

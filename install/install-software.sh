@@ -160,6 +160,7 @@ networkmanager-openvpn
 networkmanager-openconnect
 reflector
 pass
+taskwarrior-tui
 figlet
 libqalculate
 tldr

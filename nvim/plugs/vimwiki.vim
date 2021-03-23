@@ -22,6 +22,9 @@ let g:vimwiki_list = [personal_wiki, work_wiki]
 " disable folding
 let g:vim_markdown_folding_disabled = 1
 
+" Show vimwiki makrdown links as [text](text.md) instead of [text](text)
+let g:vimwiki_markdown_link_ext = 1
+
 " Disable default key mappings
 let g:vim_markdown_no_default_key_mappings = 1
 

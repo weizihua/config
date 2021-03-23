@@ -55,6 +55,7 @@ Plug 'ap/vim-css-color'
 Plug 'vim-scripts/XML-Folding'
 Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'szw/vim-maximizer'
+Plug 'tools-life/taskwiki'
 
 " Additional functionality
 Plug 'airblade/vim-rooter'

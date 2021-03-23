@@ -22,6 +22,9 @@ pip install grip
 # Speed test
 pip install speedtest-cli
 
+# Speed test
+pip install tasklib
+
 # yaml processor
 pip install yq
 

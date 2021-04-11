@@ -212,6 +212,9 @@ super + ctrl + alt + 4
 super + ctrl + alt + 5
     $HOME/'.local/bin/dmenu-calc.sh'
 
+super + alt + ctrl + 6
+    $HOME/'.local/bin/annotation.sh'
+
 super + ctrl + alt + 7
     $HOME/'.local/bin/dmenu-file-finder.sh'
 
@@ -255,6 +258,9 @@ super + {F5,F6}
 # Change temperature
 super + shift + {F5,F6}
     . $HOME/'.local/bin/change-display-temperature.sh' {dec,inc}
+
+super + F7
+    $HOME/'.local/bin/touchscreen.sh'
 
 
 super + shift + right

@@ -48,6 +48,7 @@ source ~/.config/nvim/plugs/vimwiki.vim
 source ~/.config/nvim/plugs/windows.vim
 source ~/.config/nvim/plugs/xml.vim
 source ~/.config/nvim/plugs/yaml.vim
+source ~/.config/nvim/plugs/terraform.vim
 
 " Database
 source ~/.config/nvim/plugs/dbui.vim

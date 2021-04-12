@@ -17,7 +17,7 @@ x-scheme-handler/postman=Postman.desktop
 message/rfc822=userapp-Thunderbird-802C00.desktop
 
 [Added Associations]
-application/pdf=xpdf.desktop;org.gnome.Evince.desktop;sxiv.desktop;
+application/pdf=org.gnome.Evince.desktop;xpdf.desktop;sxiv.desktop;
 x-scheme-handler/mailto=userapp-Evolution-R168P0.desktop;userapp-Thunderbird-802C00.desktop;
 image/png=feh.desktop;sxiv.desktop;
 video/x-matroska=mpv.desktop;
@@ -34,3 +34,4 @@ text/plain=sublime_text.desktop;
 text/xml=sublime_text.desktop;
 application/json=sublime_text.desktop;
 message/rfc822=userapp-Thunderbird-802C00.desktop;
+text/markdown=firefox.desktop;nvim.desktop;org.pwmt.zathura.desktop;

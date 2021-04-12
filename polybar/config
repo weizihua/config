@@ -69,7 +69,7 @@ font-3 = FontAwesome:size=10;2
 
 modules-left = bspwm
 modules-center =
-modules-right = cmus sep filesystem sep pulseaudio sep xkeyboard sep memory sep cpu sep temperature sep battery sep network-traffic sep date
+modules-right = cmus sep filesystem sep pulseaudio sep pulseaudio-mic sep xkeyboard sep memory sep cpu sep temperature sep battery sep network-traffic sep date
 
 tray-position = right
 ; tray-position = none
@@ -340,6 +340,12 @@ format-prefix = " "
 ; format-underline = #ffb52a
 label = "%date% %time% "
 
+[module/pulseaudio-mic]
+type = custom/script
+exec = ~/.config/polybar/scripts/pulseaudio-mic.sh
+tail = true
+click-left = ~/.config/polybar/scripts/pulseaudio-mic.sh --toggle &
+
 [module/pulseaudio]
 type = internal/pulseaudio
 
@@ -420,7 +426,7 @@ type = internal/temperature
 thermal-zone = 0
 warn-temperature = 70
 
-; hwmon-path = "/sys/devices/platform/coretemp.0/hwmon/hwmon9/temp1_input"
+; hwmon-path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp2_input"
 
 format = <ramp> <label>
 ; format-underline = #f50a4d

@@ -165,6 +165,7 @@ figlet
 libqalculate
 tldr
 sshfs
+at
 graphviz
 )
 

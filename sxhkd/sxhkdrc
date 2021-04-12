@@ -246,6 +246,10 @@ super + {F2,F3}
 # Mute volume
 super + F1
     pulseaudio-ctl mute
+    
+# Mute mic
+super + F4
+    pulseaudio-ctl mute-input
 # --------------------------
 
 # Change brigtness
@@ -255,7 +259,6 @@ super + {F5,F6}
 # Change temperature
 super + shift + {F5,F6}
     . $HOME/'.local/bin/change-display-temperature.sh' {dec,inc}
-
 
 super + shift + right
     cmus-remote --next

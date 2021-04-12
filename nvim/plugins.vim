@@ -22,6 +22,7 @@ Plug 'neomutt/neomutt.vim'
 Plug 'lifepillar/pgsql.vim'
 Plug 'uarun/vim-protobuf'
 Plug 'aklt/plantuml-syntax'
+Plug 'hashivim/vim-terraform'
 
 " Color scheme
 Plug 'morhetz/gruvbox'

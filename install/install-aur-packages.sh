@@ -43,6 +43,7 @@ spring-boot-cli
 camunda-modeler
 alacritty-ligatures
 origin-client
+gromit-mpx
 )
 
 func_iterate_install_aur "${packages[@]}"

@@ -27,3 +27,4 @@ bcr-george-uat https://login.uat.bcr.ro/users/login
 bcr-argocd https://argocd.ostst.bcr.os/applications
 bcr-openshift https://consoletst.bcr.os:8443/
 bcr-confluence https://confluence.bcr.wan:4443/
+swagger-editor https://editor.swagger.io/

@@ -344,6 +344,10 @@ c.input.insert_mode.auto_leave = True
 # Default zoom
 c.zoom.default = 125
 
+# Hide status bar by default
+c.statusbar.show='never'
+
+
 
 config.load_autoconfig(False)
 
@@ -358,6 +362,8 @@ config.bind(",s", "view-source")
 config.bind(",!", "config-source")
 config.bind(",.", "set content.user_stylesheets darkmode.css")
 config.bind(",,", "set content.user_stylesheets default.css")
+config.bind(',b', 'config-cycle statusbar.show never always')
+
 
 # Downloads
 config.bind("<Space>dd", "download-open")

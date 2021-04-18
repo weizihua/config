@@ -11,10 +11,12 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 polybar main &
 
-hdmi_active=$(xrandr |grep ' connected' |grep 'HDMI' |awk '{print $1}')
+external_display=$(xrandr | grep ' connected' | grep -ve 'primary' |awk '{print $1}')
+
+[[ -f "/tmp/EXTERNAL_MONITOR" ]] && external_display_mode=$(cat /tmp/EXTERNAL_MONITOR)
 
 # if HDMI1 Connected, then start second external polybar
-if [[ ! -z "$hdmi_active" ]]; then
+if [[ ! -z "$external_display" && "$external_display_mode" == 'dual' ]]; then
     polybar external &
 fi
 

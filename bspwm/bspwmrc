@@ -39,10 +39,12 @@ picom --config ~/.picom.conf &
 # BSPWM Config
 # -----------------------------------------------------
 internal_display=$(xrandr | grep ' connected' | grep 'primary' | awk '{print $1}')
-external_display=$(xrandr | grep ' connected' | grep -ve 'primary' | grep -ve 'VIRTUAL' | awk '{print $1}')
+external_display=$(xrandr | grep ' connected' | grep -ve 'primary' | awk '{print $1}')
+
+[[ -f "/tmp/EXTERNAL_MONITOR" ]] && external_display_mode=$(cat /tmp/EXTERNAL_MONITOR)
 
 # if HDMI1 Connected, then start second external polybar
-if [[ ! -z "$external_display" ]]; then
+if [[ ! -z "$external_display" && "$external_display_mode" == 'dual' ]]; then
     bspc monitor $external_display -d 1 2 3
     bspc monitor $internal_display -d 4 5 6 7 8 9 10
 else

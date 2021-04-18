@@ -28,3 +28,7 @@ bcr-argocd https://argocd.ostst.bcr.os/applications
 bcr-openshift https://consoletst.bcr.os:8443/
 bcr-confluence https://confluence.bcr.wan:4443/
 swagger-editor https://editor.swagger.io/
+egw https://beta.egwwritings.org/
+egw-ro https://beta.egwwritings.org/allCollection/ro
+egw-ru https://beta.egwwritings.org/allCollection/ru
+egw-en https://beta.egwwritings.org/allCollection/en

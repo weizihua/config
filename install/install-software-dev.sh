@@ -44,7 +44,6 @@ pygmentize
 ctags
 pgadmin4
 pacman-contrib
-spring-boot-cli
 )
 
 func_iterate_install "${packages[@]}"

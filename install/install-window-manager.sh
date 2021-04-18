@@ -43,9 +43,8 @@ clipmenu
 lxappearance
 lxrandr
 playerctl
-cli-visualizer
 gnome-control-center
-networkmanager-openvpn-gnome
+networkmanager-openvpn
 network-manager-applet
 )
 

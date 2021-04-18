@@ -168,6 +168,7 @@ tldr
 sshfs
 at
 graphviz
+rofi
 )
 
 func_iterate_install "${packages[@]}"

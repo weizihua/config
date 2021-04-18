@@ -264,8 +264,11 @@ super + shift + {F5,F6}
     . $HOME/'.local/bin/change-display-temperature.sh' {dec,inc}
 
 =======
-super + F7
+super + F9
     $HOME/'.local/bin/touchscreen.sh'
+
+super + F7
+    $HOME/'.local/bin/dmenu-display.sh'
 
 
 super + shift + right

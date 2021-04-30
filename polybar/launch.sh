@@ -15,7 +15,7 @@ external_display=$(xrandr | grep ' connected' | grep -ve 'primary' |awk '{print 
 
 [[ -f "/tmp/EXTERNAL_MONITOR" ]] && external_display_mode=$(cat /tmp/EXTERNAL_MONITOR)
 
-# if HDMI1 Connected, then start second external polybar
+# if External Display Connected, then start second external polybar
 if [[ ! -z "$external_display" && "$external_display_mode" == 'dual' ]]; then
     polybar external &
 fi
